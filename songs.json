@@ -1,0 +1,6182 @@
+{
+  "2Nite": {
+    "artist": "ND Lee",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "-", "2" ],
+      [ "4", "9", "-", "6" ],
+      [ "3", "8", "-", "6" ],
+      [ "4", "8", "-", "8" ]
+    ]
+  },
+  "너랑 있으면": {
+    "artist": "STARTRACK",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "10", "3" ],
+      [ "6", "8", "11", "3" ],
+      [ "5", "8", "-", "5" ],
+      [ "4", "10", "-", "7" ]
+    ]
+  },
+  "너로피어오라": {
+    "artist": "달의하루",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "13", "-" ],
+      [ "7", "13", "-", "11" ],
+      [ "7", "10", "13", "11" ],
+      [ "7", "11", "13", "11" ]
+    ]
+  },
+  "모짜르트 교향곡 40번 1악장": {
+    "artist": "김창훈",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "12", "8" ],
+      [ "4", "7", "10", "10" ],
+      [ "5", "9", "11", "10" ],
+      [ "5", "8", "12", "12" ]
+    ]
+  },
+  "비상 ~Stay With Me~": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "-", "7" ],
+      [ "6", "10", "-", "8" ],
+      [ "6", "10", "11", "8" ],
+      [ "7", "11", "-", "10" ]
+    ]
+  },
+  "서울여자": {
+    "artist": "ESTi",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "8", "12", "-" ],
+      [ "6", "-", "12", "5" ],
+      [ "5", "8", "12", "5" ],
+      [ "5", "11", "13", "9" ]
+    ]
+  },
+  "염라": {
+    "artist": "달의하루",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "-", "12", "7" ],
+      [ "6", "10", "-", "10" ],
+      [ "5", "9", "13", "10" ],
+      [ "5", "10", "13", "9" ]
+    ]
+  },
+  "혜성": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "8", "-", "5" ],
+      [ "5", "9", "-", "7" ],
+      [ "6", "10", "-", "8" ],
+      [ "5", "11", "-", "6" ]
+    ]
+  },
+  "Airlock": {
+    "artist": "XeoN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "13", "13" ],
+      [ "5", "9", "14", "12" ],
+      [ "4", "7", "13", "13" ],
+      [ "5", "10", "14", "14" ]
+    ]
+  },
+  "Alone(Marshmellow)": {
+    "artist": "Marshmellow",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "10", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "5", "8", "12", "-" ]
+    ]
+  },
+  "Alone(Nauts)": {
+    "artist": "Nauts",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "-", "5" ],
+      [ "5", "8", "12", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "5", "8", "12", "5" ]
+    ]
+  },
+  "Always": {
+    "artist": "신지",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "6", "9", "-", "8" ],
+      [ "5", "10", "-", "-" ],
+      [ "6", "10", "-", "9" ]
+    ]
+  },
+  "Angelic Tears": {
+    "artist": "SHIKI",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "12", "6" ],
+      [ "5", "9", "12", "7" ],
+      [ "4", "8", "12", "9" ],
+      [ "5", "8", "13", "12" ]
+    ]
+  },
+  "Armored Phantom": {
+    "artist": "ned",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "7", "-", "-" ],
+      [ "6", "11", "-", "-" ],
+      [ "7", "9", "12", "-" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "Aurora Borealis": {
+    "artist": "Electronic Boutique",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "14", "-" ],
+      [ "5", "9", "13", "-" ],
+      [ "7", "11", "-", "13" ],
+      [ "6", "-", "13", "11" ]
+    ]
+  },
+  "Beautiful Day": {
+    "artist": "ND Lee",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "8", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "2", "8", "-", "-" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "Beyond Yourself": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "6", "10", "-", "12" ],
+      [ "7", "9", "12", "12" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "Binary World": {
+    "artist": "Tsukasa",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "8", "13", "12" ],
+      [ "5", "7", "13", "12" ],
+      [ "9", "12", "13", "11" ],
+      [ "5", "7", "13", "10" ]
+    ]
+  },
+  "BlackCat": {
+    "artist": "BEXTER",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "12", "-", "7" ],
+      [ "6", "11", "-", "5" ],
+      [ "5", "8", "12", "6" ],
+      [ "7", "12", "-", "8" ]
+    ]
+  },
+  "Bleed": {
+    "artist": "Axol & The Tech Thieves",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "5", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "5", "9", "-", "-" ]
+    ]
+  },
+  "Boom!": {
+    "artist": "BEXTER",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "8", "12", "9" ],
+      [ "6", "8", "12", "10" ],
+      [ "5", "9", "13", "11" ],
+      [ "6", "10", "13", "8" ]
+    ]
+  },
+  "Bullet, Wanted!": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "8", "-", "5" ],
+      [ "7", "10", "-", "-" ],
+      [ "6", "9", "11", "9" ],
+      [ "7", "11", "-", "-" ]
+    ]
+  },
+  "Can We Talk (Broken Dog Leg Mix)": {
+    "artist": "Forte Escape",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "8", "11", "10" ],
+      [ "5", "8", "12", "9" ],
+      [ "5", "7", "11", "10" ],
+      [ "2", "6", "13", "11" ]
+    ]
+  },
+  "Celestial Tears": {
+    "artist": "Tsukasa",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "7", "10", "7" ],
+      [ "6", "9", "12", "10" ],
+      [ "4", "8", "12", "10" ],
+      [ "5", "8", "12", "10" ]
+    ]
+  },
+  "Chemical Slave": {
+    "artist": "XeoN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "11", "-", "10" ],
+      [ "6", "-", "11", "-" ],
+      [ "6", "12", "-", "11" ],
+      [ "3", "8", "14", "-" ]
+    ]
+  },
+  "Child of Night": {
+    "artist": "GOTH",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "8", "-", "11" ],
+      [ "7", "9", "12", "-" ],
+      [ "7", "10", "12", "11" ],
+      [ "7", "9", "12", "-" ]
+    ]
+  },
+  "Dance of the Dead": {
+    "artist": "GOTH",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "-", "11" ],
+      [ "6", "12", "14", "10" ],
+      [ "6", "11", "14", "10" ],
+      [ "6", "12", "14", "12" ]
+    ]
+  },
+  "Dancin' Planet": {
+    "artist": "PlanetBoom",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "7", "9", "6" ],
+      [ "3", "7", "11", "10" ],
+      [ "4", "7", "10", "10" ],
+      [ "6", "9", "12", "10" ]
+    ]
+  },
+  "Dark Lightning": {
+    "artist": "AstroKid",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "11", "11" ],
+      [ "5", "9", "12", "10" ],
+      [ "4", "7", "11", "11" ],
+      [ "6", "9", "13", "10" ]
+    ]
+  },
+  "Daylight": {
+    "artist": "CROOVE",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "10", "14", "15" ],
+      [ "6", "10", "14", "13" ],
+      [ "6", "11", "14", "13" ],
+      [ "6", "11", "14", "13" ]
+    ]
+  },
+  "Don't Die": {
+    "artist": "Paul Bazooka",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "10", "13", "11" ],
+      [ "7", "10", "14", "-" ],
+      [ "8", "11", "14", "12" ],
+      [ "7", "10", "14", "-" ]
+    ]
+  },
+  "Enter The Universe": {
+    "artist": "GOTH",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "12", "13" ],
+      [ "7", "10", "15", "13" ],
+      [ "9", "12", "14", "13" ],
+      [ "7", "10", "14", "14" ]
+    ]
+  },
+  "Far East Princess": {
+    "artist": "Nauts",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "7", "10", "5" ],
+      [ "5", "10", "-", "8" ],
+      [ "3", "9", "10", "-" ],
+      [ "5", "9", "-", "-" ]
+    ]
+  },
+  "Fly Away": {
+    "artist": "XeoN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "10", "-", "7" ],
+      [ "6", "10", "-", "8" ],
+      [ "4", "-", "11", "9" ],
+      [ "6", "10", "-", "8" ]
+    ]
+  },
+  "Get Jinxed": {
+    "artist": "Agnete K",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "8", "13", "-" ],
+      [ "5", "8", "12", "7" ],
+      [ "5", "9", "11", "7" ],
+      [ "5", "8", "12", "7" ]
+    ]
+  },
+  "Ghost Voices": {
+    "artist": "Virtual Self",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "5", "11", "-", "-" ],
+      [ "6", "10", "-", "-" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "glory day": {
+    "artist": "BEXTER/Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "8", "10", "-", "4" ],
+      [ "7", "10", "-", "6" ],
+      [ "6", "11", "-", "6" ],
+      [ "7", "10", "-", "4" ]
+    ]
+  },
+  "Grid System": {
+    "artist": "Tsukasa",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "14", "-" ],
+      [ "4", "9", "13", "10" ],
+      [ "6", "-", "13", "12" ],
+      [ "5", "9", "13", "-" ]
+    ]
+  },
+  "Groovin Up": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "-", "4" ],
+      [ "5", "9", "-", "5" ],
+      [ "5", "8", "11", "6" ],
+      [ "5", "9", "-", "7" ]
+    ]
+  },
+  "Heavenly": {
+    "artist": "makou",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "7", "-", "-" ],
+      [ "4", "8", "-", "7" ],
+      [ "5", "9", "12", "8" ],
+      [ "4", "9", "-", "5" ]
+    ]
+  },
+  "I want You ~반짝★반짝 Sunshine~": {
+    "artist": "Studio LAY-BACK",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "7", "12", "-" ],
+      [ "6", "9", "12", "-" ],
+      [ "5", "10", "12", "10" ],
+      [ "6", "10", "12", "5" ]
+    ]
+  },
+  "I'M ALIVE": {
+    "artist": "Laurent Newfield",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "11", "11" ],
+      [ "5", "8", "13", "12" ],
+      [ "5", "8", "13", "13" ],
+      [ "5", "10", "13", "13" ]
+    ]
+  },
+  "KILLER BEE": {
+    "artist": "GOTH",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "6", "11", "13" ],
+      [ "7", "11", "-", "-" ],
+      [ "8", "9", "13", "-" ],
+      [ "7", "13", "-", "10" ]
+    ]
+  },
+  "Kingdom": {
+    "artist": "Phantom Sage",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "-", "11", "-" ],
+      [ "5", "7", "-", "-" ],
+      [ "5", "-", "8", "-" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "Kung Brother": {
+    "artist": "Paul Bazooka",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "-", "8" ],
+      [ "6", "11", "-", "8" ],
+      [ "8", "10", "13", "9" ],
+      [ "6", "11", "-", "10" ]
+    ]
+  },
+  "Liar": {
+    "artist": "zts",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "9", "-", "11" ],
+      [ "8", "12", "-", "11" ],
+      [ "8", "10", "13", "11" ],
+      [ "8", "13", "-", "9" ]
+    ]
+  },
+  "Lift You Up": {
+    "artist": "makou",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "2", "5", "-", "2" ],
+      [ "4", "7", "-", "3" ],
+      [ "3", "7", "-", "5" ],
+      [ "4", "7", "-", "7" ]
+    ]
+  },
+  "Mr.Lonely": {
+    "artist": "NieN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "8", "13", "12" ],
+      [ "5", "8", "13", "9" ],
+      [ "5", "8", "13", "11" ],
+      [ "6", "8", "13", "10" ]
+    ]
+  },
+  "Mulch": {
+    "artist": "Sampling Masters MEGA",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "12", "-", "-" ],
+      [ "7", "-", "14", "14" ],
+      [ "8", "12", "14", "13" ],
+      [ "7", "-", "15", "-" ]
+    ]
+  },
+  "NB RANGER - Virgin Force": {
+    "artist": "NieN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "10", "-", "12" ],
+      [ "7", "12", "15", "13" ],
+      [ "7", "12", "14", "12" ],
+      [ "7", "11", "15", "14" ]
+    ]
+  },
+  "NEON 1989 (ESTi Remix)": {
+    "artist": "ESTi",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "3", "7", "-", "-" ],
+      [ "4", "7", "-", "5" ],
+      [ "5", "9", "-", "4" ]
+    ]
+  },
+  "Only for you": {
+    "artist": "NieN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "1", "4", "9", "3" ],
+      [ "5", "7", "10", "6" ],
+      [ "4", "7", "11", "3" ],
+      [ "5", "7", "10", "3" ]
+    ]
+  },
+  "OPEN FIRE": {
+    "artist": "JC",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "5", "7", "-", "-" ],
+      [ "5", "8", "-", "-" ]
+    ]
+  },
+  "OrBiTal": {
+    "artist": "Paul Bazooka",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "13", "12" ],
+      [ "5", "10", "14", "10" ],
+      [ "5", "10", "13", "12" ],
+      [ "7", "10", "14", "12" ]
+    ]
+  },
+  "Over Your Dream": {
+    "artist": "xxdbxx",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "11", "-", "7" ],
+      [ "5", "11", "-", "9" ],
+      [ "5", "10", "11", "8" ],
+      [ "7", "12", "-", "9" ]
+    ]
+  },
+  "POP/STARS": {
+    "artist": "K/DA",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "12", "-" ],
+      [ "5", "8", "12", "9" ],
+      [ "5", "8", "11", "6" ],
+      [ "5", "9", "13", "8" ]
+    ]
+  },
+  "quixotic": {
+    "artist": "bermei.inazawa",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "7", "12", "-", "11" ],
+      [ "7", "11", "-", "11" ],
+      [ "6", "-", "13", "11" ],
+      [ "7", "11", "13", "12" ]
+    ]
+  },
+  "Relation Again (ESTi's Remix)": {
+    "artist": "ESTi",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "8", "-", "5" ],
+      [ "5", "9", "13", "-" ],
+      [ "5", "11", "-", "8" ],
+      [ "6", "-", "12", "-" ]
+    ]
+  },
+  "Remains Of Doom": {
+    "artist": "NieN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "7", "13", "-", "11" ],
+      [ "6", "9", "14", "14" ],
+      [ "9", "12", "15", "12" ],
+      [ "6", "10", "13", "12" ]
+    ]
+  },
+  "RockSTAR": {
+    "artist": "Mr.Funky",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "-", "6" ],
+      [ "4", "11", "-", "7" ],
+      [ "4", "11", "-", "8" ],
+      [ "3", "7", "13", "9" ]
+    ]
+  },
+  "Royal Clown": {
+    "artist": "bermei.inazawa",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "8", "14", "-" ],
+      [ "7", "11", "-", "10" ],
+      [ "7", "10", "13", "11" ],
+      [ "7", "10", "14", "-" ]
+    ]
+  },
+  "Runaway": {
+    "artist": "LeeZu",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "10", "-", "-" ],
+      [ "8", "11", "-", "11" ],
+      [ "9", "11", "12", "11" ],
+      [ "8", "13", "-", "-" ]
+    ]
+  },
+  "Running girl": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "7", "-", "4" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "10", "12", "6" ],
+      [ "6", "10", "-", "-" ]
+    ]
+  },
+  "Ruti'n (GOTH Wild Electro Remix)": {
+    "artist": "GOTH",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "6", "10", "-", "11" ],
+      [ "4", "10", "-", "12" ],
+      [ "7", "10", "13", "11" ],
+      [ "7", "12", "-", "12" ]
+    ]
+  },
+  "Sad Machine": {
+    "artist": "Porter Robinson",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "5", "8", "-" ],
+      [ "5", "7", "10", "3" ],
+      [ "4", "7", "10", "3" ],
+      [ "5", "7", "10", "-" ]
+    ]
+  },
+  "Secret Dejavu": {
+    "artist": "DINY",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "6", "10", "9" ],
+      [ "5", "10", "-", "8" ],
+      [ "6", "8", "11", "11" ],
+      [ "5", "10", "-", "11" ]
+    ]
+  },
+  "Shadow Flower": {
+    "artist": "ned",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "-", "-" ],
+      [ "6", "9", "-", "-" ],
+      [ "5", "11", "-", "5" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "So Happy": {
+    "artist": "Raven & Kreyn",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "-", "10", "5" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "7", "11", "-" ],
+      [ "5", "10", "12", "8" ]
+    ]
+  },
+  "The Feelings": {
+    "artist": "supbaby",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "7", "-", "2" ],
+      [ "6", "9", "-", "7" ],
+      [ "6", "10", "-", "10" ],
+      [ "6", "10", "-", "7" ]
+    ]
+  },
+  "The Lost Story": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "1", "4", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "2", "7", "-", "-" ],
+      [ "4", "7", "-", "-" ]
+    ]
+  },
+  "The Obliterator": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "8", "-", "8" ],
+      [ "7", "11", "-", "-" ],
+      [ "8", "-", "13", "-" ],
+      [ "7", "11", "-", "10" ]
+    ]
+  },
+  "Tok! Tok! Tok!": {
+    "artist": "STARTRACK",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "7", "-", "5" ],
+      [ "4", "7", "-", "5" ],
+      [ "4", "6", "10", "4" ],
+      [ "5", "8", "11", "8" ]
+    ]
+  },
+  "U.A.D": {
+    "artist": "HAYAKO",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "6", "-", "11" ],
+      [ "5", "10", "-", "10" ],
+      [ "6", "8", "11", "-" ],
+      [ "8", "-", "12", "5" ]
+    ]
+  },
+  "v o l d e n u i t": {
+    "artist": "Cuve",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "5", "9", "12", "13" ],
+      [ "4", "9", "12", "13" ],
+      [ "5", "9", "12", "13" ],
+      [ "6", "9", "13", "14" ]
+    ]
+  },
+  "Void": {
+    "artist": "Kobayashi Tetsuya",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "7", "11", "7" ],
+      [ "5", "11", "-", "-" ],
+      [ "5", "10", "-", "7" ],
+      [ "5", "11", "-", "-" ]
+    ]
+  },
+  "waiting for me": {
+    "artist": "CROOVE",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "8", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "9", "-", "-" ],
+      [ "5", "9", "-", "-" ]
+    ]
+  },
+  "Waiting for you": {
+    "artist": "Mycin.T",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "8", "-", "7" ],
+      [ "6", "10", "-", "10" ],
+      [ "6", "12", "-", "9" ],
+      [ "7", "11", "-", "9" ]
+    ]
+  },
+  "Watch Your Step": {
+    "artist": "XeoN",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "-", "12", "10" ],
+      [ "5", "8", "-", "10" ],
+      [ "3", "-", "10", "9" ],
+      [ "3", "6", "13", "10" ]
+    ]
+  },
+  "We're All Gonna Die": {
+    "artist": "Paul Bazooka",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "8", "12", "14", "14" ],
+      [ "8", "13", "-", "15" ],
+      [ "11", "13", "15", "14" ],
+      [ "8", "13", "15", "15" ]
+    ]
+  },
+  "WHY": {
+    "artist": "Nauts",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "3", "7", "-", "3" ],
+      [ "5", "10", "-", "-" ],
+      [ "2", "7", "10", "-" ],
+      [ "4", "7", "-", "5" ]
+    ]
+  },
+  "바람에게 부탁해": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "1", "7", "-", "-" ],
+      [ "6", "7", "-", "-" ],
+      [ "3", "7", "9", "-" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "바람에게 부탁해 ~Live Mix~": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "-", "12", "11" ],
+      [ "6", "10", "-", "-" ],
+      [ "7", "11", "-", "-" ],
+      [ "7", "-", "13", "7" ]
+    ]
+  },
+  "복수혈전": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "-", "11", "-" ],
+      [ "3", "7", "-", "10" ],
+      [ "8", "12", "-", "-" ],
+      [ "10", "-", "-", "9" ]
+    ]
+  },
+  "아침형 인간": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "7" ],
+      [ "8", "9", "-", "7" ],
+      [ "6", "9", "-", "6" ],
+      [ "8", "10", "-", "8" ]
+    ]
+  },
+  "피아노 협주곡 1번": {
+    "artist": "Pyotr Ilyich Tchaikovsky",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "10", "-", "-" ],
+      [ "7", "11", "-", "12" ],
+      [ "7", "11", "-", "12" ],
+      [ "7", "11", "-", "-" ]
+    ]
+  },
+  "A.I": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "8", "12", "-", "8" ],
+      [ "7", "11", "13", "-" ],
+      [ "8", "10", "-", "9" ]
+    ]
+  },
+  "Astro Fight": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "8", "13", "-", "-" ],
+      [ "8", "11", "-", "13" ],
+      [ "7", "13", "14", "-" ],
+      [ "8", "12", "-", "11" ]
+    ]
+  },
+  "BlythE": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "6", "10", "14", "-" ],
+      [ "6", "11", "-", "12" ],
+      [ "8", "11", "14", "12" ],
+      [ "7", "-", "14", "-" ]
+    ]
+  },
+  "Bright Dream": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "2", "4", "-", "-" ],
+      [ "5", "8", "-", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "Can We Talk": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "1", "7", "-", "6" ],
+      [ "7", "9", "13", "8" ],
+      [ "5", "8", "11", "7" ],
+      [ "8", "9", "13", "9" ]
+    ]
+  },
+  "Catch Me": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "6", "-", "-" ],
+      [ "6", "-", "-", "5" ],
+      [ "7", "8", "-", "-" ],
+      [ "8", "12", "-", "6" ]
+    ]
+  },
+  "Chrono Breakers": {
+    "artist": "NieN",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "7", "11", "6" ],
+      [ "7", "10", "-", "-" ],
+      [ "7", "12", "-", "6" ],
+      [ "8", "12", "-", "-" ]
+    ]
+  },
+  "CnP": {
+    "artist": "CRooFE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "8", "12", "-" ],
+      [ "4", "9", "12", "8" ],
+      [ "4", "9", "12", "-" ],
+      [ "5", "10", "12", "7" ]
+    ]
+  },
+  "Dreadnought": {
+    "artist": "Earbreaker",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "6", "9", "12", "11" ],
+      [ "8", "11", "-", "-" ],
+      [ "8", "-", "13", "11" ],
+      [ "8", "13", "-", "-" ]
+    ]
+  },
+  "Elastic STAR": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "6", "7", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "7", "-", "-" ]
+    ]
+  },
+  "End of the Moonlight": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "7", "10", "-" ],
+      [ "5", "9", "-", "8" ],
+      [ "5", "9", "12", "8" ],
+      [ "7", "11", "-", "-" ]
+    ]
+  },
+  "Enemy Storm": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "2", "5", "13", "9" ],
+      [ "5", "8", "-", "-" ],
+      [ "6", "8", "11", "-" ],
+      [ "5", "10", "14", "8" ]
+    ]
+  },
+  "Eternal Memory ~소녀의 꿈~": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "2", "6", "-", "-" ],
+      [ "3", "9", "-", "-" ],
+      [ "2", "7", "-", "-" ],
+      [ "5", "7", "-", "-" ]
+    ]
+  },
+  "Extreme Z4": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "7", "-", "12" ],
+      [ "4", "8", "-", "11" ],
+      [ "7", "9", "-", "-" ],
+      [ "8", "12", "-", "-" ]
+    ]
+  },
+  "FEAR": {
+    "artist": "supbaby",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "5", "9", "12", "-" ],
+      [ "6", "12", "-", "9" ],
+      [ "8", "11", "12", "-" ]
+    ]
+  },
+  "Fever GJ": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "7", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "3", "7", "9", "-" ],
+      [ "7", "-", "-", "-" ]
+    ]
+  },
+  "FTR": {
+    "artist": "supbaby",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "6", "10", "-", "-" ],
+      [ "5", "10", "-", "8" ],
+      [ "8", "11", "-", "-" ],
+      [ "7", "11", "-", "5" ]
+    ]
+  },
+  "Funky Chups": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "4", "6", "-", "-" ],
+      [ "7", "-", "-", "-" ]
+    ]
+  },
+  "Futurism": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "7", "9", "-", "8" ],
+      [ "6", "8", "11", "-" ],
+      [ "8", "10", "-", "8" ]
+    ]
+  },
+  "HAMSIN": {
+    "artist": "makou",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "9", "-", "15", "15" ],
+      [ "6", "9", "13", "13" ],
+      [ "9", "12", "14", "12" ],
+      [ "6", "9", "14", "10" ]
+    ]
+  },
+  "JBG": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "7", "11", "-", "-" ],
+      [ "7", "11", "-", "11" ],
+      [ "7", "10", "12", "10" ],
+      [ "12", "-", "-", "-" ]
+    ]
+  },
+  "Jupiter Driving": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "9", "-", "6" ],
+      [ "5", "11", "-", "-" ],
+      [ "5", "8", "-", "7" ],
+      [ "7", "12", "-", "-" ]
+    ]
+  },
+  "KUDA": {
+    "artist": "GonZo",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "8", "11", "-", "8" ],
+      [ "5", "9", "-", "-" ],
+      [ "8", "12", "-", "11" ],
+      [ "10", "-", "-", "-" ]
+    ]
+  },
+  "Lemonade": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "8", "-", "-", "8" ],
+      [ "6", "13", "-", "-" ],
+      [ "7", "10", "-", "10" ],
+      [ "8", "13", "-", "-" ]
+    ]
+  },
+  "Let's Go Baby": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "2", "5", "-", "-" ],
+      [ "6", "8", "-", "-" ],
+      [ "3", "7", "10", "-" ],
+      [ "9", "-", "-", "-" ]
+    ]
+  },
+  "Light House": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "9", "-", "9" ],
+      [ "4", "11", "-", "-" ],
+      [ "6", "8", "11", "-" ],
+      [ "7", "12", "-", "12" ]
+    ]
+  },
+  "Long Vacation": {
+    "artist": "ESTi",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "3", "6", "-", "4" ],
+      [ "5", "9", "-", "-" ],
+      [ "7", "-", "-", "4" ]
+    ]
+  },
+  "Luv Flow": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "1", "5", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "1", "5", "-", "-" ],
+      [ "6", "8", "-", "-" ]
+    ]
+  },
+  "MASAI": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "7", "11", "-" ],
+      [ "5", "8", "12", "11" ],
+      [ "7", "10", "12", "-" ],
+      [ "10", "-", "-", "9" ]
+    ]
+  },
+  "Memory of Beach": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "6", "11", "-", "-" ],
+      [ "7", "12", "-", "4" ],
+      [ "6", "9", "12", "-" ],
+      [ "8", "-", "13", "3" ]
+    ]
+  },
+  "Minimul Life": {
+    "artist": "Earbreaker",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "7", "-", "12" ],
+      [ "7", "9", "-", "11" ],
+      [ "8", "12", "-", "-" ],
+      [ "8", "10", "14", "-" ]
+    ]
+  },
+  "NB RANGER": {
+    "artist": "M2U",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "8", "12", "-", "-" ],
+      [ "7", "12", "-", "11" ],
+      [ "7", "10", "13", "12" ],
+      [ "9", "13", "-", "-" ]
+    ]
+  },
+  "Never Say": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "6", "-", "-" ],
+      [ "6", "7", "-", "9" ],
+      [ "2", "7", "12", "-" ],
+      [ "8", "-", "-", "8" ]
+    ]
+  },
+  "OBLIVION": {
+    "artist": "ESTi",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "6", "11", "9" ],
+      [ "7", "-", "11", "11" ],
+      [ "3", "8", "11", "-" ],
+      [ "6", "12", "-", "9" ]
+    ]
+  },
+  "OBLIVION ~Rockin' Night Style~": {
+    "artist": "NieN",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "8", "12", "-" ],
+      [ "4", "10", "13", "12" ],
+      [ "7", "9", "13", "-" ],
+      [ "6", "10", "14", "11" ]
+    ]
+  },
+  "ON": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "5", "-", "-" ],
+      [ "2", "6", "-", "-" ],
+      [ "6", "10", "-", "-" ],
+      [ "7", "-", "-", "-" ]
+    ]
+  },
+  "One the Love": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "2", "5", "-", "4" ],
+      [ "6", "8", "-", "-" ],
+      [ "3", "6", "11", "8" ],
+      [ "7", "8", "-", "-" ]
+    ]
+  },
+  "Out Law": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "5", "12", "-", "-" ],
+      [ "7", "12", "-", "9" ],
+      [ "7", "11", "13", "9" ],
+      [ "8", "12", "-", "-" ]
+    ]
+  },
+  "Para-Q": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "10", "-", "-" ],
+      [ "6", "8", "-", "-" ],
+      [ "7", "10", "-", "12" ],
+      [ "10", "-", "-", "12" ]
+    ]
+  },
+  "Ray of Illuminati": {
+    "artist": "ESTi",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "7", "13", "-" ],
+      [ "6", "8", "13", "11" ],
+      [ "6", "10", "13", "-" ],
+      [ "8", "11", "-", "7" ]
+    ]
+  },
+  "RED": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "6", "-", "7" ],
+      [ "5", "13", "-", "8" ],
+      [ "6", "9", "12", "8" ],
+      [ "8", "13", "-", "8" ]
+    ]
+  },
+  "Road Of Death": {
+    "artist": "NieN",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "9", "-", "12" ],
+      [ "7", "13", "-", "13" ],
+      [ "8", "11", "15", "" ],
+      [ "7", "14", "-", "15" ]
+    ]
+  },
+  "Rock Or Die": {
+    "artist": "NieN",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "6", "-", "-", "12" ],
+      [ "6", "9", "-", "-" ],
+      [ "6", "10", "12", "-" ],
+      [ "6", "9", "-", "11" ]
+    ]
+  },
+  "Save My Dream": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "1", "4", "-", "-" ],
+      [ "2", "4", "-", "-" ],
+      [ "2", "5", "9", "-" ],
+      [ "5", "8", "-", "-" ]
+    ]
+  },
+  "SIN": {
+    "artist": "ESTi",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "3", "6", "11", "12" ],
+      [ "7", "10", "-", "12" ],
+      [ "7", "10", "14", "-" ],
+      [ "9", "12", "15", "-" ]
+    ]
+  },
+  "SIN ~The Last Scene~": {
+    "artist": "ESTi",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "7", "12", "14", "12" ],
+      [ "7", "12", "-", "-" ],
+      [ "8", "12", "14", "12" ],
+      [ "8", "14", "-", "-" ]
+    ]
+  },
+  "Sunny Side": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "5", "8", "11", "-" ],
+      [ "9", "-", "-", "-" ]
+    ]
+  },
+  "Sunny Side ~Deepn' Soul Mix~": {
+    "artist": "makou",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "7", "10", "-", "5" ],
+      [ "7", "11", "-", "-" ],
+      [ "7", "-", "11", "5" ],
+      [ "8", "10", "-", "-" ]
+    ]
+  },
+  "Temptation": {
+    "artist": "S-tro",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "10", "-", "-" ],
+      [ "4", "10", "-", "-" ],
+      [ "6", "-", "12", "-" ],
+      [ "9", "-", "-", "-" ]
+    ]
+  },
+  "Triple Zoe": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "12", "-", "-" ],
+      [ "6", "11", "-", "7" ],
+      [ "8", "12", "-", "8" ],
+      [ "10", "13", "-", "-" ]
+    ]
+  },
+  "Ya! Party!": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 1",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "9", "-", "-", "-" ]
+    ]
+  },
+  "설레임": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "5", "-", "3" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "7", "9", "5" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "태권부리": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "7", "-", "9" ],
+      [ "6", "-", "13", "-" ],
+      [ "6", "10", "14", "-" ],
+      [ "7", "-", "13", "9" ]
+    ]
+  },
+  "A Lie": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "2", "5", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "6", "12", "-" ],
+      [ "7", "9", "-", "-" ]
+    ]
+  },
+  "Another DAY": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "7", "11", "6" ],
+      [ "6", "8", "-", "-" ],
+      [ "5", "8", "10", "7" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "Brain Storm": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "11", "-", "13" ],
+      [ "7", "13", "15", "12" ],
+      [ "9", "14", "-", "12" ],
+      [ "8", "13", "15", "10" ]
+    ]
+  },
+  "Brandnew Days": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "8", "-", "-" ],
+      [ "6", "8", "-", "-" ],
+      [ "7", "10", "11", "-" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "Brave it Out": {
+    "artist": "BEXTER",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "8", "-", "-" ],
+      [ "5", "9", "11", "5" ],
+      [ "6", "10", "13", "-" ],
+      [ "7", "10", "12", "-" ]
+    ]
+  },
+  "Bye Bye Love": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "2", "8", "-", "-" ],
+      [ "6", "7", "-", "-" ],
+      [ "6", "9", "11", "-" ],
+      [ "6", "8", "-", "-" ]
+    ]
+  },
+  "Chain of Gravity": {
+    "artist": "Tsukasa",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "12", "-", "10" ],
+      [ "5", "10", "-", "-" ],
+      [ "7", "10", "12", "10" ],
+      [ "6", "12", "-", "-" ]
+    ]
+  },
+  "Cherokee": {
+    "artist": "xxdbxx",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "8", "-", "-" ],
+      [ "7", "9", "-", "7" ],
+      [ "6", "9", "13", "8" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "DIVINE SERVICE": {
+    "artist": "Electronic Boutique",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "4", "9", "-", "7" ],
+      [ "4", "8", "12", "7" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "Dream of You": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "7", "11", "-" ],
+      [ "6", "10", "-", "10" ],
+      [ "5", "9", "11", "9" ],
+      [ "8", "12", "-", "-" ]
+    ]
+  },
+  "Fallen Angel": {
+    "artist": "DJ Mocha",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "3", "7", "10", "7" ],
+      [ "8", "10", "-", "-" ]
+    ]
+  },
+  "Fentanest": {
+    "artist": "Earbreaker",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "10", "-", "8" ],
+      [ "6", "9", "-", "-" ],
+      [ "7", "11", "-", "8" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "For Seasons": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "1", "6", "-", "-" ],
+      [ "6", "9", "-", "-" ],
+      [ "4", "7", "11", "-" ],
+      [ "5", "10", "-", "-" ]
+    ]
+  },
+  "For the IKARUS": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "11", "-", "-" ],
+      [ "8", "-", "12", "12" ],
+      [ "6", "12", "-", "-" ]
+    ]
+  },
+  "Get on Top": {
+    "artist": "PlanetBoom",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "7", "-", "-" ],
+      [ "6", "9", "-", "-" ],
+      [ "5", "8", "12", "8" ],
+      [ "7", "10", "-", "8" ]
+    ]
+  },
+  "GET OUT": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "8", "-", "-" ],
+      [ "4", "9", "-", "-" ],
+      [ "4", "8", "13", "-" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "Good Bye": {
+    "artist": "Ruby Tuesday",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "7", "-", "7" ],
+      [ "4", "9", "-", "-" ],
+      [ "7", "-", "12", "9" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "Hello Pinky": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "8", "-", "-" ],
+      [ "5", "10", "-", "4" ],
+      [ "7", "11", "-", "-" ],
+      [ "6", "11", "-", "3" ]
+    ]
+  },
+  "Higher": {
+    "artist": "Supbaby",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "8", "-", "10" ],
+      [ "6", "12", "-", "-" ],
+      [ "6", "9", "-", "9" ],
+      [ "4", "8", "13", "-" ]
+    ]
+  },
+  "Ladymade Star": {
+    "artist": "ESTi",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "2", "6", "10", "7" ],
+      [ "3", "8", "-", "7" ],
+      [ "5", "8", "10", "7" ],
+      [ "5", "8", "-", "7" ]
+    ]
+  },
+  "Lost n' found'": {
+    "artist": "bermei.inazawa",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "7", "-", "-" ],
+      [ "6", "8", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "7", "9", "-", "-" ]
+    ]
+  },
+  "Memoirs": {
+    "artist": "M2U",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "7", "-", "5" ],
+      [ "7", "10", "-", "4" ],
+      [ "6", "9", "11", "-" ],
+      [ "7", "10", "-", "-" ]
+    ]
+  },
+  "Mess it Up": {
+    "artist": "Nauts",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "9", "-", "-" ],
+      [ "4", "9", "-", "9" ],
+      [ "9", "12", "-", "11" ],
+      [ "6", "10", "-", "-" ]
+    ]
+  },
+  "Midnight Blood": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "13", "-", "-" ],
+      [ "6", "13", "-", "9" ],
+      [ "7", "10", "13", "11" ],
+      [ "6", "9", "13", "8" ]
+    ]
+  },
+  "Miles": {
+    "artist": "Electronic Boutique",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "10", "-", "6" ],
+      [ "5", "10", "13", "-" ],
+      [ "4", "9", "13", "9" ],
+      [ "4", "11", "13", "-" ]
+    ]
+  },
+  "Minus 3": {
+    "artist": "CROOVE",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "8", "11", "-", "9" ],
+      [ "6", "12", "-", "-" ],
+      [ "10", "-", "13", "-" ],
+      [ "7", "12", "-", "10" ]
+    ]
+  },
+  "My Alias": {
+    "artist": "Dayz",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "6", "9", "12", "-" ],
+      [ "6", "9", "14", "-" ],
+      [ "5", "10", "-", "-" ]
+    ]
+  },
+  "NANO RISK": {
+    "artist": "Dayz",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "7", "-", "-", "8" ],
+      [ "7", "11", "-", "-" ],
+      [ "6", "9", "12", "9" ],
+      [ "7", "11", "-", "-" ]
+    ]
+  },
+  "NB POWER": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "7", "-", "12" ],
+      [ "6", "9", "13", "-" ],
+      [ "7", "11", "13", "-" ],
+      [ "7", "10", "-", "10" ]
+    ]
+  },
+  "NB Rangers -Returns-": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "9", "-", "11" ],
+      [ "7", "11", "-", "-" ],
+      [ "9", "11", "13", "-" ],
+      [ "7", "13", "-", "10" ]
+    ]
+  },
+  "Negative Nature": {
+    "artist": "Electronic Boutique",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "4", "7", "-", "6" ],
+      [ "7", "12", "-", "8" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "Nightmare": {
+    "artist": "M2U",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "9", "12", "-", "15" ],
+      [ "8", "13", "15", "15" ],
+      [ "8", "13", "15", "-" ],
+      [ "8", "12", "15", "15" ]
+    ]
+  },
+  "Phantom Of Sky": {
+    "artist": "M2U",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "7", "10", "-" ],
+      [ "4", "7", "-", "3" ],
+      [ "5", "10", "-", "3" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "plastic method": {
+    "artist": "zts",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "8", "-", "5" ],
+      [ "8", "12", "-", "-" ],
+      [ "8", "12", "-", "8" ],
+      [ "8", "12", "-", "-" ]
+    ]
+  },
+  "Right Now": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "1", "5", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "8", "11", "-" ],
+      [ "6", "9", "-", "-" ]
+    ]
+  },
+  "Rocka-a-doodle-doo": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "9", "-", "-" ],
+      [ "4", "8", "-", "9" ],
+      [ "7", "11", "-", "8" ],
+      [ "5", "9", "12", "-" ]
+    ]
+  },
+  "Rolling On the Duck": {
+    "artist": "NieN",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "7", "13", "-", "-" ],
+      [ "7", "10", "14", "11" ],
+      [ "8", "11", "14", "-" ],
+      [ "7", "10", "14", "11" ]
+    ]
+  },
+  "Seeker": {
+    "artist": "M2U",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "9", "-", "11" ],
+      [ "8", "-", "14", "-" ],
+      [ "5", "9", "13", "11" ],
+      [ "7", "13", "-", "-" ]
+    ]
+  },
+  "Showtime": {
+    "artist": "Ruby Tuesday",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "10", "-", "6" ],
+      [ "6", "9", "-", "-" ],
+      [ "8", "12", "-", "-" ],
+      [ "6", "10", "-", "7" ]
+    ]
+  },
+  "Smoky Quartz": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "6", "-", "8" ],
+      [ "7", "10", "-", "-" ],
+      [ "6", "-", "11", "9" ],
+      [ "7", "14", "-", "-" ]
+    ]
+  },
+  "sO mUCH iN LUV": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "1", "6", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "4", "7", "11", "-" ],
+      [ "7", "-", "-", "-" ]
+    ]
+  },
+  "SQUEEZE": {
+    "artist": "Oriental ST8",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "9", "-", "12" ],
+      [ "7", "11", "-", "-" ],
+      [ "8", "10", "12", "-" ],
+      [ "7", "12", "-", "8" ]
+    ]
+  },
+  "STALKER": {
+    "artist": "ND Lee",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "10", "-", "-" ],
+      [ "7", "9", "-", "10" ],
+      [ "6", "10", "12", "10" ],
+      [ "8", "-", "15", "-" ]
+    ]
+  },
+  "StarFish": {
+    "artist": "PlanetBoom",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "9", "-", "7" ],
+      [ "7", "10", "-", "8" ],
+      [ "6", "10", "-", "7" ],
+      [ "6", "9", "-", "9" ]
+    ]
+  },
+  "Stay with me": {
+    "artist": "Ruby Tuesday",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "2", "4", "-", "7" ],
+      [ "4", "7", "-", "-" ],
+      [ "3", "7", "-", "-" ],
+      [ "7", "9", "-", "6" ]
+    ]
+  },
+  "Sunset Rider": {
+    "artist": "Nauts",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "5", "9", "-", "6" ],
+      [ "6", "10", "-", "8" ],
+      [ "5", "7", "11", "7" ],
+      [ "6", "9", "-", "9" ]
+    ]
+  },
+  "Syriana": {
+    "artist": "BEXTER",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "6", "9", "-", "7" ],
+      [ "6", "9", "13", "-" ],
+      [ "5", "9", "-", "7" ]
+    ]
+  },
+  "WhiteBlue": {
+    "artist": "zts",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "7", "9", "13", "-" ],
+      [ "6", "10", "13", "10" ],
+      [ "7", "11", "13", "11" ],
+      [ "8", "11", "13", "-" ]
+    ]
+  },
+  "Yellowberry -AJ Mix-": {
+    "artist": "Forte Escape",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "4", "7", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "11", "-", "-" ]
+    ]
+  },
+  "Yo Creo Que Si": {
+    "artist": "makou",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "6", "9", "-", "10" ],
+      [ "8", "-", "12", "-" ],
+      [ "7", "9", "-", "10" ]
+    ]
+  },
+  "Your Own Miracle": {
+    "artist": "Ruby Tuesday",
+    "category": "PORTABLE 2",
+    "difficulty": [
+      [ "3", "9", "-", "-" ],
+      [ "3", "6", "11", "12" ],
+      [ "6", "10", "12", "-" ],
+      [ "7", "10", "13", "8" ]
+    ]
+  },
+  "Become Myself": {
+    "artist": "Kibum/Yohan",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "3", "6", "-", "4" ],
+      [ "3", "7", "-", "-" ],
+      [ "4", "8", "-", "7" ],
+      [ "5", "10", "-", "-" ]
+    ]
+  },
+  "Break!": {
+    "artist": "Mr.Funky",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "4", "6", "11", "-" ],
+      [ "4", "-", "12", "9" ],
+      [ "5", "-", "11", "10" ],
+      [ "6", "10", "11", "-" ]
+    ]
+  },
+  "Desperado ~Nu Skool Mix~": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "5", "11", "-", "9" ],
+      [ "5", "10", "13", "-" ],
+      [ "6", "12", "-", "-" ],
+      [ "6", "12", "-", "-" ]
+    ]
+  },
+  "Enemy Storm ~Dark Jungle Mix~": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "8", "-", "14", "-" ],
+      [ "5", "12", "15", "14" ],
+      [ "8", "-", "14", "13" ],
+      [ "7", "13", "15", "-" ]
+    ]
+  },
+  "Everything": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "3", "9", "-", "5" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "9", "12", "6" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "glory day (Mintorment Remix)": {
+    "artist": "Mintorment",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "7", "-", "14", "-" ],
+      [ "6", "12", "14", "-" ],
+      [ "7", "-", "13", "11" ],
+      [ "7", "14", "-", "12" ]
+    ]
+  },
+  "glory day -JHS Remix-": {
+    "artist": "JHS",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "5", "9", "12", "9" ],
+      [ "6", "11", "13", "-" ],
+      [ "6", "10", "13", "-" ],
+      [ "6", "11", "13", "12" ]
+    ]
+  },
+  "Gone Astray": {
+    "artist": "makou",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "8", "-", "14", "14" ],
+      [ "6", "11", "14", "-" ],
+      [ "8", "12", "14", "12" ],
+      [ "6", "12", "14", "-" ]
+    ]
+  },
+  "Hanz up!": {
+    "artist": "Mr.Funky",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "6", "-", "13", "-" ],
+      [ "5", "-", "13", "11" ],
+      [ "4", "12", "-", "11" ],
+      [ "6", "12", "-", "-" ]
+    ]
+  },
+  "IF": {
+    "artist": "Vanilla Unity",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "3", "6", "10", "-" ],
+      [ "5", "12", "-", "-" ],
+      [ "3", "8", "11", "-" ],
+      [ "6", "10", "12", "8" ]
+    ]
+  },
+  "Leave me alone": {
+    "artist": "NieN",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "7", "10", "13", "-" ],
+      [ "7", "11", "13", "12" ],
+      [ "8", "12", "14", "11" ],
+      [ "6", "12", "14", "11" ]
+    ]
+  },
+  "Luv Flow ~Funky House Mix~": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "3", "-", "11", "-" ],
+      [ "4", "9", "-", "6" ],
+      [ "4", "8", "11", "-" ],
+      [ "5", "12", "-", "-" ]
+    ]
+  },
+  "Luv is True": {
+    "artist": "3rd Coast",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "4", "8", "-", "5" ],
+      [ "3", "8", "10", "-" ],
+      [ "4", "11", "-", "-" ],
+      [ "5", "9", "11", "-" ]
+    ]
+  },
+  "MASAI ~Electro House Mix~": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "5", "11", "-", "9" ],
+      [ "5", "11", "-", "9" ],
+      [ "7", "12", "-", "-" ],
+      [ "6", "12", "-", "8" ]
+    ]
+  },
+  "Mellow D Fantasy": {
+    "artist": "NieN",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "2", "-", "11", "-" ],
+      [ "3", "-", "11", "5" ],
+      [ "4", "11", "-", "-" ],
+      [ "5", "11", "-", "5" ]
+    ]
+  },
+  "NB Ranger : Nonstop Remix": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "6", "-", "13", "-" ],
+      [ "6", "-", "14", "-" ],
+      [ "6", "-", "13", "-" ],
+      [ "5", "11", "14", "12" ]
+    ]
+  },
+  "Out Law : Reborn": {
+    "artist": "Mr.Funky",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "7", "10", "13", "9" ],
+      [ "5", "10", "14", "-" ],
+      [ "7", "10", "14", "12" ],
+      [ "6", "11", "14", "12" ]
+    ]
+  },
+  "Raise me up": {
+    "artist": "PlanetBoom",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "4", "11", "-", "-" ],
+      [ "4", "-", "11", "5" ],
+      [ "4", "11", "-", "5" ],
+      [ "5", "10", "12", "-" ]
+    ]
+  },
+  "Season (Warm Mix)": {
+    "artist": "makou",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "2", "6", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "3", "6", "-", "-" ],
+      [ "5", "-", "9", "-" ]
+    ]
+  },
+  "SuperSonic ~Mr.Funky Dirty Planet Remix~": {
+    "artist": "Mr.Funky",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "6", "9", "13", "-" ],
+      [ "6", "10", "13", "9" ],
+      [ "5", "10", "12", "9" ],
+      [ "5", "10", "13", "-" ]
+    ]
+  },
+  "The Rain Maker": {
+    "artist": "Paul Bazooka",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "7", "-", "13", "13" ],
+      [ "5", "11", "13", "-" ],
+      [ "5", "-", "13", "10" ],
+      [ "5", "13", "-", "-" ]
+    ]
+  },
+  "Waiting for the Sun": {
+    "artist": "MindCube",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "4", "-", "10", "5" ],
+      [ "5", "11", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "5", "11", "-", "-" ]
+    ]
+  },
+  "Your Smile": {
+    "artist": "Cistrans (RoseLine)",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "4", "8", "-", "5" ],
+      [ "4", "10", "-", "5" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "ZET ~Mr.Funky Remix~": {
+    "artist": "Mr.Funky",
+    "category": "PORTABLE 3",
+    "difficulty": [
+      [ "5", "12", "-", "-" ],
+      [ "6", "-", "12", "11" ],
+      [ "5", "11", "-", "9" ],
+      [ "5", "-", "13", "-" ]
+    ]
+  },
+  "바람의 기억": {
+    "artist": "Forte Escape",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "3", "8", "-", "2" ],
+      [ "3", "6", "-", "5" ],
+      [ "3", "7", "-", "4" ],
+      [ "4", "9", "-", "2" ]
+    ]
+  },
+  "A Lie ~Deep Inside Mix~": {
+    "artist": "Electronic Boutique",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "6", "-", "11", "-" ],
+      [ "4", "11", "-", "-" ],
+      [ "6", "10", "-", "-" ]
+    ]
+  },
+  "Bye Bye Love ~Nu Jazz Mix~": {
+    "artist": "Electronic Boutique",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "5", "8", "11", "8" ],
+      [ "6", "10", "-", "6" ],
+      [ "6", "8", "11", "8" ],
+      [ "6", "9", "11", "9" ]
+    ]
+  },
+  "Catch You": {
+    "artist": "Forte Escape",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "3", "8", "-", "5" ],
+      [ "6", "8", "10", "-" ],
+      [ "4", "8", "-", "6" ],
+      [ "6", "8", "12", "-" ]
+    ]
+  },
+  "For Seasons ~Air Guitar Mix~": {
+    "artist": "PlanetBoom",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "3", "10", "-", "7" ],
+      [ "5", "7", "10", "7" ],
+      [ "5", "-", "10", "11" ],
+      [ "5", "10", "-", "9" ]
+    ]
+  },
+  "GET OUT ~Hip Noodle Mix~": {
+    "artist": "DJ EON",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "6", "10", "-", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "6", "9", "-", "-" ],
+      [ "5", "9", "12", "-" ]
+    ]
+  },
+  "Mind Control": {
+    "artist": "NieN",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "8", "10", "13", "12" ],
+      [ "9", "11", "-", "12" ],
+      [ "9", "12", "14", "13" ],
+      [ "9", "11", "14", "12" ]
+    ]
+  },
+  "My Jealousy": {
+    "artist": "3rd Coast",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "4", "7", "10", "-" ],
+      [ "6", "8", "-", "7" ],
+      [ "6", "8", "12", "-" ],
+      [ "6", "8", "12", "7" ]
+    ]
+  },
+  "NB Girls": {
+    "artist": "NieN",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "6", "9", "-", "8" ],
+      [ "7", "-", "12", "11" ],
+      [ "5", "9", "11", "8" ],
+      [ "7", "12", "-", "10" ]
+    ]
+  },
+  "Nevermind": {
+    "artist": "Paul Bazooka",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "7", "10", "13", "13" ],
+      [ "7", "11", "-", "13" ],
+      [ "7", "10", "13", "13" ],
+      [ "6", "10", "15", "15" ]
+    ]
+  },
+  "sO mUCH iN LUV ~Melodic Twisted Mix~": {
+    "artist": "Forte Escape",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "5", "8", "-", "-" ],
+      [ "5", "8", "-", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "6", "8", "10", "-" ]
+    ]
+  },
+  "Someday": {
+    "artist": "NieN",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "3", "5", "9", "5" ],
+      [ "4", "8", "10", "8" ],
+      [ "5", "7", "11", "8" ],
+      [ "4", "6", "10", "8" ]
+    ]
+  },
+  "STOP": {
+    "artist": "3rd Coast",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "6", "10", "-", "-" ],
+      [ "8", "-", "13", "8" ],
+      [ "7", "9", "11", "-" ],
+      [ "6", "9", "13", "-" ]
+    ]
+  },
+  "Streetlight": {
+    "artist": "Nauts",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "2", "7", "-", "3" ],
+      [ "3", "6", "-", "-" ],
+      [ "5", "9", "-", "-" ],
+      [ "4", "8", "-", "2" ]
+    ]
+  },
+  "Syriana ~Blast Wave Mix~": {
+    "artist": "DJ EON",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "8", "10", "-", "8" ],
+      [ "8", "10", "12", "9" ],
+      [ "8", "11", "-", "8" ],
+      [ "8", "10", "13", "11" ]
+    ]
+  },
+  "Talk! Talk!": {
+    "artist": "xxdbxx",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "5", "10", "13", "-" ],
+      [ "6", "8", "13", "-" ],
+      [ "8", "11", "13", "-" ],
+      [ "7", "9", "12", "-" ]
+    ]
+  },
+  "The One": {
+    "artist": "Paul Bazooka",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "5", "10", "-", "9" ],
+      [ "5", "9", "11", "11" ],
+      [ "7", "10", "12", "10" ],
+      [ "6", "9", "12", "-" ]
+    ]
+  },
+  "Ventilator": {
+    "artist": "Cycle75",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "9", "11", "15", "14" ],
+      [ "9", "11", "14", "14" ],
+      [ "9", "12", "14", "13" ],
+      [ "9", "12", "14", "13" ]
+    ]
+  },
+  "Yo Creo Que Si ~Live House Version~": {
+    "artist": "BEXTER",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "7", "9", "12", "-" ],
+      [ "7", "9", "-", "8" ],
+      [ "6", "8", "12", "10" ],
+      [ "7", "9", "11", "8" ]
+    ]
+  },
+  "Your Own Miracle ~Disco House Mix~": {
+    "artist": "makou",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "4", "8", "10", "-" ],
+      [ "5", "11", "-", "-" ],
+      [ "6", "-", "11", "-" ],
+      [ "3", "8", "-", "6" ]
+    ]
+  },
+  "ZET": {
+    "artist": "BEXTER",
+    "category": "TRILOGY",
+    "difficulty": [
+      [ "7", "10", "-", "8" ],
+      [ "7", "10", "-", "11" ],
+      [ "7", "9", "13", "10" ],
+      [ "8", "11", "13", "8" ]
+    ]
+  },
+  "고백, 꽃, 늑대": {
+    "artist": "ReX",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "1", "3", "6", "-" ],
+      [ "1", "6", "-", "1" ],
+      [ "1", "4", "7", "-" ],
+      [ "1", "3", "7", "1" ]
+    ]
+  },
+  "내개로 와": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "5", "8", "3" ],
+      [ "4", "-", "8", "5" ],
+      [ "2", "7", "9", "-" ],
+      [ "4", "8", "12", "-" ]
+    ]
+  },
+  "너에게": {
+    "artist": "Sweetune",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "6", "-", "8" ],
+      [ "2", "-", "8", "8" ],
+      [ "2", "5", "9", "-" ],
+      [ "2", "7", "-", "-" ]
+    ]
+  },
+  "영원": {
+    "artist": "BEXTER",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "6", "8", "-" ],
+      [ "4", "-", "8", "-" ],
+      [ "3", "6", "9", "7" ],
+      [ "2", "6", "9", "4" ]
+    ]
+  },
+  "Closer": {
+    "artist": "3rd Coast",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "-", "8", "2" ],
+      [ "3", "8", "-", "4" ],
+      [ "3", "6", "-", "2" ],
+      [ "4", "8", "-", "4" ]
+    ]
+  },
+  "Coastal Tempo": {
+    "artist": "3rd Coast",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "5", "7", "11", "7" ],
+      [ "3", "8", "12", "7" ],
+      [ "4", "7", "11", "5" ],
+      [ "4", "8", "11", "7" ]
+    ]
+  },
+  "Color": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "5", "-", "11", "-" ],
+      [ "5", "10", "-", "11" ],
+      [ "7", "-", "11", "7" ],
+      [ "5", "9", "12", "-" ]
+    ]
+  },
+  "Creator": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "2", "7", "13", "-" ],
+      [ "1", "5", "11", "-" ],
+      [ "5", "9", "-", "8" ],
+      [ "1", "10", "-", "8" ]
+    ]
+  },
+  "DARK ENVY": {
+    "artist": "Sugardonut",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "6", "11", "15", "12" ],
+      [ "6", "10", "14", "14" ],
+      [ "7", "10", "13", "13" ],
+      [ "6", "9", "14", "13" ]
+    ]
+  },
+  "Electronics": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "8", "11", "11" ],
+      [ "4", "8", "13", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "4", "9", "13", "11" ]
+    ]
+  },
+  "Fate": {
+    "artist": "STi",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "7", "9", "-" ],
+      [ "3", "8", "10", "-" ],
+      [ "3", "9", "-", "-" ],
+      [ "3", "7", "10", "5" ]
+    ]
+  },
+  "First Kiss": {
+    "artist": "BJJ",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "2", "4", "8", "3" ],
+      [ "2", "4", "7", "3" ],
+      [ "2", "5", "7", "3" ],
+      [ "2", "4", "8", "4" ]
+    ]
+  },
+  "Flea": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "9", "12", "-" ],
+      [ "4", "9", "12", "-" ],
+      [ "5", "9", "12", "8" ],
+      [ "6", "-", "13", "-" ]
+    ]
+  },
+  "Freedom": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "5", "7", "10", "-" ],
+      [ "5", "7", "10", "-" ],
+      [ "7", "-", "11", "-" ],
+      [ "6", "8", "10", "-" ]
+    ]
+  },
+  "Here in the Moment": {
+    "artist": "Ruby Tuesday",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "7", "10", "5" ],
+      [ "4", "8", "10", "8" ],
+      [ "6", "8", "10", "-" ],
+      [ "5", "-", "10", "6" ]
+    ]
+  },
+  "Here in the Moment ~Extended Mix~": {
+    "artist": "Ruby Tuesday",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "6", "9", "8" ],
+      [ "5", "8", "11", "-" ],
+      [ "6", "9", "12", "-" ],
+      [ "5", "8", "11", "8" ]
+    ]
+  },
+  "In My Heart": {
+    "artist": "Tsukasa",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "7", "10", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "4", "8", "10", "6" ],
+      [ "3", "7", "11", "4" ]
+    ]
+  },
+  "Love Mode": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "8", "-", "2" ],
+      [ "2", "6", "9", "6" ],
+      [ "4", "9", "-", "6" ],
+      [ "2", "6", "10", "6" ]
+    ]
+  },
+  "Lover (CE Style)": {
+    "artist": "ND Lee",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "5", "8", "10", "-" ],
+      [ "5", "11", "-", "4" ],
+      [ "5", "8", "11", "-" ],
+      [ "4", "8", "10", "7" ]
+    ]
+  },
+  "Rising The Sonic": {
+    "artist": "Dayz",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "9", "12", "9" ],
+      [ "5", "10", "13", "7" ],
+      [ "5", "9", "13", "11" ],
+      [ "5", "10", "14", "11" ]
+    ]
+  },
+  "Tell Me": {
+    "artist": "이궐",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "1", "6", "-", "-" ],
+      [ "2", "5", "9", "-" ],
+      [ "3", "6", "8", "-" ],
+      [ "1", "8", "-", "-" ]
+    ]
+  },
+  "The Clear Blue Sky": {
+    "artist": "Tsukasa",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "9", "13", "-" ],
+      [ "6", "8", "13", "12" ],
+      [ "6", "9", "13", "8" ],
+      [ "4", "10", "13", "8" ]
+    ]
+  },
+  "The Night Stage": {
+    "artist": "CLAZZIQUAI",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "3", "6", "-", "3" ],
+      [ "3", "7", "-", "-" ],
+      [ "3", "8", "-", "-" ],
+      [ "3", "7", "10", "-" ]
+    ]
+  },
+  "Urban Night(hYO)": {
+    "artist": "hYO",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "8", "-", "-" ],
+      [ "3", "8", "-", "-" ],
+      [ "3", "-", "8", "-" ]
+    ]
+  },
+  "Y (CE Style)": {
+    "artist": "ND Lee",
+    "category": "CLAZZIQUAI",
+    "difficulty": [
+      [ "5", "8", "11", "7" ],
+      [ "5", "10", "-", "7" ],
+      [ "5", "8", "11", "10" ],
+      [ "5", "9", "13", "7" ]
+    ]
+  },
+  "고백, 꽃, 늑대 part.2": {
+    "artist": "ReX",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "3", "8", "-", "-" ],
+      [ "4", "10", "-", "4" ],
+      [ "4", "8", "11", "-" ],
+      [ "5", "11", "-", "7" ]
+    ]
+  },
+  "Airwave ~Extended Mix~": {
+    "artist": "ReX",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "8", "10", "13", "-" ],
+      [ "7", "10", "14", "-" ],
+      [ "6", "12", "14", "-" ],
+      [ "7", "10", "13", "-" ]
+    ]
+  },
+  "ANALYS": {
+    "artist": "HAYAKO",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "7", "11", "14", "13" ],
+      [ "7", "11", "-", "14" ],
+      [ "7", "11", "14", "12" ],
+      [ "8", "11", "14", "13" ]
+    ]
+  },
+  "Beat U Down": {
+    "artist": "makou",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "8", "12", "14", "12" ],
+      [ "8", "10", "14", "12" ],
+      [ "9", "12", "14", "11" ],
+      [ "8", "10", "14", "13" ]
+    ]
+  },
+  "Colours of Sorrow": {
+    "artist": "Tsukasa",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "-", "11", "6" ],
+      [ "6", "9", "12", "9" ],
+      [ "5", "9", "12", "7" ],
+      [ "6", "9", "13", "13" ]
+    ]
+  },
+  "Cypher Gate": {
+    "artist": "7 Sequence",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "8", "-", "10" ],
+      [ "7", "10", "-", "12" ],
+      [ "7", "10", "13", "11" ],
+      [ "7", "10", "13", "11" ]
+    ]
+  },
+  "Desperado": {
+    "artist": "CROOVE",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "9", "11", "8" ],
+      [ "7", "11", "-", "7" ],
+      [ "5", "8", "11", "6" ],
+      [ "7", "12", "-", "10" ]
+    ]
+  },
+  "Fermion": {
+    "artist": "makou",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "8", "11", "14", "12" ],
+      [ "7", "9", "14", "13" ],
+      [ "8", "12", "14", "12" ],
+      [ "7", "10", "15", "12" ]
+    ]
+  },
+  "Fever Pitch Girl": {
+    "artist": "Nikacha",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "8", "-", "6" ],
+      [ "4", "7", "10", "-" ],
+      [ "6", "10", "-", "-" ],
+      [ "6", "11", "-", "5" ]
+    ]
+  },
+  "Get Down": {
+    "artist": "BJJ",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "7", "9", "-" ],
+      [ "4", "9", "-", "-" ],
+      [ "4", "7", "10", "3" ],
+      [ "5", "10", "-", "-" ]
+    ]
+  },
+  "Grave Consequence": {
+    "artist": "Tsukasa",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "6", "10", "14", "13" ],
+      [ "6", "10", "13", "13" ],
+      [ "7", "12", "-", "13" ],
+      [ "7", "10", "14", "-" ]
+    ]
+  },
+  "Heart of Witch": {
+    "artist": "ReX",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "7", "12", "14", "13" ],
+      [ "7", "11", "15", "14" ],
+      [ "7", "12", "14", "13" ],
+      [ "8", "12", "15", "14" ]
+    ]
+  },
+  "In my Dream": {
+    "artist": "ND Lee",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "10", "14", "14" ],
+      [ "8", "11", "14", "12" ],
+      [ "5", "11", "14", "14" ],
+      [ "8", "10", "15", "14" ]
+    ]
+  },
+  "Jealousy": {
+    "artist": "3rd Coast",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "3", "7", "-", "3" ],
+      [ "3", "7", "9", "-" ],
+      [ "4", "-", "9", "-" ],
+      [ "3", "8", "9", "-" ]
+    ]
+  },
+  "Keys to the World": {
+    "artist": "PlanetBoom",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "8", "12", "9" ],
+      [ "6", "9", "13", "-" ],
+      [ "6", "11", "-", "11" ],
+      [ "6", "10", "13", "-" ]
+    ]
+  },
+  "Lovely hands": {
+    "artist": "PlanetBoom",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "-", "10", "-" ],
+      [ "5", "9", "11", "-" ],
+      [ "3", "10", "-", "6" ],
+      [ "6", "9", "11", "5" ]
+    ]
+  },
+  "Lover (BS Style)": {
+    "artist": "ND Lee",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "7", "12", "5" ],
+      [ "5", "10", "-", "8" ],
+      [ "4", "8", "11", "7" ],
+      [ "5", "8", "10", "9" ]
+    ]
+  },
+  "PDM": {
+    "artist": "Trish",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "3", "7", "10", "-" ],
+      [ "4", "7", "9", "-" ],
+      [ "3", "10", "-", "8" ],
+      [ "4", "9", "-", "3" ]
+    ]
+  },
+  "Ready Now": {
+    "artist": "Ruby Tuesday",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "8", "-", "4" ],
+      [ "4", "7", "9", "6" ],
+      [ "4", "7", "10", "-" ],
+      [ "5", "-", "9", "5" ]
+    ]
+  },
+  "Ruti'n": {
+    "artist": "Ruby Tuesday",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "10", "-", "7" ],
+      [ "5", "8", "11", "9" ],
+      [ "4", "9", "11", "6" ],
+      [ "5", "10", "-", "8" ]
+    ]
+  },
+  "Secret World": {
+    "artist": "Ruby Tuesday",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "4", "7", "10", "-" ],
+      [ "3", "8", "-", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "4", "-", "9", "-" ]
+    ]
+  },
+  "Y (BS Style)": {
+    "artist": "ND Lee",
+    "category": "BLACK SQUARE",
+    "difficulty": [
+      [ "5", "8", "11", "5" ],
+      [ "4", "7", "-", "4" ],
+      [ "4", "8", "12", "-" ],
+      [ "4", "8", "12", "-" ]
+    ]
+  },
+  "Attack": {
+    "artist": "Mr.Funky",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "4", "7", "10", "7" ],
+      [ "5", "9", "-", "11" ],
+      [ "5", "10", "13", "7" ],
+      [ "6", "8", "14", "11" ]
+    ]
+  },
+  "BLACK GOLD": {
+    "artist": "Cranky",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "6", "11", "13", "-" ],
+      [ "6", "12", "14", "11" ],
+      [ "6", "12", "14", "11" ],
+      [ "6", "11", "14", "-" ]
+    ]
+  },
+  "Do it": {
+    "artist": "House Rulez",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "5", "8", "12", "4" ],
+      [ "7", "-", "11", "4" ],
+      [ "5", "11", "-", "6" ],
+      [ "5", "11", "-", "4" ]
+    ]
+  },
+  "Dream it": {
+    "artist": "BEXTER",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "4", "8", "11", "9" ],
+      [ "4", "7", "11", "-" ],
+      [ "4", "7", "10", "10" ],
+      [ "5", "8", "12", "-" ]
+    ]
+  },
+  "Fancy Night": {
+    "artist": "SiNA × CHUCK",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "2", "5", "9", "5" ],
+      [ "4", "6", "9", "5" ],
+      [ "4", "7", "9", "6" ],
+      [ "6", "-", "10", "5" ]
+    ]
+  },
+  "FIGHT NIGHT (feat. Calyae)": {
+    "artist": "Messier",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "5", "8", "13", "10" ],
+      [ "6", "10", "13", "-" ],
+      [ "6", "10", "13", "-" ],
+      [ "8", "12", "14", "9" ]
+    ]
+  },
+  "Kensei": {
+    "artist": "Pure 100%",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "7", "10", "14", "12" ],
+      [ "8", "12", "14", "13" ],
+      [ "7", "11", "14", "13" ],
+      [ "8", "12", "14", "13" ]
+    ]
+  },
+  "Lisrim": {
+    "artist": "onoken",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "6", "8", "14", "-" ],
+      [ "6", "9", "13", "13" ],
+      [ "5", "8", "13", "10" ],
+      [ "6", "10", "14", "-" ]
+    ]
+  },
+  "Lost Serenity": {
+    "artist": "Benicx",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "4", "7", "10", "6" ],
+      [ "4", "8", "11", "8" ],
+      [ "4", "7", "11", "7" ],
+      [ "6", "11", "-", "5" ]
+    ]
+  },
+  "Lost Temple": {
+    "artist": "IMLAY",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "5", "8", "-", "12" ],
+      [ "3", "8", "11", "-" ],
+      [ "5", "8", "10", "11" ],
+      [ "5", "7", "12", "-" ]
+    ]
+  },
+  "Maharajah -fenomeno edition-": {
+    "artist": "Alice Schach and the Magic Orchestra",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "3", "5", "10", "5" ],
+      [ "5", "9", "11", "5" ],
+      [ "5", "7", "11", "8" ],
+      [ "6", "9", "12", "7" ]
+    ]
+  },
+  "Misty Er'A": {
+    "artist": "Mycin.T x jam-jam",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "3", "6", "10", "-" ],
+      [ "3", "7", "10", "-" ],
+      [ "4", "9", "-", "9" ],
+      [ "5", "7", "10", "-" ]
+    ]
+  },
+  "Move Yourself": {
+    "artist": "IMLAY/YESEO",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "2", "4", "7", "6" ],
+      [ "4", "6", "9", "7" ],
+      [ "5", "7", "10", "8" ],
+      [ "4", "7", "11", "9" ]
+    ]
+  },
+  "NANAIRO": {
+    "artist": "HAYAKO",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "3", "8", "11", "7" ],
+      [ "5", "8", "12", "-" ],
+      [ "5", "8", "12", "9" ],
+      [ "5", "9", "13", "-" ]
+    ]
+  },
+  "Never Die": {
+    "artist": "Paul Bazooka",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "5", "9", "14", "11" ],
+      [ "7", "10", "14", "12" ],
+      [ "6", "10", "14", "12" ],
+      [ "6", "11", "14", "11" ]
+    ]
+  },
+  "Remember Me": {
+    "artist": "NieN",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "7", "10", "12", "-" ],
+      [ "6", "10", "13", "10" ],
+      [ "7", "11", "13", "-" ],
+      [ "7", "11", "14", "9" ]
+    ]
+  },
+  "Space Challenger": {
+    "artist": "Bagagee Viphex13",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "4", "10", "-", "8" ],
+      [ "5", "8", "12", "11" ],
+      [ "5", "9", "12", "12" ],
+      [ "5", "11", "-", "9" ]
+    ]
+  },
+  "Vile Requiem": {
+    "artist": "GOTH",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "7", "13", "-", "10" ],
+      [ "6", "10", "13", "12" ],
+      [ "5", "10", "13", "12" ],
+      [ "6", "10", "14", "11" ]
+    ]
+  },
+  "welcome to the space (feat. Jisun)": {
+    "artist": "Pory",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "3", "6", "9", "-" ],
+      [ "4", "8", "11", "9" ],
+      [ "4", "-", "10", "-" ],
+      [ "4", "9", "11", "8" ]
+    ]
+  },
+  "WONDER $LOT 777": {
+    "artist": "MYUKKE.",
+    "category": "V EXTENSION",
+    "difficulty": [
+      [ "5", "10", "14", "12" ],
+      [ "7", "10", "13", "11" ],
+      [ "7", "9", "14", "12" ],
+      [ "7", "11", "14", "12" ]
+    ]
+  },
+  "꿈의 기억 (feat. Jisun)": {
+    "artist": "Pory.",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "4", "-", "11", "7" ],
+      [ "5", "10", "12", "6" ],
+      [ "5", "9", "-", "6" ],
+      [ "6", "13", "-", "9" ]
+    ]
+  },
+  "너로피어오라 ~Original Ver.~": {
+    "artist": "달의하루",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "6", "9", "13", "-" ],
+      [ "7", "13", "-", "11" ],
+      [ "7", "11", "13", "-" ],
+      [ "4", "9", "13", "11" ]
+    ]
+  },
+  "Arcade Love (feat. KNVWN)": {
+    "artist": "Newton/KNVWN",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "5", "10", "-", "8" ],
+      [ "5", "12", "-", "6" ],
+      [ "5", "-", "11", "7" ],
+      [ "4", "11", "-", "8" ]
+    ]
+  },
+  "Chrysanthemum": {
+    "artist": "Kanallia",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "5", "8", "12", "9" ],
+      [ "6", "9", "11", "-" ],
+      [ "6", "9", "-", "11" ],
+      [ "7", "12", "-", "12" ]
+    ]
+  },
+  "Cocked Pistol": {
+    "artist": "Pierre Blanche",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "10", "14", "14" ],
+      [ "8", "11", "14", "12" ],
+      [ "7", "-", "12", "12" ],
+      [ "7", "11", "14", "12" ]
+    ]
+  },
+  "Daydream": {
+    "artist": "Mycin.T x SiNA",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "11", "14", "-" ],
+      [ "7", "11", "15", "13" ],
+      [ "7", "11", "14", "12" ],
+      [ "7", "10", "15", "12" ]
+    ]
+  },
+  "FALLING IN LOVE": {
+    "artist": "NieN",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "1", "4", "7", "3" ],
+      [ "1", "7", "10", "3" ],
+      [ "2", "5", "9", "5" ],
+      [ "3", "7", "12", "4" ]
+    ]
+  },
+  "Forgotten": {
+    "artist": "Paul Bazooka",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "6", "12", "-", "11" ],
+      [ "7", "-", "11", "11" ],
+      [ "6", "11", "-", "11" ],
+      [ "7", "12", "-", "12" ]
+    ]
+  },
+  "I've got a feeling": {
+    "artist": "LeeZu",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "11", "13", "-" ],
+      [ "8", "12", "14", "12" ],
+      [ "7", "10", "12", "11" ],
+      [ "7", "-", "14", "-" ]
+    ]
+  },
+  "Imaginary dance": {
+    "artist": "CHUCK",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "5", "8", "-", "10" ],
+      [ "3", "6", "14", "-" ],
+      [ "3", "5", "-", "13" ],
+      [ "3", "6", "14", "12" ]
+    ]
+  },
+  "Melonaid": {
+    "artist": "KATOMORI",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "5", "11", "13", "8" ],
+      [ "6", "11", "13", "9" ],
+      [ "7", "11", "13", "9" ],
+      [ "5", "10", "-", "10" ]
+    ]
+  },
+  "Never let you go": {
+    "artist": "Blosso",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "9", "12", "10" ],
+      [ "6", "-", "12", "9" ],
+      [ "5", "9", "13", "10" ],
+      [ "7", "-", "14", "13" ]
+    ]
+  },
+  "Odysseus": {
+    "artist": "XeoN",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "13", "15", "13" ],
+      [ "8", "13", "15", "14" ],
+      [ "10", "13", "15", "15" ],
+      [ "10", "13", "15", "15" ]
+    ]
+  },
+  "Over Me": {
+    "artist": "SSOMbo",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "6", "-", "14", "-" ],
+      [ "7", "10", "14", "14" ],
+      [ "8", "-", "13", "13" ],
+      [ "7", "-", "14", "13" ]
+    ]
+  },
+  "Red Eyes": {
+    "artist": "Cosmograph",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "-", "14", "-" ],
+      [ "9", "-", "15", "14" ],
+      [ "8", "-", "14", "13" ],
+      [ "8", "12", "15", "13" ]
+    ]
+  },
+  "Sweet On You": {
+    "artist": "jam-jam",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "4", "9", "-", "4" ],
+      [ "5", "8", "-", "5" ],
+      [ "4", "8", "-", "8" ],
+      [ "7", "12", "-", "7" ]
+    ]
+  },
+  "Underwater Castle": {
+    "artist": "Nauts",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "2", "7", "10", "2" ],
+      [ "5", "8", "11", "-" ],
+      [ "3", "7", "11", "-" ],
+      [ "4", "12", "-", "5" ]
+    ]
+  },
+  "Vertical Floating": {
+    "artist": "Tsukasa",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "11", "14", "7" ],
+      [ "7", "11", "-", "10" ],
+      [ "7", "11", "13", "12" ],
+      [ "7", "-", "14", "12" ]
+    ]
+  },
+  "Voyage(SOPHI)": {
+    "artist": "SOPHI",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "9", "-", "7" ],
+      [ "6", "12", "-", "6" ],
+      [ "4", "8", "12", "-" ],
+      [ "7", "12", "-", "-" ]
+    ]
+  },
+  "Won't Back Down": {
+    "artist": "Pure 100%/KASA",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "11", "13", "13" ],
+      [ "7", "11", "13", "12" ],
+      [ "4", "7", "14", "13" ],
+      [ "7", "11", "14", "13" ]
+    ]
+  },
+  "Zero to the hunnit": {
+    "artist": "SiNA",
+    "category": "V EXTENSION 2",
+    "difficulty": [
+      [ "7", "-", "13", "12" ],
+      [ "8", "-", "13", "-" ],
+      [ "3", "9", "12", "-" ],
+      [ "7", "-", "13", "13" ]
+    ]
+  },
+  "밤비(Bambi) - DJMAX Edit -": {
+    "artist": "다즈비(DAZBEE)",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "3", "8", "11", "8" ],
+      [ "3", "6", "9", "9" ],
+      [ "5", "7", "10", "7" ],
+      [ "5", "8", "10", "6" ]
+    ]
+  },
+  "#mine (feat. Riho Iwamoto)": {
+    "artist": "Tsukasa",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "5", "8", "10", "10" ],
+      [ "5", "10", "12", "8" ],
+      [ "5", "8", "11", "8" ],
+      [ "6", "9", "12", "9" ]
+    ]
+  },
+  "Bright Future": {
+    "artist": "RiraN",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "5", "9", "13", "14" ],
+      [ "7", "10", "13", "13" ],
+      [ "8", "10", "13", "13" ],
+      [ "7", "10", "14", "14" ]
+    ]
+  },
+  "Charming World": {
+    "artist": "SOPHI",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "4", "7", "9", "5" ],
+      [ "5", "7", "9", "6" ],
+      [ "4", "6", "9", "7" ],
+      [ "5", "7", "9", "5" ]
+    ]
+  },
+  "Disappearing Act": {
+    "artist": "Pierre Blanche",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "7", "11", "13", "13" ],
+      [ "8", "12", "14", "14" ],
+      [ "6", "11", "15", "14" ],
+      [ "8", "11", "15", "14" ]
+    ]
+  },
+  "Emerge": {
+    "artist": "Pure 100%",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "4", "10", "14", "13" ],
+      [ "5", "10", "13", "12" ],
+      [ "5", "8", "12", "12" ],
+      [ "5", "8", "12", "13" ]
+    ]
+  },
+  "Every Day ~ Every Night": {
+    "artist": "Night Tempo",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "5", "7", "8", "6" ],
+      [ "4", "7", "8", "4" ],
+      [ "3", "6", "8", "5" ],
+      [ "5", "7", "11", "5" ]
+    ]
+  },
+  "Fundamental": {
+    "artist": "Bagagee Viphex13",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "7", "11", "14", "14" ],
+      [ "7", "10", "14", "15" ],
+      [ "6", "10", "12", "13" ],
+      [ "8", "13", "15", "15" ]
+    ]
+  },
+  "KICK IT": {
+    "artist": "HAYAKO",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "5", "11", "14", "14" ],
+      [ "6", "11", "13", "13" ],
+      [ "5", "9", "13", "14" ],
+      [ "7", "11", "15", "14" ]
+    ]
+  },
+  "Misty E'ra 'Mui'": {
+    "artist": "Mycin.T x jam-jam",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "3", "7", "11", "11" ],
+      [ "4", "10", "13", "11" ],
+      [ "4", "8", "11", "10" ],
+      [ "6", "11", "13", "11" ]
+    ]
+  },
+  "Moment (feat. Nauts)": {
+    "artist": "DoubleTO",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "3", "7", "12", "10" ],
+      [ "5", "8", "12", "9" ],
+      [ "5", "8", "12", "11" ],
+      [ "6", "8", "12", "11" ]
+    ]
+  },
+  "NB RANGERS - 운명의 Destiny": {
+    "artist": "NieN",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "6", "10", "13", "13" ],
+      [ "6", "10", "13", "13" ],
+      [ "5", "9", "11", "13" ],
+      [ "7", "9", "12", "12" ]
+    ]
+  },
+  "Plasma Sphere": {
+    "artist": "VoidRover",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "4", "8", "13", "13" ],
+      [ "3", "9", "13", "13" ],
+      [ "5", "9", "12", "12" ],
+      [ "6", "12", "14", "14" ]
+    ]
+  },
+  "Secret": {
+    "artist": "Milkoi/Ruxxi",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "4", "8", "10", "6" ],
+      [ "4", "7", "10", "6" ],
+      [ "4", "6", "10", "7" ],
+      [ "4", "8", "10", "9" ]
+    ]
+  },
+  "Set Me Free": {
+    "artist": "Takahiro Eguchi",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "2", "7", "9", "9" ],
+      [ "4", "6", "12", "10" ],
+      [ "3", "5", "10", "7" ],
+      [ "4", "9", "12", "12" ]
+    ]
+  },
+  "Space Dream (feat. J.O.Y)": {
+    "artist": "Newton",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "3", "5", "8", "6" ],
+      [ "4", "7", "10", "6" ],
+      [ "2", "5", "9", "7" ],
+      [ "5", "8", "10", "8" ]
+    ]
+  },
+  "STEP": {
+    "artist": "YESEO",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "2", "5", "9", "9" ],
+      [ "2", "5", "10", "12" ],
+      [ "3", "5", "9", "10" ],
+      [ "4", "8", "11", "10" ]
+    ]
+  },
+  "Tic! Tac! Toe!": {
+    "artist": "TAK x Corbin",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "4", "7", "13", "9" ],
+      [ "3", "7", "11", "9" ],
+      [ "4", "7", "11", "11" ],
+      [ "4", "8", "13", "9" ]
+    ]
+  },
+  "Winners": {
+    "artist": "CHUCK",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "6", "12", "14", "12" ],
+      [ "6", "12", "14", "13" ],
+      [ "5", "10", "13", "12" ],
+      [ "7", "12", "14", "14" ]
+    ]
+  },
+  "Zero-Break": {
+    "artist": "Cosmograph",
+    "category": "V EXTENSION 3",
+    "difficulty": [
+      [ "6", "11", "14", "15" ],
+      [ "6", "11", "15", "14" ],
+      [ "8", "12", "14", "15" ],
+      [ "8", "12", "14", "15" ]
+    ]
+  },
+  "너에게로 갈래": {
+    "artist": "SOPHI(Feat.혜이)",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "3", "6", "8", "5" ],
+      [ "2", "6", "9", "7" ],
+      [ "3", "6", "8", "7" ],
+      [ "3", "6", "8", "8" ]
+    ]
+  },
+  "염라 ~Original Ver.~": {
+    "artist": "달의하루",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "4", "6", "12", "8" ],
+      [ "6", "9", "11", "10" ],
+      [ "7", "10", "12", "9" ],
+      [ "5", "8", "13", "10" ]
+    ]
+  },
+  "!!New Game Start!!": {
+    "artist": "Teikyou",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "7", "8", "13", "14" ],
+      [ "6", "10", "14", "14" ],
+      [ "6", "11", "15", "14" ],
+      [ "6", "10", "14", "13" ]
+    ]
+  },
+  "ADDICT!ON (DJMAX Edit)": {
+    "artist": "아이리 칸나",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "3", "5", "8", "4" ],
+      [ "3", "7", "9", "8" ],
+      [ "3", "6", "8", "4" ],
+      [ "6", "7", "10", "9" ]
+    ]
+  },
+  "Back to the oldschool": {
+    "artist": "Blosso",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "8", "10", "13" ],
+      [ "7", "10", "11", "12" ],
+      [ "5", "9", "13", "13" ],
+      [ "7", "10", "13", "13" ]
+    ]
+  },
+  "Deadly Bomber": {
+    "artist": "Daisuke Kurosawa",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "7", "9", "13", "13" ],
+      [ "6", "9", "14", "14" ],
+      [ "6", "10", "14", "13" ],
+      [ "6", "11", "15", "14" ]
+    ]
+  },
+  "DIE IN": {
+    "artist": "TAK x Sobrem",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "7", "10", "15", "15" ],
+      [ "7", "11", "15", "15" ],
+      [ "8", "12", "15", "15" ],
+      [ "9", "13", "15", "15" ]
+    ]
+  },
+  "Don't Cry": {
+    "artist": "Nauts",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "1", "4", "7", "3" ],
+      [ "2", "6", "8", "3" ],
+      [ "1", "4", "8", "5" ],
+      [ "2", "5", "9", "6" ]
+    ]
+  },
+  "Gloxinia": {
+    "artist": "Ruxxi/Milkoi",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "5", "8", "11", "11" ],
+      [ "7", "9", "12", "12" ],
+      [ "5", "9", "11", "12" ],
+      [ "5", "8", "13", "11" ]
+    ]
+  },
+  "Hell'o": {
+    "artist": "Pan",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "8", "10", "14", "15" ],
+      [ "8", "11", "14", "15" ],
+      [ "9", "12", "14", "15" ],
+      [ "6", "11", "14", "15" ]
+    ]
+  },
+  "Hyper Drive": {
+    "artist": "MINIMONSTER",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "8", "12", "11" ],
+      [ "5", "9", "13", "12" ],
+      [ "5", "10", "13", "11" ],
+      [ "4", "11", "13", "13" ]
+    ]
+  },
+  "Hypernaid": {
+    "artist": "KATOMORI",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "8", "10", "9" ],
+      [ "6", "8", "12", "10" ],
+      [ "4", "8", "11", "10" ],
+      [ "5", "9", "13", "11" ]
+    ]
+  },
+  "Like a Fool": {
+    "artist": "Mr.Funky x Purple.J",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "2", "5", "8", "6" ],
+      [ "2", "5", "8", "6" ],
+      [ "1", "4", "9", "6" ],
+      [ "2", "6", "9", "6" ]
+    ]
+  },
+  "Love.Game.Money": {
+    "artist": "LeeZu",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "5", "8", "12", "14" ],
+      [ "6", "8", "14", "14" ],
+      [ "7", "10", "13", "13" ],
+      [ "6", "8", "13", "13" ]
+    ]
+  },
+  "LUV": {
+    "artist": "ND Lee",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "2", "5", "8", "5" ],
+      [ "3", "7", "10", "6" ],
+      [ "2", "4", "7", "6" ],
+      [ "4", "7", "10", "7" ]
+    ]
+  },
+  "New World": {
+    "artist": "Pure 100%",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "4", "7", "11", "11" ],
+      [ "6", "10", "12", "11" ],
+      [ "5", "9", "11", "10" ],
+      [ "6", "9", "13", "12" ]
+    ]
+  },
+  "Stay Alive": {
+    "artist": "NieN",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "5", "9", "13", "13" ],
+      [ "6", "11", "15", "14" ],
+      [ "6", "10", "13", "13" ],
+      [ "5", "10", "14", "13" ]
+    ]
+  },
+  "Stolen Memory": {
+    "artist": "Pierre Blanche",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "9", "12", "12" ],
+      [ "6", "11", "13", "13" ],
+      [ "6", "11", "13", "12" ],
+      [ "5", "9", "14", "13" ]
+    ]
+  },
+  "The Four Seasons : Summer 2017": {
+    "artist": "Funtwo",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "9", "11", "11" ],
+      [ "5", "9", "13", "13" ],
+      [ "5", "8", "11", "11" ],
+      [ "5", "9", "13", "13" ]
+    ]
+  },
+  "Vertical Eclipse": {
+    "artist": "TAG",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "6", "10", "14", "14" ],
+      [ "8", "12", "14", "15" ],
+      [ "8", "12", "15", "14" ],
+      [ "7", "10", "15", "14" ]
+    ]
+  },
+  "Weaponize": {
+    "artist": "causeluve",
+    "category": "V EXTENSION 4",
+    "difficulty": [
+      [ "4", "8", "11", "11" ],
+      [ "4", "9", "13", "13" ],
+      [ "4", "8", "12", "13" ],
+      [ "5", "9", "13", "10" ]
+    ]
+  },
+  "별빛너머": {
+    "artist": "ned",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "7", "10", "7" ],
+      [ "3", "5", "10", "8" ],
+      [ "3", "7", "10", "8" ],
+      [ "4", "8", "12", "9" ]
+    ]
+  },
+  "3:33": {
+    "artist": "Pierre Blanche",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "8", "13", "14" ],
+      [ "5", "10", "15", "14" ],
+      [ "5", "11", "15", "15" ],
+      [ "5", "11", "15", "14" ]
+    ]
+  },
+  "Accelerate": {
+    "artist": "Teminite & Skybreak",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "5", "8", "11", "10" ],
+      [ "5", "10", "13", "12" ],
+      [ "6", "9", "13", "12" ],
+      [ "4", "8", "13", "11" ]
+    ]
+  },
+  "Behemoth": {
+    "artist": "Paul Bazooka",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "8", "12", "10" ],
+      [ "6", "9", "13", "12" ],
+      [ "4", "8", "13", "11" ],
+      [ "4", "9", "14", "12" ]
+    ]
+  },
+  "Carrot Carrot": {
+    "artist": "Sobrem",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "8", "11", "13", "13" ],
+      [ "6", "10", "14", "14" ],
+      [ "10", "13", "15", "15" ],
+      [ "9", "13", "15", "15" ]
+    ]
+  },
+  "Critical Point": {
+    "artist": "ND Lee",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "7", "8", "13", "14" ],
+      [ "6", "11", "14", "14" ],
+      [ "6", "10", "14", "14" ],
+      [ "6", "10", "14", "14" ]
+    ]
+  },
+  "ECiLA": {
+    "artist": "seibin",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "5", "8", "10", "9" ],
+      [ "5", "8", "12", "10" ],
+      [ "5", "9", "12", "11" ],
+      [ "4", "8", "12", "10" ]
+    ]
+  },
+  "glory MAX -나의 최대치로 너와 함께할게-": {
+    "artist": "TAK",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "6", "8", "12", "12" ],
+      [ "5", "8", "13", "12" ],
+      [ "6", "9", "13", "10" ],
+      [ "6", "9", "14", "12" ]
+    ]
+  },
+  "God Machine": {
+    "artist": "VoidRover",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "3", "8", "13", "12" ],
+      [ "5", "8", "13", "13" ],
+      [ "6", "8", "13", "13" ],
+      [ "4", "7", "14", "12" ]
+    ]
+  },
+  "Inside the Light": {
+    "artist": "danbi",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "2", "5", "9", "10" ],
+      [ "3", "6", "11", "8" ],
+      [ "2", "7", "12", "11" ],
+      [ "4", "7", "11", "8" ]
+    ]
+  },
+  "My Wonderland": {
+    "artist": "NieN",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "6", "8", "13", "11" ],
+      [ "6", "8", "13", "11" ],
+      [ "6", "9", "13", "10" ],
+      [ "5", "9", "13", "11" ]
+    ]
+  },
+  "Paradise": {
+    "artist": "Blosso",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "7", "11", "9" ],
+      [ "5", "8", "13", "10" ],
+      [ "4", "7", "12", "9" ],
+      [ "3", "9", "14", "13" ]
+    ]
+  },
+  "Peace Comes At a Price": {
+    "artist": "Pure 100%",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "6", "9", "9" ],
+      [ "4", "7", "12", "8" ],
+      [ "3", "7", "10", "8" ],
+      [ "3", "8", "12", "10" ]
+    ]
+  },
+  "Pitter-patter": {
+    "artist": "SOPHI",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "5", "8", "11", "12" ],
+      [ "4", "8", "13", "13" ],
+      [ "4", "7", "13", "13" ],
+      [ "5", "9", "13", "12" ]
+    ]
+  },
+  "Revenger": {
+    "artist": "Sampling Masters AYA",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "7", "10", "14", "14" ],
+      [ "6", "11", "15", "15" ],
+      [ "7", "12", "15", "14" ],
+      [ "7", "11", "15", "15" ]
+    ]
+  },
+  "Rhapsody for The VEndetta": {
+    "artist": "Ice",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "8", "10", "14", "14" ],
+      [ "6", "10", "15", "15" ],
+      [ "7", "11", "15", "14" ],
+      [ "6", "10", "15", "15" ]
+    ]
+  },
+  "Right Time [ScreaM Records]": {
+    "artist": "Faver/Haz Haus",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "2", "5", "10", "9" ],
+      [ "2", "5", "13", "12" ],
+      [ "3", "7", "11", "11" ],
+      [ "3", "9", "13", "12" ]
+    ]
+  },
+  "Rocket Launcher": {
+    "artist": "MINIMONSTER",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "5", "8", "11", "11" ],
+      [ "5", "9", "13", "12" ],
+      [ "4", "8", "12", "11" ],
+      [ "5", "9", "13", "12" ]
+    ]
+  },
+  "S.A.V.E": {
+    "artist": "RiraN",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "8", "11", "11" ],
+      [ "5", "8", "12", "11" ],
+      [ "3", "8", "11", "9" ],
+      [ "5", "8", "13", "11" ]
+    ]
+  },
+  "Shining Light (feat. Shabel Tonya)": {
+    "artist": "INFX/MIIM",
+    "category": "V EXTENSION 5",
+    "difficulty": [
+      [ "4", "8", "10", "8" ],
+      [ "4", "8", "11", "8" ],
+      [ "5", "9", "11", "7" ],
+      [ "5", "8", "11", "9" ]
+    ]
+  },
+  "Cosmic Elevator": {
+    "artist": "Forte Escape",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "4", "8", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "6", "12", "-", "-" ],
+      [ "6", "12", "-", "-" ]
+    ]
+  },
+  "Feel": {
+    "artist": "DJ Mocha",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "4", "7", "-", "3" ],
+      [ "4", "9", "-", "-" ],
+      [ "5", "-", "10", "5" ],
+      [ "6", "-", "11", "-" ]
+    ]
+  },
+  "Knowledge System": {
+    "artist": "Forte Escape",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "6", "10", "-", "12" ],
+      [ "7", "11", "13", "9" ],
+      [ "7", "10", "13", "9" ],
+      [ "7", "10", "13", "11" ]
+    ]
+  },
+  "Real Over Drive": {
+    "artist": "NieN",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "7", "-", "12", "-" ],
+      [ "6", "11", "-", "8" ],
+      [ "7", "13", "-", "-" ],
+      [ "7", "13", "-", "11" ]
+    ]
+  },
+  "Space of Soul": {
+    "artist": "M2U",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "6", "10", "14", "-" ],
+      [ "7", "12", "14", "12" ],
+      [ "7", "12", "14", "13" ],
+      [ "7", "12", "14", "-" ]
+    ]
+  },
+  "Super lovely": {
+    "artist": "Earbreaker",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "7", "11", "15", "13" ],
+      [ "6", "12", "15", "14" ],
+      [ "6", "11", "15", "14" ],
+      [ "6", "12", "15", "-" ]
+    ]
+  },
+  "Urban Night(Electronic Boutique)": {
+    "artist": "Electronic Boutique",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "5", "13", "-", "-" ],
+      [ "5", "12", "-", "9" ],
+      [ "6", "-", "13", "11" ],
+      [ "6", "-", "13", "-" ]
+    ]
+  },
+  "Yo! Max!": {
+    "artist": "ND Lee",
+    "category": "EMOTIONAL SENSE",
+    "difficulty": [
+      [ "2", "8", "-", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "-", "8", "-" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "Access": {
+    "artist": "Sphazer",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "2", "4", "7", "4" ],
+      [ "3", "6", "-", "4" ],
+      [ "3", "-", "12", "-" ],
+      [ "5", "7", "11", "-" ]
+    ]
+  },
+  "Area 7": {
+    "artist": "Sphazer",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "-", "10", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "5", "7", "11", "-" ],
+      [ "4", "7", "12", "-" ]
+    ]
+  },
+  "Beyond the Future": {
+    "artist": "7 Sequence",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "8", "11", "10" ],
+      [ "4", "8", "11", "8" ],
+      [ "4", "9", "12", "8" ],
+      [ "4", "9", "12", "12" ]
+    ]
+  },
+  "Dear my Lady": {
+    "artist": "Oriental ST8",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "5", "9", "-", "8" ],
+      [ "5", "7", "10", "-" ],
+      [ "5", "7", "11", "5" ],
+      [ "4", "7", "10", "-" ]
+    ]
+  },
+  "DJMAX": {
+    "artist": "Humming Urban Stereo",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "2", "7", "-", "-" ],
+      [ "3", "-", "8", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "4", "8", "-", "-" ]
+    ]
+  },
+  "Do you want it": {
+    "artist": "House Rulez",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "5", "8", "-", "5" ],
+      [ "7", "9", "-", "4" ],
+      [ "5", "9", "-", "8" ],
+      [ "5", "11", "-", "7" ]
+    ]
+  },
+  "Fury": {
+    "artist": "Sugardonut",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "9", "11", "-" ],
+      [ "5", "8", "12", "-" ],
+      [ "5", "9", "12", "11" ],
+      [ "5", "10", "12", "12" ]
+    ]
+  },
+  "HEXAD": {
+    "artist": "Electronic Boutique",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "5", "10", "13", "10" ],
+      [ "5", "9", "12", "11" ],
+      [ "5", "9", "12", "12" ],
+      [ "6", "10", "13", "12" ]
+    ]
+  },
+  "Honeymoon": {
+    "artist": "Humming Urban Stereo",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "3", "5", "8", "-" ],
+      [ "4", "-", "8", "-" ],
+      [ "4", "8", "-", "-" ],
+      [ "3", "9", "-", "-" ]
+    ]
+  },
+  "I want You": {
+    "artist": "Lin-G",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "3", "6", "8", "8" ],
+      [ "3", "8", "10", "7" ],
+      [ "5", "8", "11", "5" ],
+      [ "4", "9", "11", "8" ]
+    ]
+  },
+  "Landscape": {
+    "artist": "Tsukasa",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "6", "8", "11", "9" ],
+      [ "5", "9", "12", "11" ],
+      [ "7", "9", "13", "12" ]
+    ]
+  },
+  "Melody": {
+    "artist": "bermei.inazawa",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "5", "8", "11", "11" ],
+      [ "5", "8", "11", "11" ],
+      [ "4", "8", "12", "10" ],
+      [ "5", "10", "12", "9" ]
+    ]
+  },
+  "Play the Future": {
+    "artist": "Urbatronic Chopsticks",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "9", "-", "8" ],
+      [ "4", "7", "10", "-" ],
+      [ "6", "10", "-", "-" ],
+      [ "5", "-", "10", "-" ]
+    ]
+  },
+  "Remember": {
+    "artist": "Lin-G",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "3", "8", "10", "-" ],
+      [ "4", "7", "10", "4" ],
+      [ "4", "7", "11", "-" ],
+      [ "5", "-", "11", "5" ]
+    ]
+  },
+  "Shoreline": {
+    "artist": "Oriental ST8",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "8", "10", "-" ],
+      [ "6", "11", "-", "-" ],
+      [ "6", "11", "-", "8" ],
+      [ "6", "8", "12", "9" ]
+    ]
+  },
+  "SON OF SUN": {
+    "artist": "Hosoe Shinji",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "7", "10", "14", "12" ],
+      [ "7", "10", "14", "13" ],
+      [ "7", "11", "14", "13" ],
+      [ "7", "10", "15", "14" ]
+    ]
+  },
+  "SON OF SUN ~Extended Mix~": {
+    "artist": "Hosoe Shinji",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "7", "10", "14", "-" ],
+      [ "7", "10", "15", "-" ],
+      [ "7", "11", "14", "-" ],
+      [ "8", "11", "15", "-" ]
+    ]
+  },
+  "SuperSonic": {
+    "artist": "PlanetBoom",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "7", "11", "10" ],
+      [ "5", "8", "12", "9" ],
+      [ "6", "9", "12", "9" ],
+      [ "6", "10", "13", "10" ]
+    ]
+  },
+  "Sweet Shining Shooting Star": {
+    "artist": "CROOVE",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "3", "8", "10", "3" ],
+      [ "3", "6", "10", "-" ],
+      [ "6", "-", "10", "6" ],
+      [ "6", "-", "11", "-" ]
+    ]
+  },
+  "The Last Dance": {
+    "artist": "Urbatronic Chopsticks",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "4", "-", "8", "2" ],
+      [ "5", "11", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "4", "-", "12", "-" ]
+    ]
+  },
+  "Thor": {
+    "artist": "XeoN",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "7", "11", "14", "-" ],
+      [ "6", "10", "14", "-" ],
+      [ "6", "11", "14", "12" ],
+      [ "7", "11", "14", "12" ]
+    ]
+  },
+  "Voyage(makou)": {
+    "artist": "makou",
+    "category": "TECHNIKA 1",
+    "difficulty": [
+      [ "6", "9", "-", "-" ],
+      [ "5", "10", "-", "-" ],
+      [ "3", "7", "11", "-" ],
+      [ "5", "11", "-", "-" ]
+    ]
+  },
+  "Airwave": {
+    "artist": "ReX",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "9", "12", "12" ],
+      [ "6", "9", "13", "-" ],
+      [ "7", "-", "14", "13" ],
+      [ "7", "11", "13", "-" ]
+    ]
+  },
+  "BEE-U-TIFUL": {
+    "artist": "FIRST AID",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "6", "-", "11", "9" ],
+      [ "7", "10", "12", "10" ],
+      [ "6", "11", "13", "11" ],
+      [ "6", "10", "13", "11" ]
+    ]
+  },
+  "Burn it Down": {
+    "artist": "P'sycho-Remi",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "4", "7", "9", "7" ],
+      [ "4", "9", "-", "9" ],
+      [ "4", "8", "11", "9" ],
+      [ "5", "7", "12", "10" ]
+    ]
+  },
+  "Cosmic Fantastic Lovesong": {
+    "artist": "DINY",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "2", "5", "9", "3" ],
+      [ "3", "8", "11", "-" ],
+      [ "3", "7", "12", "-" ],
+      [ "4", "7", "11", "-" ]
+    ]
+  },
+  "Cozy Quilt": {
+    "artist": "bermei.inazawa",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "3", "9", "-", "-" ],
+      [ "2", "7", "-", "4" ],
+      [ "3", "7", "-", "5" ],
+      [ "3", "7", "12", "-" ]
+    ]
+  },
+  "D2": {
+    "artist": "FIRST AID",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "7", "-", "14", "13" ],
+      [ "6", "9", "13", "14" ],
+      [ "7", "12", "15", "-" ],
+      [ "7", "11", "15", "13" ]
+    ]
+  },
+  "Dream of Winds": {
+    "artist": "XeoN",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "8", "12", "13" ],
+      [ "6", "10", "13", "12" ],
+      [ "4", "8", "12", "12" ],
+      [ "5", "9", "12", "13" ]
+    ]
+  },
+  "Dual Strikers": {
+    "artist": "7 Sequence",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "6", "8", "-", "12" ],
+      [ "6", "9", "12", "11" ],
+      [ "6", "10", "13", "11" ],
+      [ "7", "10", "13", "9" ]
+    ]
+  },
+  "End of Mythology": {
+    "artist": "Alice Schach and the Magic Orchestra",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "3", "8", "12", "6" ],
+      [ "4", "-", "12", "4" ],
+      [ "5", "8", "12", "5" ],
+      [ "4", "7", "12", "7" ]
+    ]
+  },
+  "Eternal Fantasy ~유니의 꿈~": {
+    "artist": "XeoN",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "2", "5", "-", "-" ],
+      [ "2", "5", "-", "-" ],
+      [ "3", "5", "9", "-" ],
+      [ "3", "7", "-", "2" ]
+    ]
+  },
+  "La Campanella : Nu Rave": {
+    "artist": "Cranky",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "6", "9", "13", "9" ],
+      [ "7", "13", "-", "11" ],
+      [ "7", "-", "13", "-" ],
+      [ "7", "11", "13", "10" ]
+    ]
+  },
+  "Love is Beautiful": {
+    "artist": "Electronic Boutique",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "4", "5", "7", "-" ],
+      [ "5", "8", "-", "3" ],
+      [ "4", "7", "9", "-" ],
+      [ "5", "9", "-", "3" ]
+    ]
+  },
+  "MonoXide": {
+    "artist": "PlanetBoom",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "9", "12", "-" ],
+      [ "6", "12", "-", "-" ],
+      [ "6", "9", "12", "8" ],
+      [ "5", "12", "-", "8" ]
+    ]
+  },
+  "Nova ~Mr.Funky Remix~": {
+    "artist": "Mr.Funky",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "7", "-", "7" ],
+      [ "6", "10", "-", "6" ],
+      [ "7", "10", "12", "-" ],
+      [ "6", "-", "12", "-" ]
+    ]
+  },
+  "Put'Em Up": {
+    "artist": "makou",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "2", "5", "8", "5" ],
+      [ "5", "9", "-", "5" ],
+      [ "3", "6", "9", "5" ],
+      [ "5", "10", "-", "5" ]
+    ]
+  },
+  "Puzzler": {
+    "artist": "Electronic Boutique",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "-", "10", "7" ],
+      [ "4", "10", "-", "4" ],
+      [ "4", "11", "-", "8" ],
+      [ "5", "9", "12", "10" ]
+    ]
+  },
+  "Rage Of Demon": {
+    "artist": "NieN",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "6", "11", "15", "13" ],
+      [ "8", "11", "15", "14" ],
+      [ "8", "12", "15", "14" ],
+      [ "8", "13", "15", "13" ]
+    ]
+  },
+  "Say it from your heart": {
+    "artist": "makou",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "3", "5", "10", "-" ],
+      [ "4", "8", "10", "-" ],
+      [ "3", "8", "-", "5" ],
+      [ "4", "9", "-", "-" ]
+    ]
+  },
+  "Sweet Dream": {
+    "artist": "Lin-G",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "4", "6", "10", "-" ],
+      [ "3", "5", "8", "6" ],
+      [ "4", "7", "11", "7" ],
+      [ "5", "11", "-", "-" ]
+    ]
+  },
+  "The Guilty": {
+    "artist": "P'sycho-Remi",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "4", "7", "12", "-" ],
+      [ "6", "10", "13", "9" ],
+      [ "7", "12", "-", "-" ],
+      [ "7", "-", "13", "11" ]
+    ]
+  },
+  "Thor ~Extended Mix~": {
+    "artist": "XeoN",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "5", "11", "14", "-" ],
+      [ "6", "10", "15", "-" ],
+      [ "6", "11", "14", "-" ],
+      [ "8", "-", "14", "12" ]
+    ]
+  },
+  "Trip": {
+    "artist": "NieN",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "1", "4", "6", "2" ],
+      [ "2", "5", "8", "4" ],
+      [ "3", "5", "8", "6" ],
+      [ "3", "5", "8", "5" ]
+    ]
+  },
+  "XLASHER": {
+    "artist": "Hosoe Shinji",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "4", "8", "11", "11" ],
+      [ "5", "10", "13", "13" ],
+      [ "4", "8", "13", "10" ],
+      [ "6", "10", "13", "13" ]
+    ]
+  },
+  "Y ~Extended Mix~": {
+    "artist": "ND Lee",
+    "category": "TECHNIKA 2",
+    "difficulty": [
+      [ "6", "-", "12", "8" ],
+      [ "6", "10", "12", "-" ],
+      [ "6", "9", "12", "-" ],
+      [ "6", "10", "13", "-" ]
+    ]
+  },
+  "설레임 Part.2": {
+    "artist": "ND Lee",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "2", "4", "8", "4" ],
+      [ "5", "8", "-", "6" ],
+      [ "4", "-", "10", "7" ],
+      [ "6", "-", "11", "8" ]
+    ]
+  },
+  "유령": {
+    "artist": "STi",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "3", "5", "9", "6" ],
+      [ "4", "-", "8", "6" ],
+      [ "4", "9", "-", "-" ],
+      [ "5", "10", "12", "-" ]
+    ]
+  },
+  "A Life With You": {
+    "artist": "makou",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "4", "-", "9", "7" ],
+      [ "4", "6", "10", "8" ],
+      [ "6", "10", "12", "8" ],
+      [ "6", "12", "-", "8" ]
+    ]
+  },
+  "AD2222": {
+    "artist": "CROOVE",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "5", "8", "11", "12" ],
+      [ "6", "9", "14", "12" ],
+      [ "6", "10", "13", "12" ],
+      [ "6", "10", "12", "13" ]
+    ]
+  },
+  "AD2222 ~Extended Mix~": {
+    "artist": "CROOVE",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "5", "10", "12", "-" ],
+      [ "6", "10", "13", "-" ],
+      [ "7", "-", "13", "-" ],
+      [ "7", "10", "13", "-" ]
+    ]
+  },
+  "ALiCE": {
+    "artist": "seibin",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "4", "8", "12", "10" ],
+      [ "5", "9", "11", "9" ],
+      [ "5", "9", "11", "11" ],
+      [ "5", "10", "12", "11" ]
+    ]
+  },
+  "Angel": {
+    "artist": "Laurent Newfield & Revenant",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "4", "9", "12", "8" ],
+      [ "6", "10", "12", "10" ],
+      [ "6", "9", "13", "8" ],
+      [ "6", "10", "12", "8" ]
+    ]
+  },
+  "Bamboo on Bamboo": {
+    "artist": "Sampling Masters MEGA",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "8", "12", "15", "13" ],
+      [ "6", "12", "15", "14" ],
+      [ "7", "12", "15", "13" ],
+      [ "8", "12", "15", "15" ]
+    ]
+  },
+  "Black Swan": {
+    "artist": "TAK",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "5", "8", "12", "-" ],
+      [ "5", "11", "13", "-" ],
+      [ "5", "10", "12", "13" ],
+      [ "6", "10", "14", "13" ]
+    ]
+  },
+  "Dark Prism": {
+    "artist": "Tsukasa",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "7", "13", "-", "11" ],
+      [ "5", "12", "13", "11" ],
+      [ "5", "11", "14", "13" ],
+      [ "6", "-", "13", "12" ]
+    ]
+  },
+  "Dream Again": {
+    "artist": "DINY",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "2", "5", "9", "4" ],
+      [ "4", "7", "-", "4" ],
+      [ "4", "7", "-", "6" ],
+      [ "3", "9", "10", "5" ]
+    ]
+  },
+  "EGG": {
+    "artist": "Nauts",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "4", "7", "10", "-" ],
+      [ "5", "10", "13", "8" ],
+      [ "5", "10", "12", "-" ],
+      [ "6", "10", "13", "9" ]
+    ]
+  },
+  "EGG ~Extended Mix~": {
+    "artist": "Nauts",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "4", "7", "11", "-" ],
+      [ "6", "10", "-", "-" ],
+      [ "5", "11", "13", "-" ],
+      [ "7", "13", "-", "-" ]
+    ]
+  },
+  "Emblem": {
+    "artist": "makou",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "8", "12", "14", "-" ],
+      [ "6", "9", "13", "13" ],
+      [ "8", "13", "-", "12" ],
+      [ "6", "9", "14", "-" ]
+    ]
+  },
+  "Fallin' in LUV": {
+    "artist": "3rd Coast",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "3", "7", "-", "3" ],
+      [ "3", "8", "10", "-" ],
+      [ "3", "6", "10", "-" ],
+      [ "5", "-", "10", "4" ]
+    ]
+  },
+  "Feel Ma Beat": {
+    "artist": "NieN",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "7", "11", "14", "-" ],
+      [ "9", "11", "14", "-" ],
+      [ "8", "11", "14", "9" ],
+      [ "8", "11", "14", "12" ]
+    ]
+  },
+  "Give Me 5": {
+    "artist": "ND Lee",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "5", "-", "10", "8" ],
+      [ "5", "9", "11", "8" ],
+      [ "5", "9", "-", "7" ],
+      [ "5", "9", "11", "8" ]
+    ]
+  },
+  "Kung-Fu Rider": {
+    "artist": "AstroKid",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "6", "9", "-", "5" ],
+      [ "6", "10", "-", "9" ],
+      [ "6", "10", "-", "8" ],
+      [ "6", "10", "12", "-" ]
+    ]
+  },
+  "My Heart, My Soul": {
+    "artist": "3rd Coast",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "2", "6", "-", "-" ],
+      [ "5", "7", "-", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "4", "10", "-", "-" ]
+    ]
+  },
+  "Now a NEW Day": {
+    "artist": "Sui.Jay",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "3", "7", "10", "8" ],
+      [ "5", "8", "11", "-" ],
+      [ "5", "9", "11", "6" ],
+      [ "5", "8", "11", "-" ]
+    ]
+  },
+  "Out of CTRL": {
+    "artist": "Mr.Funky",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "7", "10", "13", "12" ],
+      [ "7", "11", "-", "13" ],
+      [ "8", "13", "-", "-" ],
+      [ "6", "10", "13", "11" ]
+    ]
+  },
+  "Over the Rainbow": {
+    "artist": "Tsukasa",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "7", "12", "-", "12" ],
+      [ "5", "9", "12", "-" ],
+      [ "7", "10", "12", "12" ],
+      [ "7", "13", "-", "-" ]
+    ]
+  },
+  "Right Back": {
+    "artist": "TANUKI",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "8", "11", "14", "-" ],
+      [ "8", "-", "13", "9" ],
+      [ "7", "10", "14", "10" ],
+      [ "5", "10", "14", "11" ]
+    ]
+  },
+  "Showdown(LeeZu)": {
+    "artist": "LeeZu",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "6", "9", "13", "-" ],
+      [ "6", "8", "-", "10" ],
+      [ "5", "11", "14", "-" ],
+      [ "6", "10", "13", "12" ]
+    ]
+  },
+  "SigNalize": {
+    "artist": "Paul Bazooka",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "6", "8", "10", "9" ],
+      [ "7", "9", "-", "10" ],
+      [ "7", "-", "12", "9" ],
+      [ "6", "10", "14", "10" ]
+    ]
+  },
+  "Supernova": {
+    "artist": "Cranky",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "5", "-", "11", "-" ],
+      [ "6", "-", "12", "12" ],
+      [ "5", "9", "13", "-" ],
+      [ "6", "-", "14", "13" ]
+    ]
+  },
+  "Supersonic 2011": {
+    "artist": "PlanetBoom/Sound LAB",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "6", "12", "-", "12" ],
+      [ "7", "11", "-", "12" ],
+      [ "7", "12", "-", "-" ],
+      [ "5", "10", "14", "-" ]
+    ]
+  },
+  "Wanna Be Your Lover": {
+    "artist": "Laurent Newfield & Ravenant",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "1", "4", "7", "4" ],
+      [ "5", "8", "-", "7" ],
+      [ "4", "-", "10", "7" ],
+      [ "4", "10", "-", "7" ]
+    ]
+  },
+  "Xeus": {
+    "artist": "XeoN",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "6", "11", "13", "12" ],
+      [ "8", "11", "14", "13" ],
+      [ "7", "11", "14", "13" ],
+      [ "6", "11", "14", "15" ]
+    ]
+  },
+  "You & Me": {
+    "artist": "NieN",
+    "category": "TECHNIKA 3",
+    "difficulty": [
+      [ "3", "5", "7", "3" ],
+      [ "4", "8", "-", "3" ],
+      [ "3", "7", "10", "-" ],
+      [ "3", "7", "10", "-" ]
+    ]
+  },
+  "별빛정원": {
+    "artist": "vneld",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "4", "8", "10", "6" ],
+      [ "4", "8", "11", "5" ],
+      [ "4", "7", "11", "7" ],
+      [ "4", "7", "11", "6" ]
+    ]
+  },
+  "A Song of Sixpence": {
+    "artist": "makou",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "3", "7", "10", "5" ],
+      [ "3", "6", "10", "6" ],
+      [ "2", "4", "8", "5" ],
+      [ "3", "6", "10", "5" ]
+    ]
+  },
+  "Back to Life": {
+    "artist": "CROOVE",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "6", "8", "11", "7" ],
+      [ "4", "8", "12", "5" ],
+      [ "3", "5", "12", "7" ],
+      [ "5", "8", "12", "7" ]
+    ]
+  },
+  "Deborah": {
+    "artist": "Paul Bazooka",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "5", "9", "13", "9" ],
+      [ "5", "10", "13", "11" ],
+      [ "4", "7", "11", "10" ],
+      [ "6", "9", "12", "10" ]
+    ]
+  },
+  "Eternal Fantasy (Miya Vocal Mix)": {
+    "artist": "XeoN",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "3", "6", "8", "3" ],
+      [ "3", "6", "9", "5" ],
+      [ "3", "5", "7", "4" ],
+      [ "3", "6", "11", "6" ]
+    ]
+  },
+  "Festa Nova": {
+    "artist": "TerraMycin",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "6", "10", "12", "8" ],
+      [ "5", "9", "12", "8" ],
+      [ "7", "9", "12", "12" ],
+      [ "6", "10", "14", "13" ]
+    ]
+  },
+  "Kal_wrnw": {
+    "artist": "LeeZu",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "6", "11", "13", "12" ],
+      [ "6", "10", "13", "11" ],
+      [ "5", "8", "12", "10" ],
+      [ "6", "8", "12", "9" ]
+    ]
+  },
+  "Love☆Panic": {
+    "artist": "Hiyong",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "4", "8", "10", "5" ],
+      [ "3", "7", "10", "5" ],
+      [ "5", "8", "10", "6" ],
+      [ "4", "8", "11", "7" ]
+    ]
+  },
+  "Luv Yourself": {
+    "artist": "ND Lee",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "2", "7", "10", "5" ],
+      [ "3", "7", "9", "5" ],
+      [ "1", "3", "9", "4" ],
+      [ "3", "7", "9", "5" ]
+    ]
+  },
+  "Mukilteo Beach": {
+    "artist": "CROOVE",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "4", "6", "9", "6" ],
+      [ "3", "6", "10", "6" ],
+      [ "3", "6", "8", "8" ],
+      [ "3", "8", "10", "8" ]
+    ]
+  },
+  "Never Ending TECHNIKA": {
+    "artist": "Studio LAY-BACK",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "3", "7", "10", "6" ],
+      [ "2", "5", "8", "4" ],
+      [ "3", "6", "9", "8" ],
+      [ "5", "8", "11", "7" ]
+    ]
+  },
+  "Renovation": {
+    "artist": "XeoN",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "7", "10", "13", "10" ],
+      [ "6", "11", "14", "13" ],
+      [ "6", "10", "13", "12" ],
+      [ "6", "9", "13", "10" ]
+    ]
+  },
+  "Retention": {
+    "artist": "XeoN",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "5", "8", "10", "8" ],
+      [ "3", "7", "11", "10" ],
+      [ "4", "6", "11", "9" ],
+      [ "4", "7", "10", "8" ]
+    ]
+  },
+  "Shining My Boy": {
+    "artist": "AstroKid",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "1", "4", "8", "3" ],
+      [ "3", "5", "8", "3" ],
+      [ "1", "4", "8", "4" ],
+      [ "3", "7", "8", "4" ]
+    ]
+  },
+  "Silent Clarity": {
+    "artist": "Tsukasa",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "5", "8", "13", "10" ],
+      [ "6", "9", "13", "9" ],
+      [ "6", "8", "12", "12" ],
+      [ "6", "9", "13", "10" ]
+    ]
+  },
+  "Take on Me": {
+    "artist": "Cuve",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "5", "8", "12", "7" ],
+      [ "5", "7", "12", "7" ],
+      [ "3", "6", "11", "9" ],
+      [ "4", "8", "12", "7" ]
+    ]
+  },
+  "Techno Racer": {
+    "artist": "Paul Bazooka",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "6", "10", "12", "11" ],
+      [ "5", "8", "11", "10" ],
+      [ "5", "8", "12", "11" ],
+      [ "7", "11", "13", "13" ]
+    ]
+  },
+  "The MAX": {
+    "artist": "ND Lee",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "3", "8", "10", "6" ],
+      [ "3", "6", "9", "5" ],
+      [ "4", "7", "10", "8" ],
+      [ "4", "8", "11", "8" ]
+    ]
+  },
+  "Thor (Deepin' Absonant Mix)": {
+    "artist": "XeoN",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "5", "9", "14", "10" ],
+      [ "4", "10", "14", "11" ],
+      [ "5", "8", "12", "11" ],
+      [ "5", "11", "14", "13" ]
+    ]
+  },
+  "VORTEX": {
+    "artist": "Electronic Boutique",
+    "category": "TECHNIKA TUNE Q",
+    "difficulty": [
+      [ "4", "11", "13", "10" ],
+      [ "5", "11", "13", "11" ],
+      [ "6", "10", "12", "11" ],
+      [ "4", "9", "13", "11" ]
+    ]
+  },
+  "Break a Spell": {
+    "artist": "Daisuke Ishiwatari",
+    "category": "GUILTY GEAR",
+    "difficulty": [
+      [ "5", "9", "14", "12" ],
+      [ "6", "10", "-", "11" ],
+      [ "7", "9", "14", "12" ],
+      [ "7", "10", "14", "12" ]
+    ]
+  },
+  "Holy Orders (Be Just Or Be Dead)": {
+    "artist": "Daisuke Ishiwatari",
+    "category": "GUILTY GEAR",
+    "difficulty": [
+      [ "4", "9", "11", "8" ],
+      [ "6", "8", "11", "8" ],
+      [ "6", "9", "12", "9" ],
+      [ "6", "10", "11", "10" ]
+    ]
+  },
+  "Marionette": {
+    "artist": "Daisuke Ishiwatari",
+    "category": "GUILTY GEAR",
+    "difficulty": [
+      [ "5", "9", "13", "11" ],
+      [ "7", "12", "-", "12" ],
+      [ "6", "10", "13", "12" ],
+      [ "8", "-", "13", "13" ]
+    ]
+  },
+  "Barbarous Funera": {
+    "artist": "Rikako Watanabe(Basicscape)",
+    "category": "GIRLS' FRONTLINE",
+    "difficulty": [
+      [ "4", "8", "11", "9" ],
+      [ "5", "9", "12", "10" ],
+      [ "6", "9", "12", "12" ],
+      [ "7", "-", "13", "11" ]
+    ]
+  },
+  "Frontline": {
+    "artist": "B@kamin/M2U",
+    "category": "GIRLS' FRONTLINE",
+    "difficulty": [
+      [ "4", "8", "12", "10" ],
+      [ "6", "10", "-", "8" ],
+      [ "6", "10", "-", "11" ],
+      [ "6", "9", "13", "10" ]
+    ]
+  },
+  "What am I fighting for?": {
+    "artist": "Haloweak",
+    "category": "GIRLS' FRONTLINE",
+    "difficulty": [
+      [ "3", "7", "-", "8" ],
+      [ "4", "10", "-", "11" ],
+      [ "4", "-", "12", "11" ],
+      [ "6", "12", "-", "12" ]
+    ]
+  },
+  "Black MInD": {
+    "artist": "COSIO",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "5", "9", "14", "-" ],
+      [ "6", "12", "14", "-" ],
+      [ "6", "12", "14", "14" ],
+      [ "5", "12", "14", "12" ]
+    ]
+  },
+  "Good Night, Bad Luck.": {
+    "artist": " t+pazolite",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "5", "-", "13", "-" ],
+      [ "6", "11", "14", "13" ],
+      [ "8", "11", "14", "-" ],
+      [ "7", "12", "14", "13" ]
+    ]
+  },
+  "Got more raves?": {
+    "artist": "E.G.G.",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "4", "7", "12", "-" ],
+      [ "6", "10", "13", "12" ],
+      [ "5", "10", "12", "12" ],
+      [ "6", "10", "13", "-" ]
+    ]
+  },
+  "Groove Prayer": {
+    "artist": "COSIO",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "3", "5", "8", "11" ],
+      [ "5", "8", "11", "-" ],
+      [ "5", "-", "11", "-" ],
+      [ "4", "8", "11", "7" ]
+    ]
+  },
+  "HB-axeleration": {
+    "artist": "Tsukasa Yatoki",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "2", "6", "12", "-" ],
+      [ "4", "8", "12", "-" ],
+      [ "4", "11", "-", "-" ],
+      [ "6", "9", "12", "-" ]
+    ]
+  },
+  "Marry me, Nightmare": {
+    "artist": "t+pazolite",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "6", "11", "13", "-" ],
+      [ "7", "-", "14", "13" ],
+      [ "7", "11", "13", "13" ],
+      [ "8", "12", "14", "-" ]
+    ]
+  },
+  "ouroboros -twin stroke of the end-": {
+    "artist": "Cranky VS MASAKI",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "7", "12", "15", "14" ],
+      [ "7", "13", "15", "14" ],
+      [ "8", "13", "15", "15" ],
+      [ "8", "12", "15", "-" ]
+    ]
+  },
+  "OVER THE NIGHT": {
+    "artist": "Cranky VS MASAKI",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "5", "8", "-", "9" ],
+      [ "6", "9", "-", "-" ],
+      [ "5", "-", "11", "12" ],
+      [ "7", "12", "-", "-" ]
+    ]
+  },
+  "Satisfiction": {
+    "artist": "t+pazolite",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "5", "8", "-", "8" ],
+      [ "6", "9", "11", "8" ],
+      [ "7", "11", "14", "-" ],
+      [ "5", "10", "13", "-" ]
+    ]
+  },
+  "Warrior": {
+    "artist": "Cranky",
+    "category": "GROOVE COASTER",
+    "difficulty": [
+      [ "7", "11", "14", "-" ],
+      [ "5", "11", "15", "-" ],
+      [ "6", "11", "14", "13" ],
+      [ "6", "11", "14", "13" ]
+    ]
+  },
+  "Angelic Sphere": {
+    "artist": "3R2",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "4", "9", "13", "8" ],
+      [ "5", "10", "13", "10" ],
+      [ "4", "8", "13", "11" ],
+      [ "6", "9", "12", "11" ]
+    ]
+  },
+  "ANiMA": {
+    "artist": "xi",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "6", "9", "14", "13" ],
+      [ "8", "13", "15", "13" ],
+      [ "7", "13", "15", "15" ],
+      [ "8", "12", "15", "15" ]
+    ]
+  },
+  "Dream": {
+    "artist": "Rabpit",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "2", "-", "8", "-" ],
+      [ "3", "-", "10", "-" ],
+      [ "2", "-", "11", "-" ],
+      [ "5", "8", "11", "-" ]
+    ]
+  },
+  "Legacy": {
+    "artist": "switchworks",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "3", "7", "9", "3" ],
+      [ "4", "8", "-", "4" ],
+      [ "4", "8", "-", "4" ],
+      [ "4", "8", "11", "4" ]
+    ]
+  },
+  "Magnolia": {
+    "artist": "M2U",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "6", "10", "13", "9" ],
+      [ "6", "10", "11", "8" ],
+      [ "6", "11", "13", "8" ],
+      [ "7", "11", "13", "13" ]
+    ]
+  },
+  "Nine point eight": {
+    "artist": "Mili",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "5", "8", "12", "6" ],
+      [ "5", "9", "12", "5" ],
+      [ "6", "9", "12", "7" ],
+      [ "7", "11", "-", "8" ]
+    ]
+  },
+  "Sairai": {
+    "artist": "Shinichi Kobayashi",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "3", "-", "8", "4" ],
+      [ "3", "6", "9", "5" ],
+      [ "5", "-", "9", "3" ],
+      [ "5", "7", "12", "7" ]
+    ]
+  },
+  "Undo": {
+    "artist": "Yuk-cheung Chun",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "5", "7", "10", "-" ],
+      [ "4", "7", "10", "-" ],
+      [ "4", "8", "10", "-" ]
+    ]
+  },
+  "Utopiosphere": {
+    "artist": "Mili",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "4", "6", "10", "3" ],
+      [ "4", "8", "-", "4" ],
+      [ "4", "8", "12", "6" ],
+      [ "5", "11", "-", "3" ]
+    ]
+  },
+  "YUBIKIRI-GENMAN": {
+    "artist": "Mili",
+    "category": "DEEMO",
+    "difficulty": [
+      [ "5", "10", "-", "-" ],
+      [ "5", "-", "11", "-" ],
+      [ "4", "-", "10", "-" ],
+      [ "4", "-", "10", "3" ]
+    ]
+  },
+  "AXION": {
+    "artist": "sakuzyo",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "4", "-", "12", "-" ],
+      [ "5", "12", "-", "9" ],
+      [ "5", "11", "13", "12" ],
+      [ "5", "13", "-", "-" ]
+    ]
+  },
+  "CODE NAME : ZERO": {
+    "artist": "NeLiME",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "5", "12", "-", "12" ],
+      [ "6", "12", "15", "-" ],
+      [ "5", "12", "13", "13" ],
+      [ "6", "12", "14", "-" ]
+    ]
+  },
+  "conflict": {
+    "artist": "Cranky + siromaru",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "5", "11", "14", "-" ],
+      [ "6", "12", "-", "13" ],
+      [ "4", "11", "14", "13" ],
+      [ "7", "11", "14", "-" ]
+    ]
+  },
+  "EMber": {
+    "artist": "SIHanatsuka",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "5", "12", "-", "-" ],
+      [ "6", "10", "-", "12" ],
+      [ "4", "10", "13", "-" ],
+      [ "6", "12", "15", "12" ]
+    ]
+  },
+  "Entrance": {
+    "artist": "Ice",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "7", "-", "15", "-" ],
+      [ "7", "13", "-", "-" ],
+      [ "9", "-", "15", "14" ],
+      [ "6", "12", "15", "14" ]
+    ]
+  },
+  "L": {
+    "artist": "Ice",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "3", "12", "-", "12" ],
+      [ "5", "-", "14", "-" ],
+      [ "6", "12", "15", "14" ],
+      [ "8", "-", "15", "13" ]
+    ]
+  },
+  "Les Parfums de L'Amour": {
+    "artist": "naotyu-",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "4", "-", "13", "-" ],
+      [ "7", "-", "13", "-" ],
+      [ "5", "-", "12", "-" ],
+      [ "8", "14", "-", "-" ]
+    ]
+  },
+  "Mammal": {
+    "artist": "Teikyou",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "6", "12", "15", "-" ],
+      [ "6", "12", "15", "13" ],
+      [ "6", "12", "14", "-" ],
+      [ "8", "12", "15", "13" ]
+    ]
+  },
+  "Myosotis": {
+    "artist": "M2U",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "5", "10", "13", "-" ],
+      [ "6", "12", "-", "10" ],
+      [ "5", "10", "13", "-" ],
+      [ "7", "-", "14", "12" ]
+    ]
+  },
+  "Old Gold": {
+    "artist": "Cranky",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "6", "11", "-", "6" ],
+      [ "6", "11", "13", "-" ],
+      [ "5", "10", "13", "-" ],
+      [ "6", "11", "13", "10" ]
+    ]
+  },
+  "Shoot out": {
+    "artist": "Tsukasa",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "3", "8", "12", "-" ],
+      [ "4", "11", "13", "-" ],
+      [ "4", "10", "13", "-" ],
+      [ "5", "9", "13", "-" ]
+    ]
+  },
+  "Ververg": {
+    "artist": "Ani",
+    "category": "CYTUS",
+    "difficulty": [
+      [ "4", "-", "9", "4" ],
+      [ "4", "-", "12", "8" ],
+      [ "4", "10", "-", "-" ],
+      [ "4", "12", "-", "-" ]
+    ]
+  },
+  "Cyberozar": {
+    "artist": "sakuzyo",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "5", "-", "12", "-" ],
+      [ "6", "11", "-", "11" ],
+      [ "5", "-", "13", "11" ],
+      [ "9", "-", "14", "-" ]
+    ]
+  },
+  "Garakuta Doll Play": {
+    "artist": "t+pazolite",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "6", "13", "-", "14" ],
+      [ "9", "12", "15", "-" ],
+      [ "8", "-", "15", "14" ],
+      [ "7", "12", "15", "12" ]
+    ]
+  },
+  "Ikazuchi": {
+    "artist": "Takenobu Mitsuyoshi",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "8", "-", "15", "-" ],
+      [ "8", "-", "15", "15" ],
+      [ "6", "13", "15", "14" ],
+      [ "7", "13", "15", "14" ]
+    ]
+  },
+  "Ray Tuning": {
+    "artist": "NayutalieN",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "5", "12", "-", "11" ],
+      [ "6", "13", "-", "-" ],
+      [ "6", "13", "-", "9" ],
+      [ "7", "13", "-", "-" ]
+    ]
+  },
+  "The wheel to the right": {
+    "artist": "Sampling Masters MEGA",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "6", "11", "14", "-" ],
+      [ "7", "13", "-", "12" ],
+      [ "6", "12", "15", "12" ],
+      [ "6", "13", "15", "-" ]
+    ]
+  },
+  "Trrricksters!!": {
+    "artist": "s-don vs. Hino Isuka",
+    "category": "CHUNITHM",
+    "difficulty": [
+      [ "6", "-", "14", "13" ],
+      [ "8", "13", "15", "-" ],
+      [ "8", "12", "15", "13" ],
+      [ "8", "13", "15", "14" ]
+    ]
+  },
+  "안아줘": {
+    "artist": "TAK/seibin",
+    "category": "ESTIMATE",
+    "difficulty": [
+      [ "3", "7", "-", "5" ],
+      [ "5", "9", "12", "7" ],
+      [ "5", "9", "-", "-" ],
+      [ "6", "-", "11", "-" ]
+    ]
+  },
+  "HELIX": {
+    "artist": "ESTi",
+    "category": "ESTIMATE",
+    "difficulty": [
+      [ "6", "-", "12", "-" ],
+      [ "7", "10", "13", "13" ],
+      [ "7", "10", "13", "12" ],
+      [ "6", "11", "13", "12" ]
+    ]
+  },
+  "In My Heart ~ESTi Remix~": {
+    "artist": "ESTi",
+    "category": "ESTIMATE",
+    "difficulty": [
+      [ "4", "9", "-", "5" ],
+      [ "5", "11", "-", "-" ],
+      [ "5", "10", "-", "6" ],
+      [ "6", "10", "-", "4" ]
+    ]
+  },
+  "Obelisque": {
+    "artist": "ESTi & M2U",
+    "category": "ESTIMATE",
+    "difficulty": [
+      [ "7", "-", "12", "-" ],
+      [ "6", "10", "13", "8" ],
+      [ "7", "10", "12", "9" ],
+      [ "7", "11", "13", "11" ]
+    ]
+  },
+  "U-NIVUS": {
+    "artist": "ESTi",
+    "category": "ESTIMATE",
+    "difficulty": [
+      [ "5", "9", "-", "5" ],
+      [ "5", "11", "-", "5" ],
+      [ "4", "11", "-", "-" ],
+      [ "6", "11", "-", "-" ]
+    ]
+  },
+  "공성전 ~Pierre Blanche, Yonce Remix~": {
+    "artist": "Pierre Blanche",
+    "category": "NEXON",
+    "difficulty": [
+      [ "7", "11", "14", "11" ],
+      [ "7", "12", "14", "11" ],
+      [ "7", "12", "14", "12" ],
+      [ "7", "13", "-", "10" ]
+    ]
+  },
+  "광명의 루 : 루 라바다": {
+    "artist": "Studio EIM",
+    "category": "NEXON",
+    "difficulty": [
+      [ "6", "10", "-", "11" ],
+      [ "6", "9", "13", "11" ],
+      [ "5", "11", "-", "13" ],
+      [ "6", "11", "14", "11" ]
+    ]
+  },
+  "부여성 ~Blosso Remix~": {
+    "artist": "Blosso",
+    "category": "NEXON",
+    "difficulty": [
+      [ "7", "10", "12", "10" ],
+      [ "5", "10", "13", "10" ],
+      [ "7", "10", "12", "11" ],
+      [ "8", "13", "-", "8" ]
+    ]
+  },
+  "소년 모험가 ~SiNA Remix~": {
+    "artist": "SiNA",
+    "category": "NEXON",
+    "difficulty": [
+      [ "4", "8", "13", "9" ],
+      [ "6", "9", "13", "12" ],
+      [ "7", "9", "12", "12" ],
+      [ "7", "12", "-", "11" ]
+    ]
+  },
+  "어릴적 할머니가 들려주신 옛 전설": {
+    "artist": "HanStone",
+    "category": "NEXON",
+    "difficulty": [
+      [ "2", "9", "-", "2" ],
+      [ "6", "10", "-", "3" ],
+      [ "4", "9", "-", "5" ],
+      [ "5", "9", "-", "3" ]
+    ]
+  },
+  "연합군과 제국군": {
+    "artist": "NEXON",
+    "category": "NEXON",
+    "difficulty": [
+      [ "4", "9", "-", "-" ],
+      [ "4", "8", "12", "10" ],
+      [ "6", "11", "-", "-" ],
+      [ "7", "13", "-", "-" ]
+    ]
+  },
+  "전설이 시작된 곳 ~VoidRover Remix~": {
+    "artist": "VoidRover",
+    "category": "NEXON",
+    "difficulty": [
+      [ "8", "-", "15", "13" ],
+      [ "7", "13", "15", "12" ],
+      [ "7", "13", "15", "14" ],
+      [ "8", "-", "14", "13" ]
+    ]
+  },
+  "죽음의 신 : 크로우 크루아흐": {
+    "artist": "Studio EIM",
+    "category": "NEXON",
+    "difficulty": [
+      [ "6", "-", "11", "12" ],
+      [ "6", "11", "15", "12" ],
+      [ "5", "11", "-", "13" ],
+      [ "8", "12", "15", "13" ]
+    ]
+  },
+  "최종무곡": {
+    "artist": "HanStone",
+    "category": "NEXON",
+    "difficulty": [
+      [ "6", "12", "-", "-" ],
+      [ "6", "10", "13", "9" ],
+      [ "5", "9", "13", "9" ],
+      [ "6", "10", "14", "11" ]
+    ]
+  },
+  "카트라이더 Mashup ~Cosmograph Remix~": {
+    "artist": "Cosmograph",
+    "category": "NEXON",
+    "difficulty": [
+      [ "6", "10", "-", "11" ],
+      [ "8", "11", "14", "14" ],
+      [ "7", "10", "12", "-" ],
+      [ "8", "12", "15", "13" ]
+    ]
+  },
+  "카트라이더 Mashup ~Pure 100% Remix~": {
+    "artist": "Pure 100%",
+    "category": "NEXON",
+    "difficulty": [
+      [ "6", "-", "13", "13" ],
+      [ "6", "10", "13", "12" ],
+      [ "7", "9", "13", "9" ],
+      [ "7", "-", "14", "12" ]
+    ]
+  },
+  "카트라이더, 크레이지아케이드, 버블파이터 Main theme ~CHUCK Remix~": {
+    "artist": "CHUCK",
+    "category": "NEXON",
+    "difficulty": [
+      [ "4", "9", "-", "13" ],
+      [ "7", "11", "14", "13" ],
+      [ "7", "-", "13", "13" ],
+      [ "8", "-", "13", "13" ]
+    ]
+  },
+  "Apparition": {
+    "artist": "ESTi",
+    "category": "NEXON",
+    "difficulty": [
+      [ "2", "4", "9", "7" ],
+      [ "7", "11", "-", "-" ],
+      [ "6", "12", "-", "9" ],
+      [ "7", "10", "12", "9" ]
+    ]
+  },
+  "Constant Moderato": {
+    "artist": "Mitsukiyo",
+    "category": "NEXON",
+    "difficulty": [
+      [ "5", "9", "-", "7" ],
+      [ "3", "7", "10", "5" ],
+      [ "6", "10", "-", "6" ],
+      [ "4", "-", "12", "5" ]
+    ]
+  },
+  "It's my war now": {
+    "artist": "김동현",
+    "category": "NEXON",
+    "difficulty": [
+      [ "8", "-", "13", "9" ],
+      [ "7", "11", "14", "10" ],
+      [ "7", "-", "14", "10" ],
+      [ "7", "12", "14", "11" ]
+    ]
+  },
+  "Lacheln, The City of Dreams": {
+    "artist": "NEXON",
+    "category": "NEXON",
+    "difficulty": [
+      [ "5", "7", "-", "7" ],
+      [ "6", "11", "-", "7" ],
+      [ "6", "-", "11", "7" ],
+      [ "4", "10", "-", "4" ]
+    ]
+  },
+  "Reminiscence": {
+    "artist": "Nauts",
+    "category": "NEXON",
+    "difficulty": [
+      [ "3", "5", "10", "5" ],
+      [ "4", "9", "12", "6" ],
+      [ "5", "11", "-", "6" ],
+      [ "4", "9", "12", "5" ]
+    ]
+  },
+  "Start The Adventure ~SOPHI Remix~": {
+    "artist": "SOPHI",
+    "category": "NEXON",
+    "difficulty": [
+      [ "3", "8", "-", "9" ],
+      [ "5", "-", "13", "10" ],
+      [ "6", "-", "12", "11" ],
+      [ "4", "11", "-", "12" ]
+    ]
+  },
+  "Tayberrs - Collapsed Paradise": {
+    "artist": "정영걸",
+    "category": "NEXON",
+    "difficulty": [
+      [ "3", "7", "12", "7" ],
+      [ "5", "-", "11", "7" ],
+      [ "6", "-", "12", "8" ],
+      [ "7", "12", "-", "8" ]
+    ]
+  },
+  "The Little Adventurer": {
+    "artist": "Studio EIM",
+    "category": "NEXON",
+    "difficulty": [
+      [ "4", "7", "-", "3" ],
+      [ "7", "9", "-", "3" ],
+      [ "6", "10", "-", "-" ],
+      [ "3", "10", "-", "-" ]
+    ]
+  },
+  "The Raindrop Flower ~jam-jam Remix~": {
+    "artist": "jam-jam",
+    "category": "NEXON",
+    "difficulty": [
+      [ "7", "12", "-", "9" ],
+      [ "6", "11", "13", "9" ],
+      [ "6", "-", "13", "9" ],
+      [ "6", "11", "13", "10" ]
+    ]
+  },
+  "Bang!!": {
+    "artist": "BOOGEY VOXX",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "3", "-", "10", "6" ],
+      [ "4", "7", "11", "-" ],
+      [ "3", "8", "-", "8" ],
+      [ "5", "10", "12", "6" ]
+    ]
+  },
+  "can you feel it": {
+    "artist": "MK",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "4", "8", "12", "5" ],
+      [ "5", "11", "-", "6" ],
+      [ "2", "5", "9", "6" ],
+      [ "6", "11", "-", "7" ]
+    ]
+  },
+  "Comet Coaster": {
+    "artist": "DJ Noriken & aran",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "4", "10", "13", "12" ],
+      [ "6", "9", "13", "13" ],
+      [ "4", "8", "12", "13" ],
+      [ "7", "12", "14", "13" ]
+    ]
+  },
+  "Cthugha": {
+    "artist": "USAO",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "5", "12", "15", "14" ],
+      [ "8", "12", "15", "14" ],
+      [ "6", "10", "15", "14" ],
+      [ "8", "12", "15", "14" ]
+    ]
+  },
+  "DataErr0r": {
+    "artist": "USAO",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "6", "11", "13", "10" ],
+      [ "7", "-", "14", "13" ],
+      [ "5", "8", "13", "12" ],
+      [ "7", "12", "15", "-" ]
+    ]
+  },
+  "Dysthymia": {
+    "artist": "a_hisa",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "5", "11", "14", "12" ],
+      [ "6", "10", "15", "-" ],
+      [ "6", "11", "14", "13" ],
+      [ "6", "12", "15", "13" ]
+    ]
+  },
+  "ENERGY SYNERGY MATRIX": {
+    "artist": "Tanchiky",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "6", "11", "14", "13" ],
+      [ "6", "10", "14", "13" ],
+      [ "5", "10", "14", "-" ],
+      [ "6", "11", "14", "11" ]
+    ]
+  },
+  "Koi no Moonlight": {
+    "artist": "REDALiCE",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "3", "8", "12", "3" ],
+      [ "5", "8", "11", "6" ],
+      [ "2", "6", "11", "4" ],
+      [ "5", "11", "-", "3" ]
+    ]
+  },
+  "Lights of Muse": {
+    "artist": "Ayatsugu_Otowa",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "7", "12", "14", "13" ],
+      [ "7", "11", "14", "13" ],
+      [ "5", "8", "13", "14" ],
+      [ "8", "12", "15", "13" ]
+    ]
+  },
+  "MUSEDASH!!!!": {
+    "artist": "Dan@Yomi",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "4", "-", "12", "6" ],
+      [ "5", "8", "-", "5" ],
+      [ "4", "6", "11", "9" ],
+      [ "6", "10", "12", "11" ]
+    ]
+  },
+  "Pancake is Love": {
+    "artist": "3R2",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "5", "8", "10", "-" ],
+      [ "7", "12", "-", "3" ],
+      [ "4", "7", "-", "4" ],
+      [ "5", "10", "12", "-" ]
+    ]
+  },
+  "PUPA": {
+    "artist": "3R2",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "7", "12", "15", "15" ],
+      [ "7", "12", "15", "15" ],
+      [ "7", "11", "14", "15" ],
+      [ "10", "13", "15", "14" ]
+    ]
+  },
+  "tape/stop/night": {
+    "artist": "Sugar & Co.",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "3", "10", "-", "-" ],
+      [ "5", "11", "-", "6" ],
+      [ "2", "7", "-", "5" ],
+      [ "5", "8", "12", "5" ]
+    ]
+  },
+  "The 90's Decision": {
+    "artist": "MYUKKE.",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "5", "11", "13", "6" ],
+      [ "6", "11", "13", "9" ],
+      [ "5", "9", "12", "-" ],
+      [ "6", "11", "13", "9" ]
+    ]
+  },
+  "XING": {
+    "artist": "ginhika",
+    "category": "MUSE DASH",
+    "difficulty": [
+      [ "5", "10", "12", "12" ],
+      [ "6", "10", "14", "-" ],
+      [ "8", "11", "-", "12" ],
+      [ "5", "10", "13", "9" ]
+    ]
+  },
+  "느낌": {
+    "artist": "Kang Eun Su/eridanus",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "2", "4", "6", "3" ],
+      [ "3", "5", "8", "6" ],
+      [ "1", "4", "8", "7" ],
+      [ "4", "8", "10", "7" ]
+    ]
+  },
+  "A Site De La Rue": {
+    "artist": "STREME REVERIE",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "8", "12", "12" ],
+      [ "7", "11", "14", "14" ],
+      [ "7", "10", "14", "14" ],
+      [ "8", "12", "15", "14" ]
+    ]
+  },
+  "Appeal": {
+    "artist": "Andy Lee",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "1", "5", "7", "6" ],
+      [ "2", "6", "10", "6" ],
+      [ "2", "5", "8", "6" ],
+      [ "3", "7", "10", "7" ]
+    ]
+  },
+  "Aquaris": {
+    "artist": "CROOVE",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "6", "8", "12", "10" ],
+      [ "5", "10", "12", "11" ],
+      [ "4", "7", "12", "12" ],
+      [ "6", "10", "12", "11" ]
+    ]
+  },
+  "Back for more": {
+    "artist": "Ruby Tuesday",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "4", "7", "10", "7" ],
+      [ "3", "6", "8", "8" ],
+      [ "3", "6", "10", "7" ],
+      [ "4", "7", "11", "9" ]
+    ]
+  },
+  "Complex": {
+    "artist": "CROOVE",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "8", "11", "11" ],
+      [ "6", "9", "14", "13" ],
+      [ "4", "8", "13", "11" ],
+      [ "5", "10", "13", "13" ]
+    ]
+  },
+  "Envy Mask": {
+    "artist": "CROOVE/Mario Bolden",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "6", "8", "10", "8" ],
+      [ "6", "8", "11", "9" ],
+      [ "4", "8", "11", "8" ],
+      [ "3", "8", "13", "8" ]
+    ]
+  },
+  "Lie Lie": {
+    "artist": "Andy Lee",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "4", "7", "10", "7" ],
+      [ "3", "8", "11", "7" ],
+      [ "4", "7", "11", "9" ],
+      [ "4", "7", "10", "8" ]
+    ]
+  },
+  "LIMBO": {
+    "artist": "Mori+",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "8", "12", "15", "15" ],
+      [ "8", "12", "15", "15" ],
+      [ "9", "13", "15", "15" ],
+      [ "10", "12", "15", "15" ]
+    ]
+  },
+  "Look out ~Here comes my love~": {
+    "artist": "Ruby Tuesday",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "2", "5", "9", "5" ],
+      [ "3", "7", "9", "6" ],
+      [ "3", "6", "8", "7" ],
+      [ "3", "6", "10", "8" ]
+    ]
+  },
+  "Metagalactic": {
+    "artist": "xxdbxx",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "8", "13", "12" ],
+      [ "5", "10", "12", "13" ],
+      [ "6", "9", "13", "12" ],
+      [ "6", "8", "13", "12" ]
+    ]
+  },
+  "Nihilism": {
+    "artist": "nato",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "9", "13", "14" ],
+      [ "7", "11", "15", "14" ],
+      [ "7", "10", "14", "13" ],
+      [ "6", "11", "14", "14" ]
+    ]
+  },
+  "Sand Storm": {
+    "artist": "CROOVE",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "8", "12", "13" ],
+      [ "6", "11", "13", "12" ],
+      [ "6", "11", "13", "12" ],
+      [ "5", "9", "13", "13" ]
+    ]
+  },
+  "Showdown(Andy Lee)": {
+    "artist": "Andy Lee",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "7", "11", "11" ],
+      [ "5", "9", "11", "10" ],
+      [ "5", "9", "12", "13" ],
+      [ "6", "8", "12", "11" ]
+    ]
+  },
+  "Sparrow": {
+    "artist": "xxdbxx/CROOVE",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "6", "8", "13", "10" ],
+      [ "5", "8", "13", "11" ],
+      [ "6", "9", "12", "11" ],
+      [ "6", "10", "13", "11" ]
+    ]
+  },
+  "Stay": {
+    "artist": "Jeon Jun Kyu/Mario Bolden",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "6", "8", "10", "9" ],
+      [ "6", "8", "11", "9" ],
+      [ "5", "7", "10", "9" ],
+      [ "6", "8", "12", "10" ]
+    ]
+  },
+  "Weird Wave": {
+    "artist": "Joyrock",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "9", "13", "13" ],
+      [ "6", "9", "13", "13" ],
+      [ "5", "11", "13", "13" ],
+      [ "5", "9", "13", "14" ]
+    ]
+  },
+  "Zeroize": {
+    "artist": "Forte Escape",
+    "category": "EZ2ON",
+    "difficulty": [
+      [ "5", "8", "12", "14" ],
+      [ "7", "11", "14", "14" ],
+      [ "8", "11", "14", "14" ],
+      [ "6", "10", "15", "14" ]
+    ]
+  },
+  "Ariant ~ned Remix~": {
+    "artist": "ned",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "7", "9", "12", "12" ],
+      [ "7", "11", "15", "14" ],
+      [ "8", "12", "14", "15" ],
+      [ "7", "11", "14", "14" ]
+    ]
+  },
+  "Catch Your Dreams!": {
+    "artist": "StudioEIM",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "4", "7", "10", "8" ],
+      [ "5", "8", "12", "9" ],
+      [ "5", "8", "11", "9" ],
+      [ "5", "8", "12", "11" ]
+    ]
+  },
+  "Dynamic Universe": {
+    "artist": "유종호 (NEXON)",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "2", "6", "8", "6" ],
+      [ "4", "7", "9", "6" ],
+      [ "3", "7", "9", "8" ],
+      [ "3", "6", "11", "8" ]
+    ]
+  },
+  "Fairytale ~Pan Remix~": {
+    "artist": "Pan",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "5", "8", "13", "11" ],
+      [ "4", "8", "13", "13" ],
+      [ "4", "7", "13", "12" ],
+      [ "4", "7", "14", "13" ]
+    ]
+  },
+  "Frozen Link": {
+    "artist": "유종호 (NEXON)",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "2", "6", "9", "6" ],
+      [ "2", "5", "8", "6" ],
+      [ "2", "6", "9", "7" ],
+      [ "2", "6", "10", "7" ]
+    ]
+  },
+  "Leafre (EDM ver.)": {
+    "artist": "신유식 (NEXON)",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "3", "7", "9", "6" ],
+      [ "4", "8", "9", "7" ],
+      [ "3", "7", "8", "8" ],
+      [ "2", "6", "9", "7" ]
+    ]
+  },
+  "Missing You ~SOPHI Remix~": {
+    "artist": "SOPHI",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "1", "5", "12", "11" ],
+      [ "3", "8", "14", "14" ],
+      [ "3", "7", "11", "11" ],
+      [ "3", "6", "12", "11" ]
+    ]
+  },
+  "Moonlight Shadow ~Paul Bazooka Remix~": {
+    "artist": "Paul Bazooka",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "7", "11", "13", "12" ],
+      [ "5", "8", "13", "11" ],
+      [ "7", "10", "13", "11" ],
+      [ "5", "7", "12", "11" ]
+    ]
+  },
+  "Smile": {
+    "artist": "S.I.D-Sound",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "5", "7", "11", "8" ],
+      [ "5", "8", "11", "8" ],
+      [ "4", "6", "11", "9" ],
+      [ "3", "7", "10", "10" ]
+    ]
+  },
+  "Star Bubble": {
+    "artist": "Yeyosound",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "4", "7", "10", "6" ],
+      [ "5", "9", "13", "9" ],
+      [ "4", "6", "11", "8" ],
+      [ "5", "8", "12", "9" ]
+    ]
+  },
+  "Story of Maple": {
+    "artist": "Mycin.T x ned",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "6", "8", "12", "13" ],
+      [ "6", "9", "14", "10" ],
+      [ "6", "9", "12", "13" ],
+      [ "6", "9", "14", "13" ]
+    ]
+  },
+  "Temple of Time (EDM ver.)": {
+    "artist": "유종호/박지훈 (NEXON)",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "5", "8", "10", "5" ],
+      [ "4", "7", "9", "7" ],
+      [ "3", "5", "10", "7" ],
+      [ "5", "8", "10", "8" ]
+    ]
+  },
+  "The Lake of Oblivion ~jam-jam Remix~": {
+    "artist": "jam-jam",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "5", "8", "11", "11" ],
+      [ "5", "8", "13", "12" ],
+      [ "4", "9", "12", "13" ],
+      [ "5", "8", "14", "13" ]
+    ]
+  },
+  "The Tune of the Azure Light ~Parang Remix~": {
+    "artist": "Parang",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "4", "7", "11", "14" ],
+      [ "8", "12", "15", "14" ],
+      [ "7", "10", "14", "14" ],
+      [ "5", "10", "14", "14" ]
+    ]
+  },
+  "Where Stars Rest": {
+    "artist": "Initium SoundLab",
+    "category": "MAPLESTORY",
+    "difficulty": [
+      [ "2", "4", "7", "3" ],
+      [ "2", "5", "8", "3" ],
+      [ "2", "5", "8", "7" ],
+      [ "3", "5", "8", "5" ]
+    ]
+  },
+  "From Hell to Breakfast": {
+    "artist": "Daisuke Kurosawa",
+    "category": "CLEAR PASS",
+    "difficulty": [
+      [ "4", "7", "10", "10" ],
+      [ "7", "10", "14", "13" ],
+      [ "7", "9", "13", "13" ],
+      [ "6", "9", "14", "13" ]
+    ]
+  },
+  "SURVIVOR": {
+    "artist": "jam-jam",
+    "category": "CLEAR PASS",
+    "difficulty": [
+      [ "4", "7", "11", "10" ],
+      [ "5", "8", "12", "11" ],
+      [ "3", "7", "11", "9" ],
+      [ "3", "6", "12", "11" ]
+    ]
+  },
+  "Ashita e no Kodou": {
+    "artist": "Falcom Sound Team jdk/Kanako Kotera",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "2", "5", "8", "6" ],
+      [ "5", "7", "10", "6" ],
+      [ "5", "6", "9", "5" ],
+      [ "4", "8", "10", "9" ]
+    ]
+  },
+  "Blue Destination": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "3", "5", "8", "2" ],
+      [ "3", "6", "9", "3" ],
+      [ "3", "6", "10", "6" ],
+      [ "4", "7", "10", "7" ]
+    ]
+  },
+  "GENESIS BEYOND THE BEGINNING": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "5", "9", "13", "9" ],
+      [ "5", "9", "12", "9" ],
+      [ "4", "9", "13", "10" ],
+      [ "5", "8", "13", "11" ]
+    ]
+  },
+  "Inevitable Struggle": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "5", "7", "12", "9" ],
+      [ "5", "9", "12", "9" ],
+      [ "5", "8", "12", "9" ],
+      [ "6", "8", "13", "12" ]
+    ]
+  },
+  "NORSE WIND": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "5", "8", "13", "11" ],
+      [ "6", "10", "14", "13" ],
+      [ "7", "10", "14", "13" ],
+      [ "7", "12", "14", "14" ]
+    ]
+  },
+  "Silver Will": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "2", "5", "7", "4" ],
+      [ "3", "6", "10", "4" ],
+      [ "3", "6", "11", "5" ],
+      [ "5", "8", "11", "7" ]
+    ]
+  },
+  "STEP AHEAD": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "5", "8", "12", "8" ],
+      [ "5", "10", "13", "8" ],
+      [ "6", "9", "12", "9" ],
+      [ "7", "9", "14", "12" ]
+    ]
+  },
+  "SUNSHINE COASTLINE": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "4", "6", "13", "12" ],
+      [ "5", "9", "13", "12" ],
+      [ "7", "9", "13", "13" ],
+      [ "7", "8", "14", "14" ]
+    ]
+  },
+  "TO MAKE THE END OF BATTLE": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "4", "10", "14", "13" ],
+      [ "5", "9", "14", "13" ],
+      [ "4", "7", "12", "12" ],
+      [ "5", "8", "14", "12" ]
+    ]
+  },
+  "To the Future.": {
+    "artist": "Falcom Sound Team jdk",
+    "category": "FALCOM",
+    "difficulty": [
+      [ "1", "3", "6", "7" ],
+      [ "4", "7", "10", "5" ],
+      [ "2", "6", "10", "6" ],
+      [ "5", "7", "11", "9" ]
+    ]
+  },
+  "BlueWhite": {
+    "artist": "HAYAKO",
+    "category": "RESPECT",
+    "difficulty": [
+      [ "4", "9", "15", "14" ],
+      [ "6", "9", "15", "15" ],
+      [ "7", "10", "15", "15" ],
+      [ "6", "8", "15", "15" ]
+    ]
+  }
+}  
