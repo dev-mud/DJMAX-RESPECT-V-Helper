@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, QMessageBox, QCheckBox, QSpinBox
+from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, QMessageBox, QCheckBox, QSpinBox, QComboBox
 from PyQt5.QtWidgets import QLabel, QPushButton, QLineEdit, QTextEdit
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -69,11 +69,11 @@ class MainWindow(QMainWindow):
         self.show()
         
     def init_font(self):
-        self.font = QFont()
-        self.font.setFamily('돋움')
-        self.font.setPointSize(14)
-        self.smallfont = QFont()
-        self.smallfont.setPointSize(12)
+        self.aditional_font = []
+        Noto_Sans_font_path = 'font/Noto_Sans_KR/NotoSansKR-Bold.ttf'
+        QFontDatabase.addApplicationFont(Noto_Sans_font_path)
+        self.aditional_font.append('Noto Sans KR')
+
         
     def init_stacked_widget(self):
         self.stack = QStackedWidget(self)
@@ -82,16 +82,28 @@ class MainWindow(QMainWindow):
         self.stack.addWidget(self.multi_select_widget)
         self.stack.addWidget(self.roulette_widget)
         
-    def set_css(self):   
+    def set_css(self):
+        palette = self.palette()
+        palette.setBrush(self.backgroundRole(), QBrush(QImage('image/main_background.jpg')))
+        self.setPalette(palette)
+        
+        """
+        self.setStyleSheet(
+            'background-color : rgb(255, 191, 0)'
+        )
+        """
+
         self.option_label.setStyleSheet(
             'QLabel {'
             f'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
         self.memo_label.setStyleSheet(
             'QLabel {'
             f'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -100,6 +112,7 @@ class MainWindow(QMainWindow):
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
             'font : bold 28px;'
+            'font-family : Noto Sans KR;'
             'border : 2px solid rgb(47,54,95);'
             '}'
         )
@@ -108,17 +121,17 @@ class MainWindow(QMainWindow):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -126,17 +139,17 @@ class MainWindow(QMainWindow):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -145,14 +158,17 @@ class MainWindow(QMainWindow):
                 'QPushButton {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::hover {'
                 f'background-color : rgb(47,54,95);'
                 'color : rgb(247,241,237);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::pressed {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
             )
         
@@ -161,14 +177,17 @@ class MainWindow(QMainWindow):
                 'QPushButton {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::hover {'
                 f'background-color : rgb(47,54,95);'
                 'color : rgb(247,241,237);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::pressed {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
             )
         
@@ -177,14 +196,17 @@ class MainWindow(QMainWindow):
                 'QPushButton {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::hover {'
                 f'background-color : rgb(47,54,95);'
                 'color : rgb(247,241,237);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::pressed {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
             )
             
@@ -193,30 +215,67 @@ class MainWindow(QMainWindow):
                 'QPushButton {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::hover {'
                 f'background-color : rgb(47,54,95);'
                 'color : rgb(247,241,237);'
+                'font-family : Noto Sans KR;'
                 '}'
                 'QPushButton::pressed {'
                 f'background-color : rgb(247,241,237);'
                 'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
                 '}'
             )
-            
+  
         for attribute_label in self.attribute_label:
             attribute_label.setStyleSheet(
                 'QLabel {'
                 f'background-color : rgb(47,54,95);'
                 'color : rgb(247,241,237);'
-                'font : bold;'
+                'font-size : 15px;'
+                'font-family : Noto Sans KR;'
                 '}'
             )
-            
+
+        for data_label in self.data_label:
+            data_label.setStyleSheet(
+                'QLabel {'
+                f'font-size : 15px;'
+                'font-family : Noto Sans KR;'
+                '}'
+            )    
+
+        self.option_checkbox.setStyleSheet(
+            'QCheckBox {'
+            f'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.option_checkbox_2.setStyleSheet(
+            'QCheckBox {'
+            f'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.multi_select_count_spinbox.setStyleSheet(
+            'QSpinBox {'
+            f'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.option_checkbox_3.setStyleSheet(
+            'QCheckBox {'
+            f'font-family : Noto Sans KR;'
+            '}'
+        )
+
         for filter_label in self.filter_attribute:
             filter_label.setStyleSheet(
                 'QLabel {'
                 f'font : bold;'
+                'font-family : Noto Sans KR;'
                 '}'
             )
         
@@ -336,15 +395,12 @@ class MainWindow(QMainWindow):
         for i, key in enumerate(self.keys):
             self.attribute_label.append(QLabel(key))
             self.data_label.append(QLabel())
-            self.attribute_label[i].setFont(self.smallfont)
-            self.data_label[i].setFont(self.smallfont)
             self.v_layout[0].addWidget(self.attribute_label[i])
             self.v_layout[1].addWidget(self.data_label[i])
             
         self.attribute_label.append(QLabel('FLOOR'))
         self.data_label.append(QLabel(''))
-        self.attribute_label[6].setFont(self.smallfont)
-        self.data_label[6].setFont(self.smallfont)
+
         self.v_layout[0].addWidget(self.attribute_label[6])
         self.v_layout[1].addWidget(self.data_label[6])
             
@@ -471,12 +527,14 @@ class MainWindow(QMainWindow):
                 + "background-color : rgb(247,241,237);"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
                 + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
-                + "font : 10px, bold;"
+                + "font-size : 10px;"
+                + "font-family : Noto Sans KR;"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
-                + "font : 10px, bold;"
+                + "font-size : 10px;"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
         
@@ -489,11 +547,13 @@ class MainWindow(QMainWindow):
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
                 + "color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "color : rgb(247,241,237);"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
         
@@ -505,12 +565,14 @@ class MainWindow(QMainWindow):
             self.difficulty_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
         
@@ -524,10 +586,12 @@ class MainWindow(QMainWindow):
             self.level_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             
@@ -591,7 +655,7 @@ class MainWindow(QMainWindow):
             if category == label.text():
                 label.setStyleSheet("background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
-                + "font : bold;"
+                + "font-family : Noto Sans KR;"
                 )
         
         if button_label.text().split(' ')[0] not in list(str(self.button)): #버튼 체크
@@ -602,7 +666,7 @@ class MainWindow(QMainWindow):
             if str(button) == button_label.text().split(' ')[0]:
                 button_label.setStyleSheet("background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "color : rgb(247, 241, 237);"
-                + "font : bold;"
+                + "font-family : Noto Sans KR;"
                 )
     
     def click_option_checkbox_2(self):
@@ -663,7 +727,7 @@ class MainWindow(QMainWindow):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgba(47,54,95,70);'
-            'font : bold;'
+            + 'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -722,17 +786,17 @@ class MainWindow(QMainWindow):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -748,7 +812,8 @@ class MainWindow(QMainWindow):
                 + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
                 + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
-                + "font : 10px, bold;"
+                + "font-size : 10px;"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.category_flag[i] = False
@@ -758,12 +823,14 @@ class MainWindow(QMainWindow):
                 + "background-color : rgb(247,241,237);"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
                 + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
-                + "font : 10px, bold;"
+                + "font-size : 10px;"
+                + "font-family : Noto Sans KR;"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                 + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
-                + "font : 10px, bold;"
+                + "font-size : 10px;"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.category_flag[i] = True
@@ -774,6 +841,7 @@ class MainWindow(QMainWindow):
                 "QPushButton {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "color : rgb(247,241,237);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "}"
             )
@@ -783,11 +851,13 @@ class MainWindow(QMainWindow):
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
                 + "color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "color : rgb(247,241,237);"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.button_flag[i] = True
@@ -798,6 +868,7 @@ class MainWindow(QMainWindow):
                 "QPushButton {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
             )
@@ -806,12 +877,14 @@ class MainWindow(QMainWindow):
             self.difficulty_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.difficulty_flag[i] = True
@@ -821,6 +894,7 @@ class MainWindow(QMainWindow):
             self.level_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
                 + "}"
             )
@@ -829,10 +903,12 @@ class MainWindow(QMainWindow):
             self.level_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.level_flag[i] = True
@@ -845,7 +921,8 @@ class MainWindow(QMainWindow):
                     + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                     + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
                     + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
-                    + "font : 10px, bold;"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
                     + "}"
                 )
                 self.category_flag[i] = False
@@ -857,6 +934,7 @@ class MainWindow(QMainWindow):
                     "QPushButton {"
                     + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                     + "color : rgb(247,241,237);"
+                    + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                     + "}"
                 )
@@ -869,6 +947,7 @@ class MainWindow(QMainWindow):
                     "QPushButton {"
                     + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                     + "color : rgb(47,54,95);"
+                    + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                     + "}"
                 )
@@ -880,6 +959,7 @@ class MainWindow(QMainWindow):
                 button.setStyleSheet(
                     "QPushButton {"
                     + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
                     + "}"
                 )
@@ -893,12 +973,14 @@ class MainWindow(QMainWindow):
                     + "background-color : rgb(247,241,237);"
                     + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
                     + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
-                    + "font : 10px, bold;"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
                     + "}"
                     + "QPushButton::hover {"
                     + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
                     + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
-                    + "font : 10px, bold;"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
                     + "}"
                 )
                 self.category_flag[i] = True
@@ -910,11 +992,13 @@ class MainWindow(QMainWindow):
                     "QPushButton {"
                     + "background-color : rgb(247,241,237);"
                     + "color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                     + "}"
                     + "QPushButton::hover {"
                     + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                     + "color : rgb(247,241,237);"
+                    + "font-family : Noto Sans KR;"
                     + "}"
                 )
                 self.button_flag[i] = True
@@ -924,12 +1008,14 @@ class MainWindow(QMainWindow):
             button.setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "color : rgb(47,54,95);"
+                + "font-family : Noto Sans KR;"
                 + "}"
             )
             self.difficulty_flag[i] = True
@@ -940,10 +1026,12 @@ class MainWindow(QMainWindow):
                 button.setStyleSheet(
                     "QPushButton {"
                     + "background-color : rgb(247,241,237);"
+                    + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
                     + "}"
                     + "QPushButton::hover {"
                     + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "font-family : Noto Sans KR;"
                     + "}"
                 )
                 self.level_flag[i] = True
@@ -1080,19 +1168,20 @@ class RouletteWidget(QWidget):
         self.parent = parent
         self.count = 10
         self.roulette_rotate = 0
-        self.rainbow_palette = [[255, 150, 138], [255, 174, 165], [255, 197, 191], [255, 216, 190], [255, 200, 162], [212, 240, 240], [143, 202, 202], [204, 226, 203], [182, 207, 182], [151, 193, 169]]
-        self.max_time = 10000 #룰렛이 돌아가는 시간
+        self.roulette_palette = [[255, 150, 138], [212, 240, 240], [255, 174, 165], [143, 202, 202], [255, 197, 191], [204, 226, 203], [255, 216, 190], [182, 207, 182], [255, 200, 162], [151, 193, 169]]
+        self.max_time = 0 #룰렛이 돌아가는 시간
+        self.max_speed = 0
         self.frame = 143 #초당 프레임 수
         self.time_per_frame = int(1000 / self.frame)
-        self.roulette_speed = 1
-        self.acceleration = random.randrange(400, 600)/1000
+        self.roulette_speed = 0
+        self.acceleration = 0
         self.input = ['' for i in range(MAX_ROULETTE_INPUT)]
         self.roulette_pin_flag = False
         self.init_UI()
         
     def init_UI(self):
         self.roulette_layout = QVBoxLayout()
-        self.roulette_botton_layout = QVBoxLayout()
+        self.roulette_bottom_layout = QVBoxLayout()
         self.roulette_button_layout = QHBoxLayout()
         self.spin_roulette_button = QPushButton('빙글빙글 돌아가는')
         self.home_button = QPushButton('확인')
@@ -1102,9 +1191,14 @@ class RouletteWidget(QWidget):
         self.roulette_add_button = QPushButton('+')
         self.roulette_remove_button = QPushButton('-')
         self.roulette_probability_label = []
+        self.roulette_speed_combobox = QComboBox()
+        self.roulette_speed_mode = ['NORMAL', '부드럽게', '거칠게']
+
+        self.roulette_speed_combobox.addItems(self.roulette_speed_mode)
         
         self.roulette_layout.addWidget(self.roulette_result_label)
-        self.roulette_botton_layout.addLayout(self.roulette_button_layout)
+        self.roulette_bottom_layout.addWidget(self.roulette_speed_combobox)
+        self.roulette_bottom_layout.addLayout(self.roulette_button_layout)
         self.roulette_button_layout.addWidget(self.roulette_add_button)
         self.roulette_button_layout.addWidget(self.spin_roulette_button)
         self.roulette_button_layout.addWidget(self.roulette_remove_button)
@@ -1114,16 +1208,16 @@ class RouletteWidget(QWidget):
             self.roulette_input_field.append(QLineEdit())
             self.roulette_probability_label.append(QLabel('10%'))
             
-            self.roulette_botton_layout.addLayout(self.roulette_input_layout[i])
+            self.roulette_bottom_layout.addLayout(self.roulette_input_layout[i])
             self.roulette_input_layout[i].addWidget(self.roulette_input_field[i])
             self.roulette_input_layout[i].addWidget(self.roulette_probability_label[i])
                
         self.setLayout(self.roulette_layout)
-        self.roulette_layout.addLayout(self.roulette_botton_layout)
-        self.roulette_botton_layout.addWidget(self.home_button)
+        self.roulette_layout.addLayout(self.roulette_bottom_layout)
+        self.roulette_bottom_layout.addWidget(self.home_button)
         
         self.roulette_result_label.setAlignment(Qt.AlignCenter)
-        self.roulette_botton_layout.setAlignment(Qt.AlignBottom)
+        self.roulette_bottom_layout.setAlignment(Qt.AlignBottom)
         
         self.roulette_add_button.clicked.connect(self.add_roulette)
         self.roulette_remove_button.clicked.connect(self.remove_roulette)
@@ -1137,26 +1231,35 @@ class RouletteWidget(QWidget):
             'QLabel {'
             f'background-color : rgb(255,0,0);'
             'color : black;'
-            'font : bold 15px;'
+            'font-size : 15px;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         self.roulette_result_label.setMaximumHeight(30)
+
+        self.roulette_speed_combobox.setStyleSheet(
+            'QComboBox {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
         
         self.spin_roulette_button.setStyleSheet(
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -1164,26 +1267,26 @@ class RouletteWidget(QWidget):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
         for i, edit in enumerate(self.roulette_input_field):
             edit.setStyleSheet(
                 'QLineEdit {'
-                f'background-color : rgb(' + str(self.rainbow_palette[i][0]) + ',' + str(self.rainbow_palette[i][1]) + ',' + str(self.rainbow_palette[i][2]) + ',);'
+                f'background-color : rgb(' + str(self.roulette_palette[i][0]) + ',' + str(self.roulette_palette[i][1]) + ',' + str(self.roulette_palette[i][2]) + ',);'
                 'color : rgb(47,54,95);'
-                'font : bold 15px;'
+                'font-family : Noto Sans KR;'
                 'border : 2px solid rgb(47,54,95);'
                 '}'
             )
@@ -1194,17 +1297,17 @@ class RouletteWidget(QWidget):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -1212,37 +1315,54 @@ class RouletteWidget(QWidget):
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold 15px;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
-        for attribute_label in self.roulette_probability_label:
-            attribute_label.setStyleSheet(
+        for roulette_probability_label in self.roulette_probability_label:
+            roulette_probability_label.setStyleSheet(
                 'QLabel {'
                 f'color : rgb(47,54,95);'
-                'font : bold;'
+                'font-family : Noto Sans KR;'
                 '}'
             )
     
+    def set_roulette_speed(self, mode):
+        if mode == '부드럽게':
+            self.roulette_speed = 1
+            self.acceleration = 1 + random.randrange(50, 80)/10000
+            self.max_time = random.randrange(9000, 11000)
+            self.max_speed = 200
+        elif mode == '거칠게':
+            self.roulette_speed = 1
+            self.acceleration = 1 + random.randrange(400, 600)/10000
+            self.max_time = random.randrange(7000, 9000)
+            self.max_speed = 500
+        elif mode == 'NORMAL':
+            self.roulette_speed = 1
+            self.acceleration = 1 + random.randrange(100, 200)/10000
+            self.max_time = random.randrange(7000, 9000)
+            self.max_speed = 375
+
     def add_roulette(self):
         if self.count < MAX_ROULETTE_INPUT:
             self.count += 1
             self.roulette_input_field[self.count-1].setEnabled(True)
             self.roulette_input_field[self.count-1].setStyleSheet(
                 'QLineEdit {'
-                f'background-color : rgb(' + str(self.rainbow_palette[self.count-1][0]) + ',' + str(self.rainbow_palette[self.count-1][1]) + ',' + str(self.rainbow_palette[self.count-1][2]) + ',);'
+                f'background-color : rgb(' + str(self.roulette_palette[self.count-1][0]) + ',' + str(self.roulette_palette[self.count-1][1]) + ',' + str(self.roulette_palette[self.count-1][2]) + ',);'
                 'color : rgb(47,54,95);'
-                'font : bold 15px;'
+                'font-family : Noto Sans KR;'
                 'border : 2px solid rgb(47,54,95);'
                 '}'
             )
@@ -1259,7 +1379,7 @@ class RouletteWidget(QWidget):
                 'QLineEdit {'
                 f'background-color : rgb(128,128,128);'
                 'color : rgb(47,54,95);'
-                'font : bold 15px;'
+                'font-family : Noto Sans KR;'
                 'border : 2px solid rgb(47,54,95);'
                 '}'
             )
@@ -1273,6 +1393,8 @@ class RouletteWidget(QWidget):
             self.update()
     
     def spin_roulette(self):
+        self.set_roulette_speed(self.roulette_speed_combobox.currentText())
+
         self.roulette_add_button.setEnabled(False)
         self.spin_roulette_button.setEnabled(False)
         self.spin_roulette_button.setText('빙글빙글 돌아가는 룰렛')
@@ -1289,12 +1411,15 @@ class RouletteWidget(QWidget):
         qp.begin(self)
         
         while(self.max_time > time):
-            self.roulette_rotate += self.roulette_speed
+            if self.roulette_speed > self.max_speed:
+                self.roulette_rotate += self.max_speed
+            else:
+                self.roulette_rotate += self.roulette_speed
             
             if self.max_time / 2 < time:
-                self.roulette_speed -= self.acceleration
+                self.roulette_speed /= self.acceleration
             else:
-                self.roulette_speed += self.acceleration
+                self.roulette_speed *= self.acceleration
             
             time += self.time_per_frame
             QTest.qWait(self.time_per_frame)
@@ -1315,31 +1440,31 @@ class RouletteWidget(QWidget):
         qp.end()
 
     def draw_pie(self, qp, n, rotate):
-        font = QFont('돋움', 10)
+        font = QFont('font-family : Noto Sans KR;', 10)
         font.setBold(True)
         qp.setFont(font)
         qp.drawText(int(W_width / 2) - 85, 30, '돌려돌려 돌림판')
         roulette_center_x = int(W_width / 2)
         roulette_center_y = 50 + (DIAMETER / 2)
-        radius = DIAMETER / 2 * 0.75
+        radius = DIAMETER / 2 * 0.65
         
         for i in range(n):
             qp.setPen(QPen(Qt.black, 2))
             qp.drawPie(int(W_width / 2 - DIAMETER / 2), 50, DIAMETER, DIAMETER, int(270 * 16 + 360 * 16 / n * i) - rotate, int(360 * 16 / n))
-            color = QColor(self.rainbow_palette[i][0], self.rainbow_palette[i][1], self.rainbow_palette[i][2])
+            color = QColor(self.roulette_palette[i][0], self.roulette_palette[i][1], self.roulette_palette[i][2])
             brush = QBrush(color)
             qp.setBrush(brush)
             qp.drawPie(int(W_width / 2 - DIAMETER / 2), 50, DIAMETER, DIAMETER, int(270 * 16 + 360 * 16 / n * i) - rotate, int(360 * 16 / n))
         
         for i in range(n):
-            font = QFont('돋움', 30 - int(len(self.roulette_input_field[i].text()) * 1.5))
+            font = QFont('Noto Sans KR', 20 - int(len(self.roulette_input_field[i].text()) * 0.25) + int(20 / n))
             qp.setFont(font)
-            angle = 110 + (360 / n)  * (i + 1) * (-1) + rotate / 16
-            x = roulette_center_x + (radius * math.cos(math.radians(angle))) - 100
-            y = roulette_center_y + (radius * math.sin(math.radians(angle))) - 20
-            qp.drawText(QRect(int(x), int(y), 200, 50), Qt.AlignCenter, self.roulette_input_field[i].text())
+            angle = 110 + (360 / n)  * (i + 1) * (-1) + rotate / 16 + 360 / math.pow(n, 2) / 2
+            x = roulette_center_x + (radius * math.cos(math.radians(angle))) - 250
+            y = roulette_center_y + (radius * math.sin(math.radians(angle))) - 50
+            qp.drawText(QRect(int(x), int(y), 500, 100), Qt.AlignCenter, self.roulette_input_field[i].text())
 
-        self.set_result_label(self.rainbow_palette[int(rotate / 360 / 16 * n % n)][0], self.rainbow_palette[int(rotate / 360 / 16 * n % n)][1], self.rainbow_palette[int(rotate / 360 / 16 * n % n)][2], int(rotate / 360 / 16 * n % n))     
+        self.set_result_label(self.roulette_palette[int(rotate / 360 / 16 * n % n)][0], self.roulette_palette[int(rotate / 360 / 16 * n % n)][1], self.roulette_palette[int(rotate / 360 / 16 * n % n)][2], int(rotate / 360 / 16 * n % n))     
     
     def draw_roulette_pin(self, qp):
         qp.setPen(QPen(Qt.red, 0))
@@ -1360,7 +1485,8 @@ class RouletteWidget(QWidget):
             'QLabel {'
             f'background-color : rgb(' + str(red) + ',' + str(green) + ',' + str(blue) + ');'
             'color : black;'
-            'font : bold 22px;'
+            'font-size : 15px;'
+            'font-family : Noto Sans KR;'
             '}'
         )
         self.roulette_result_label.setText(self.input[idx])
