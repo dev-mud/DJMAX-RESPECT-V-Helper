@@ -365,6 +365,7 @@ class MainWindow(QMainWindow):
         self.button_flag = []
         self.button_color = [['0', '255', '0'], ['0', '255', '255'], ['255', '153', '0'], ['28', '31', '133']]
         self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)']
+        self.duplication_index = []
         self.status_flag = False
      
         for i, key in enumerate(data):
@@ -372,6 +373,7 @@ class MainWindow(QMainWindow):
                 self.song_name.append(key)
             else:
                 self.song_name.append(key.split('(')[0])
+                self.duplication_index.append(i)
             self.artist.append(data[key]['artist'])
             self.category.append(data[key]['category'])
             self.level.append(data[key]['difficulty'])
@@ -552,7 +554,7 @@ class MainWindow(QMainWindow):
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                + "color : rgb(247,241,237);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "}"
             )
@@ -565,13 +567,13 @@ class MainWindow(QMainWindow):
             self.difficulty_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "}"
             )
@@ -665,7 +667,7 @@ class MainWindow(QMainWindow):
         for i, button in enumerate(self.button):
             if str(button) == button_label.text().split(' ')[0]:
                 button_label.setStyleSheet("background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                + "color : rgb(247, 241, 237);"
+                + "color : rgb(0, 0, 0);"
                 + "font-family : Noto Sans KR;"
                 )
     
@@ -746,7 +748,6 @@ class MainWindow(QMainWindow):
 
                 if self.option_checkbox_3.isChecked():
                     self.set_label_text(song_index, -1, -1)
-#                    self.countLog.loc[self.countLog['곡'] == self.song_name[song_index], 'Count'] += 1
                 else:
                     if (self.category[song_index] in category_filter) and (self.button[button_index] in button_filter) and (self.difficulty[difficulty_index] in difficulty_filter) and (level in level_filter) and ('-' not in level):
                         self.set_label_text(song_index, button_index, difficulty_index)
@@ -840,7 +841,7 @@ class MainWindow(QMainWindow):
             self.button_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                + "color : rgb(247,241,237);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                 + "}"
@@ -856,7 +857,7 @@ class MainWindow(QMainWindow):
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                + "color : rgb(247,241,237);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "}"
             )
@@ -867,7 +868,7 @@ class MainWindow(QMainWindow):
             self.difficulty_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
@@ -877,13 +878,13 @@ class MainWindow(QMainWindow):
             self.difficulty_filter_button[i].setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "}"
             )
@@ -933,7 +934,7 @@ class MainWindow(QMainWindow):
                 button.setStyleSheet(
                     "QPushButton {"
                     + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                    + "color : rgb(247,241,237);"
+                    + "color : rgb(0,0,0);"
                     + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
                     + "}"
@@ -946,7 +947,7 @@ class MainWindow(QMainWindow):
                 button.setStyleSheet(
                     "QPushButton {"
                     + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
-                    + "color : rgb(47,54,95);"
+                    + "color : rgb(0,0,0);"
                     + "font-family : Noto Sans KR;"
                     + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                     + "}"
@@ -997,7 +998,7 @@ class MainWindow(QMainWindow):
                     + "}"
                     + "QPushButton::hover {"
                     + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
-                    + "color : rgb(247,241,237);"
+                    + "color : rgb(0,0,0);"
                     + "font-family : Noto Sans KR;"
                     + "}"
                 )
@@ -1008,13 +1009,13 @@ class MainWindow(QMainWindow):
             button.setStyleSheet(
                 "QPushButton {"
                 + "background-color : rgb(247,241,237);"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
                 + "}"
                 + "QPushButton::hover {"
                 + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
-                + "color : rgb(47,54,95);"
+                + "color : rgb(0,0,0);"
                 + "font-family : Noto Sans KR;"
                 + "}"
             )
