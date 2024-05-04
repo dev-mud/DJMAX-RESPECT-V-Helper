@@ -377,6 +377,10 @@ class MainWindow(QMainWindow):
             self.artist.append(data[key]['artist'])
             self.category.append(data[key]['category'])
             self.level.append(data[key]['difficulty'])
+
+        print(self.song_name)
+        print(self.duplication_index)
+        print(self.level)    
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -421,7 +425,7 @@ class MainWindow(QMainWindow):
         if button_index != -1 and difficulty_index != -1:
             self.data_label[3].setText(str(self.button[button_index]))
             self.data_label[4].setText(self.difficulty[difficulty_index])
-            self.data_label[5].setText(self.search_level(self.song_name[song_index], self.button[button_index], self.difficulty[difficulty_index]))
+            self.data_label[5].setText(self.search_level(song_index, button_index, difficulty_index))
         else:
             self.data_label[3].setText('')
             self.data_label[4].setText('')
@@ -744,7 +748,7 @@ class MainWindow(QMainWindow):
                 song_index = random.randrange(0, len(self.song_name))
                 button_index = random.randrange(0, len(self.button))
                 difficulty_index = random.randrange(0, len(self.difficulty))
-                level = self.search_level(self.song_name[song_index], self.button[button_index], self.difficulty[difficulty_index])
+                level = self.search_level(song_index, button_index, difficulty_index)
 
                 if self.option_checkbox_3.isChecked():
                     self.set_label_text(song_index, -1, -1)
@@ -1069,12 +1073,8 @@ class MainWindow(QMainWindow):
                 
         return tmp        
     
-    def search_level(self, song, button, difficulty):
+    def search_level(self, song_index, button_index, difficulty_index):
         level = ''
-
-        song_index = self.song_name.index(song)
-        button_index = self.button.index(button)
-        difficulty_index = self.difficulty.index(difficulty)
         
         if difficulty_index == 3:
             level = 'SC ' + self.level[song_index][button_index][difficulty_index]
@@ -1119,7 +1119,7 @@ class MainWindow(QMainWindow):
             song_index = random.randrange(0, len(self.sname_replica))
             button_index = random.randrange(0, len(self.button))
             difficulty_index = random.randrange(0, len(self.difficulty))
-            level = self.search_level(self.song_name[song_index], self.button[button_index], self.difficulty[difficulty_index])
+            level = self.search_level(song_index, button_index, difficulty_index)
             if self.option_checkbox_3.isChecked() and self.sname_replica[song_index] != '': #ONLY SONGS모드에서 중복 선곡 방지
                 song_index_final = song_index 
                 
@@ -1144,7 +1144,7 @@ class MainWindow(QMainWindow):
                     self.multi_select_category_label[index].setText(self.category[song_index])
                     self.multi_select_button_label[index].setText(str(self.button[button_index]) + ' BUTTON')
                     self.multi_select_difficulty_label[index].setText(self.difficulty[difficulty_index])
-                    self.multi_select_level_label[index].setText(self.search_level(self.song_name[song_index], self.button[button_index], self.difficulty[difficulty_index]))
+                    self.multi_select_level_label[index].setText(self.search_level(song_index, button_index, difficulty_index))
                     
                     if os.path.exists('ICON/' + str(song_index+1) + '.png'):
                         self.multi_select_thumbnail_pixmap[index] = QPixmap('ICON/' + str(song_index+1) + '.png')
@@ -1450,8 +1450,7 @@ class RouletteWidget(QWidget):
         radius = DIAMETER / 2 * 0.65
         
         for i in range(n):
-            qp.setPen(QPen(Qt.black, 2))
-            qp.drawPie(int(W_width / 2 - DIAMETER / 2), 50, DIAMETER, DIAMETER, int(270 * 16 + 360 * 16 / n * i) - rotate, int(360 * 16 / n))
+            qp.setPen(QPen(Qt.black, 0))
             color = QColor(self.roulette_palette[i][0], self.roulette_palette[i][1], self.roulette_palette[i][2])
             brush = QBrush(color)
             qp.setBrush(brush)
