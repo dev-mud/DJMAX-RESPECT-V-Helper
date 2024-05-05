@@ -281,19 +281,23 @@ class MainWindow(QMainWindow):
         
         self.multi_select_widget.setStyleSheet(
             'QLabel {'
-            f'font : 18px;'
+            f'font-size : 10px;'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::hover {'
             f'background-color : rgb(47,54,95);'
             'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
             '}'
             'QPushButton::pressed {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
             '}'
         )    
     
@@ -376,11 +380,7 @@ class MainWindow(QMainWindow):
                 self.duplication_index.append(i)
             self.artist.append(data[key]['artist'])
             self.category.append(data[key]['category'])
-            self.level.append(data[key]['difficulty'])
-
-        print(self.song_name)
-        print(self.duplication_index)
-        print(self.level)    
+            self.level.append(data[key]['difficulty'])   
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -416,8 +416,8 @@ class MainWindow(QMainWindow):
         self.set_label_text(0,0,0)
         
         self.data_label[2].setAlignment(Qt.AlignCenter)
-        self.data_label[3].setAlignment(Qt.AlignCenter)
-        
+        self.data_label[3].setAlignment(Qt.AlignCenter)   
+
     def set_label_text(self, song_index, button_index, difficulty_index):
         self.data_label[0].setText(self.song_name[song_index])
         self.data_label[1].setText(self.artist[song_index])
@@ -457,7 +457,7 @@ class MainWindow(QMainWindow):
         self.option_label = QLabel('OPTION')
         self.option_checkbox = QCheckBox('룰렛 SKIP')
         self.option_checkbox_2 = QCheckBox('한번에 뽑기')
-        self.option_checkbox_3 = QCheckBox('ONLY SONGS(필터 X)')
+        self.option_checkbox_3 = QCheckBox('곡만 뽑기(CATEGORY 필터 적용)')
         self.multi_select_count_spinbox = QSpinBox()
         self.memo_label = QLabel('MEMO\n(Beta)')
         self.memo_edit = QTextEdit()
@@ -709,13 +709,10 @@ class MainWindow(QMainWindow):
         return category_filter, button_filter, difficulty_filter, level_filter
     
     def click_select_button(self):
-        count = [0 for i in range(len(self.song_name))]
-        
-        if self.option_checkbox_3.isChecked() == False:
-            try:
-                category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
-            except TypeError:
-                return
+        try:
+            category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
+        except TypeError:
+            return
         
         if self.option_checkbox_2.isChecked():
             if self.multi_select_count_spinbox.value() > MAX_MULTI_SELECT or self.multi_select_count_spinbox.value() <= 1:
@@ -751,7 +748,10 @@ class MainWindow(QMainWindow):
                 level = self.search_level(song_index, button_index, difficulty_index)
 
                 if self.option_checkbox_3.isChecked():
-                    self.set_label_text(song_index, -1, -1)
+                    if self.category[song_index] in category_filter:
+                        self.set_label_text(song_index, -1, -1)
+                    else:
+                        continue    
                 else:
                     if (self.category[song_index] in category_filter) and (self.button[button_index] in button_filter) and (self.difficulty[difficulty_index] in difficulty_filter) and (level in level_filter) and ('-' not in level):
                         self.set_label_text(song_index, button_index, difficulty_index)
@@ -766,7 +766,7 @@ class MainWindow(QMainWindow):
                 self.thumbnail_label.setPixmap(self.thumbnail_pixmap) 
                 self.change_label_background(self.data_label[2], self.data_label[3])
                 
-                if not self.option_checkbox_3.isChecked():
+                if self.option_checkbox_3.isChecked() == False:
                     floor_index = list(filter(lambda x: self.floor_sname[x] == self.data_label[0].text(), range(len(self.floor_sname))))
                     index_tmp = -1
                     
@@ -1485,7 +1485,7 @@ class RouletteWidget(QWidget):
             'QLabel {'
             f'background-color : rgb(' + str(red) + ',' + str(green) + ',' + str(blue) + ');'
             'color : black;'
-            'font-size : 15px;'
+            'font-size : 20px;'
             'font-family : Noto Sans KR;'
             '}'
         )
