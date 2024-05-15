@@ -15,7 +15,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.4.0'
+VERSION = '1.4.1'
 song_DB_path = 'songs.json'
 
 W_width = 560 #창 가로 길이
@@ -1084,6 +1084,9 @@ class MainWindow(QMainWindow):
         return level
     
     def multi_select_music(self, category_filter, button_filter, difficulty_filter, level_filter):
+        file = open('log/multi_select_log.txt', 'w')
+        file.write('')
+        file.close()
         self.multi_select_home_button.setEnabled(False)
         self.sname_replica = self.song_name.copy() #중복 선곡 방지 체크용으로 복사하는 리스트(ONLY SONGS 모드에서만 적용)
         
@@ -1114,6 +1117,9 @@ class MainWindow(QMainWindow):
             
     def spin_roulette(self, index, category_filter, button_filter, difficulty_filter, level_filter):
         song_index_final = 0 #최종 선곡 인덱스 저장용
+        selected_song_log = '' #선곡 로그
+        text_file_path = 'log/multi_select_log.txt' #선곡 로그 저장 경로
+        file = open(text_file_path, 'a', encoding="utf8")    
 
         while True:
             song_index = random.randrange(0, len(self.sname_replica))
@@ -1128,6 +1134,8 @@ class MainWindow(QMainWindow):
                 self.multi_select_button_label[index].setText('')
                 self.multi_select_difficulty_label[index].setText('')
                 self.multi_select_level_label[index].setText('')
+                selected_song_log = self.song_name[song_index] + ' ' + self.category[song_index] + '\n'
+                file.write(selected_song_log)
                 
                 if os.path.exists('ICON/' + str(song_index+1) + '.png'):
                     self.multi_select_thumbnail_pixmap[index] = QPixmap('ICON/' + str(song_index+1) + '.png')
@@ -1146,6 +1154,9 @@ class MainWindow(QMainWindow):
                     self.multi_select_difficulty_label[index].setText(self.difficulty[difficulty_index])
                     self.multi_select_level_label[index].setText(self.search_level(song_index, button_index, difficulty_index))
                     
+                    selected_song_log = self.song_name[song_index] + ' ' + self.category[song_index] + ' ' + str(self.button[button_index]) + ' BUTTON ' + self.difficulty[difficulty_index] + ' ' + str(self.search_level(song_index, button_index, difficulty_index)) + 'LEVEL\n'
+                    file.write(selected_song_log)
+
                     if os.path.exists('ICON/' + str(song_index+1) + '.png'):
                         self.multi_select_thumbnail_pixmap[index] = QPixmap('ICON/' + str(song_index+1) + '.png')
                     else:
@@ -1157,12 +1168,13 @@ class MainWindow(QMainWindow):
                     break
                 else:
                     continue
-            
-        self.sname_replica[song_index_final] = '' #선곡된 곡은 빈 칸으로
         
+        file.close()
+        self.sname_replica[song_index_final] = '' #선곡된 곡은 빈 칸으로
+
         if index == int(self.multi_select_count_spinbox.value())-1:
             self.multi_select_home_button.setEnabled(True)
-        
+
 class RouletteWidget(QWidget):
     def __init__(self, parent):
         super(RouletteWidget, self).__init__(parent)
