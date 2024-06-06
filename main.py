@@ -5,7 +5,6 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtTest import *
 from functools import partial
-from threading import Thread
 from bs4 import BeautifulSoup
 import sys, os
 import math
@@ -15,7 +14,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.4.1'
+VERSION = '1.4.2'
 song_DB_path = 'songs.json'
 
 W_width = 560 #창 가로 길이
@@ -357,9 +356,9 @@ class MainWindow(QMainWindow):
         self.level_color = [['255', '255', '0'], ['255', '127', '0'], ['255', '0', '0'], ['224', '0', '117'], ['198', '4', '227'], ['61', '102', '255']]
         self.category = []
         self.category_flag = []
-        self.category_color = [['255', '191', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
-        self.category_font_color = [['231', '117', '63'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
-        self.category_name = ['RESPECT', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'CLEAR PASS']
+        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
+        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
+        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'CLEAR PASS']
         self.difficulty = ['NORMAL', 'HARD', 'MAXIMUM', 'SC']
         self.difficulty_flag = []
         self.difficulty_color = [['255', '255', '0'], ['255', '102', '0'], ['255', '0', '0'], ['198', '4', '227']]
@@ -465,7 +464,7 @@ class MainWindow(QMainWindow):
         self.top_layout.addLayout(self.v_layout[1], 5)
         self.top_layout.addLayout(self.right_layout, 1)
         self.main_layout.addLayout(self.top_layout, 5)
-        self.main_layout.addLayout(self.memo_layout, 1)
+        #self.main_layout.addLayout(self.memo_layout, 1)
         self.main_layout.addLayout(self.option_layout, 1)
         self.main_layout.addLayout(self.filter_layout, 20)
         self.option_layout.addWidget(self.option_label)
@@ -1093,12 +1092,12 @@ class MainWindow(QMainWindow):
         self.reset_multi_select()
         
         music_count = self.multi_select_count_spinbox.value()
-
-        self.th = [Thread(target=self.spin_roulette, args=(i, category_filter, button_filter, difficulty_filter, level_filter)) for i in range(music_count)] #멀티스레드로 룰렛 따로 돌리기(n번째 곡과 n+1 곡 사이에는 1초 정도의 텀을 두고 선곡됨)  
         
-        for th in self.th:
-            th.start()
+        for i in range(music_count):
+            self.spin_roulette(i, category_filter, button_filter, difficulty_filter, level_filter)
             QTest.qWait(1000)
+
+        self.sname_replica = self.song_name.copy()
     
     def reset_multi_select(self):
         for i in range(MAX_MULTI_SELECT):
@@ -1109,14 +1108,17 @@ class MainWindow(QMainWindow):
             self.multi_select_difficulty_label[i].setText('')
             self.multi_select_level_label[i].setText('')
             self.multi_select_thumbnail_label[i].setStyleSheet("font : 12px;")
-            self.multi_select_song_name_label[i].setStyleSheet("font : 15px;")
+            self.multi_select_song_name_label[i].setStyleSheet("font : 14px;")
             self.multi_select_category_label[i].setStyleSheet("font : 12px;")
             self.multi_select_button_label[i].setStyleSheet("font : 12px;")
             self.multi_select_difficulty_label[i].setStyleSheet("font : 12px;")
             self.multi_select_level_label[i].setStyleSheet("font : 12px;")
+            self.multi_select_song_name_label[i].setMinimumHeight(20)
+            self.multi_select_song_name_label[i].setAlignment(Qt.AlignTop)
             
     def spin_roulette(self, index, category_filter, button_filter, difficulty_filter, level_filter):
         song_index_final = 0 #최종 선곡 인덱스 저장용
+        first_select_flag = True #첫 선곡 제외
         selected_song_log = '' #선곡 로그
         text_file_path = 'log/multi_select_log.txt' #선곡 로그 저장 경로
         file = open(text_file_path, 'a', encoding="utf8")    
@@ -1128,7 +1130,8 @@ class MainWindow(QMainWindow):
             level = self.search_level(song_index, button_index, difficulty_index)
             if self.option_checkbox_3.isChecked() and self.sname_replica[song_index] != '': #ONLY SONGS모드에서 중복 선곡 방지
                 song_index_final = song_index 
-                
+                first_select_flag = False
+
                 self.multi_select_song_name_label[index].setText(self.sname_replica[song_index])
                 self.multi_select_category_label[index].setText(self.category[song_index])
                 self.multi_select_button_label[index].setText('')
@@ -1146,13 +1149,30 @@ class MainWindow(QMainWindow):
                 empty_label = QLabel()
                 self.change_label_background(self.multi_select_category_label[index], empty_label)    
                 break
-            else:
+            elif self.sname_replica[song_index] != '':
                 if (self.category[song_index] in category_filter) and (self.button[button_index] in button_filter) and (self.difficulty[difficulty_index] in difficulty_filter) and (level in level_filter) and ('-' not in level):
+                    song_index_final = song_index
+                    first_select_flag = False
+
                     self.multi_select_song_name_label[index].setText(self.song_name[song_index])
                     self.multi_select_category_label[index].setText(self.category[song_index])
                     self.multi_select_button_label[index].setText(str(self.button[button_index]) + ' BUTTON')
                     self.multi_select_difficulty_label[index].setText(self.difficulty[difficulty_index])
                     self.multi_select_level_label[index].setText(self.search_level(song_index, button_index, difficulty_index))
+
+                    floor_index = list(filter(lambda x: self.floor_sname[x] == self.multi_select_song_name_label[index].text(), range(len(self.floor_sname))))
+                    index_tmp = -1
+                    
+                    for idx in floor_index:
+                        print(self.floor_button[idx] == int(self.multi_select_button_label[index].text().split(' ')[0]))
+                        print(self.floor_level[idx] == self.multi_select_level_label[index].text())
+                        if self.floor_button[idx] == int(self.multi_select_button_label[index].text().split(' ')[0]) and self.floor_level[idx] == self.multi_select_level_label[index].text():
+                            index_tmp = idx
+                    
+                    if index_tmp != -1:
+                        self.multi_select_level_label[index].setText(self.search_level(song_index, button_index, difficulty_index) + '(' + self.floor[index_tmp] + ' FLOOR)')
+                    else:
+                        pass
                     
                     selected_song_log = self.song_name[song_index] + ' ' + self.category[song_index] + ' ' + str(self.button[button_index]) + ' BUTTON ' + self.difficulty[difficulty_index] + ' ' + str(self.search_level(song_index, button_index, difficulty_index)) + 'LEVEL\n'
                     file.write(selected_song_log)
@@ -1170,7 +1190,8 @@ class MainWindow(QMainWindow):
                     continue
         
         file.close()
-        self.sname_replica[song_index_final] = '' #선곡된 곡은 빈 칸으로
+        if first_select_flag == False:
+            self.sname_replica[song_index_final] = '' #선곡된 곡은 빈 칸으로
 
         if index == int(self.multi_select_count_spinbox.value())-1:
             self.multi_select_home_button.setEnabled(True)
