@@ -1,0 +1,158 @@
+{
+    "GRAND MASTER" : {
+        "SC_MIN_LEVEL" : 10,
+        "SC_MAX_LEVEL" : 15,
+        "NON_SC_MIN_LEVEL" : -1,
+        "NON_SC_MAX_LEVEL" : -1
+    },
+    "MASTER" : {
+        "SC_MIN_LEVEL" : 8,
+        "SC_MAX_LEVEL" : 15,
+        "NON_SC_MIN_LEVEL" : -1,
+        "NON_SC_MAX_LEVEL" : -1
+    },
+    "DIAMOND I" : {
+        "SC_MIN_LEVEL" : 8,
+        "SC_MAX_LEVEL" : 15,
+        "NON_SC_MIN_LEVEL" : -1,
+        "NON_SC_MAX_LEVEL" : -1
+    },
+    "DIAMOND II" : {
+        "SC_MIN_LEVEL" : 8,
+        "SC_MAX_LEVEL" : 15,
+        "NON_SC_MIN_LEVEL" : 15,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "DIAMOND III" : {
+        "SC_MIN_LEVEL" : 8,
+        "SC_MAX_LEVEL" : 15,
+        "NON_SC_MIN_LEVEL" : 15,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "DIAMOND IV" : {
+        "SC_MIN_LEVEL" : 6,
+        "SC_MAX_LEVEL" : 11,
+        "NON_SC_MIN_LEVEL" : 15,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "PLATINUM I" : {
+        "SC_MIN_LEVEL" : 6,
+        "SC_MAX_LEVEL" : 9,
+        "NON_SC_MIN_LEVEL" : 14,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "PLATINUM II" : {
+        "SC_MIN_LEVEL" : 4,
+        "SC_MAX_LEVEL" : 9,
+        "NON_SC_MIN_LEVEL" : 13,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "PLATINUM III" : {
+        "SC_MIN_LEVEL" : 4,
+        "SC_MAX_LEVEL" : 7,
+        "NON_SC_MIN_LEVEL" : 13,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "PLATINUM IV" : {
+        "SC_MIN_LEVEL" : 2,
+        "SC_MAX_LEVEL" : 7,
+        "NON_SC_MIN_LEVEL" : 12,
+        "NON_SC_MAX_LEVEL" : 15
+    },
+    "GOLD I" : {
+        "SC_MIN_LEVEL" : 2,
+        "SC_MAX_LEVEL" : 7,
+        "NON_SC_MIN_LEVEL" : 12,
+        "NON_SC_MAX_LEVEL" : 14
+    },
+    "GOLD II" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 5,
+        "NON_SC_MIN_LEVEL" : 11,
+        "NON_SC_MAX_LEVEL" : 13
+    },
+    "GOLD III" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 5,
+        "NON_SC_MIN_LEVEL" : 11,
+        "NON_SC_MAX_LEVEL" : 13
+    },
+    "GOLD IV" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 3,
+        "NON_SC_MIN_LEVEL" : 10,
+        "NON_SC_MAX_LEVEL" : 12
+    },
+    "SILVER I" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 3,
+        "NON_SC_MIN_LEVEL" : 9,
+        "NON_SC_MAX_LEVEL" : 12
+    },
+    "SILVER II" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 1,
+        "NON_SC_MIN_LEVEL" : 8,
+        "NON_SC_MAX_LEVEL" : 11
+    },
+    "SILVER III" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 1,
+        "NON_SC_MIN_LEVEL" : 7,
+        "NON_SC_MAX_LEVEL" : 11
+    },
+    "SILVER IV" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 1,
+        "NON_SC_MIN_LEVEL" : 7,
+        "NON_SC_MAX_LEVEL" : 11
+    },
+    "BRONZE I" : {
+        "SC_MIN_LEVEL" : 1,
+        "SC_MAX_LEVEL" : 1,
+        "NON_SC_MIN_LEVEL" : 7,
+        "NON_SC_MAX_LEVEL" : 11
+    },
+    "BRONZE II" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 7,
+        "NON_SC_MAX_LEVEL" : 10
+    },
+    "BRONZE III" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 7,
+        "NON_SC_MAX_LEVEL" : 10
+    },
+    "BRONZE IV" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 6,
+        "NON_SC_MAX_LEVEL" : 10
+    },
+    "IRON I" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 5,
+        "NON_SC_MAX_LEVEL" : 9
+    },
+    "IRON II" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 4,
+        "NON_SC_MAX_LEVEL" : 8
+    },
+    "IRON III" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 3,
+        "NON_SC_MAX_LEVEL" : 7
+    },
+    "IRON IV" : {
+        "SC_MIN_LEVEL" : -1,
+        "SC_MAX_LEVEL" : -1,
+        "NON_SC_MIN_LEVEL" : 1,
+        "NON_SC_MAX_LEVEL" : 6
+    }
+}

@@ -14,8 +14,9 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.4.2'
+VERSION = '1.4.4'
 song_DB_path = 'songs.json'
+ladder_tier_DB_path = 'ladder_tier.json'
 
 W_width = 560 #창 가로 길이
 W_height = 980 #창 세로 길이
@@ -270,6 +271,20 @@ class MainWindow(QMainWindow):
             '}'
         )
 
+        self.option_checkbox_4.setStyleSheet(
+            'QCheckBox {'
+            f'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.ladder_tier_select_combobox.setStyleSheet(
+            'QComboBox {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
         for filter_label in self.filter_attribute:
             filter_label.setStyleSheet(
                 'QLabel {'
@@ -341,13 +356,16 @@ class MainWindow(QMainWindow):
         with open(song_DB_path, 'r', encoding='utf-8') as f:
             song_json = json.load(f, strict=False)
         
+        with open(ladder_tier_DB_path, 'r', encoding='utf-8') as f:
+            ladder_tier_json = json.load(f, strict=False)
+
         try: 
             self.crawling_from_archive()    
         except:
             pass
-        self.set_data(song_json)
+        self.set_data(song_json, ladder_tier_json)
         
-    def set_data(self, data):
+    def set_data(self, song_data, ladder_tier_data):
         self.song_name = []
         self.artist= []
         self.level = []
@@ -356,9 +374,9 @@ class MainWindow(QMainWindow):
         self.level_color = [['255', '255', '0'], ['255', '127', '0'], ['255', '0', '0'], ['224', '0', '117'], ['198', '4', '227'], ['61', '102', '255']]
         self.category = []
         self.category_flag = []
-        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
-        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
-        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'CLEAR PASS']
+        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['255', '81', '186'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
+        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['69', '238', '252'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
+        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'V LIBERTY', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'CLEAR PASS']
         self.difficulty = ['NORMAL', 'HARD', 'MAXIMUM', 'SC']
         self.difficulty_flag = []
         self.difficulty_color = [['255', '255', '0'], ['255', '102', '0'], ['255', '0', '0'], ['198', '4', '227']]
@@ -367,19 +385,27 @@ class MainWindow(QMainWindow):
         self.button = [4,5,6,8]
         self.button_flag = []
         self.button_color = [['0', '255', '0'], ['0', '255', '255'], ['255', '153', '0'], ['28', '31', '133']]
+        self.ladder_tier = []
+        self.ladder_tier_sc_level = []
+        self.ladder_tier_non_sc_level = []
         self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)']
         self.duplication_index = []
         self.status_flag = False
      
-        for i, key in enumerate(data):
+        for i, key in enumerate(song_data):
             if key not in self.duplication:
                 self.song_name.append(key)
             else:
                 self.song_name.append(key.split('(')[0])
                 self.duplication_index.append(i)
-            self.artist.append(data[key]['artist'])
-            self.category.append(data[key]['category'])
-            self.level.append(data[key]['difficulty'])   
+            self.artist.append(song_data[key]['artist'])
+            self.category.append(song_data[key]['category'])
+            self.level.append(song_data[key]['difficulty'])
+
+        for i, key in enumerate(ladder_tier_data):
+            self.ladder_tier.append(key)
+            self.ladder_tier_sc_level.append([ladder_tier_data[key]["SC_MIN_LEVEL"], ladder_tier_data[key]["SC_MAX_LEVEL"]])
+            self.ladder_tier_non_sc_level.append([ladder_tier_data[key]["NON_SC_MIN_LEVEL"], ladder_tier_data[key]["NON_SC_MAX_LEVEL"]])
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -436,6 +462,7 @@ class MainWindow(QMainWindow):
         self.v_layout = [QVBoxLayout(), QVBoxLayout()]
         self.right_layout = QVBoxLayout()
         self.option_layout = QHBoxLayout()
+        self.option_layout_2 = QHBoxLayout()
         self.memo_layout = QHBoxLayout()
         self.filter_layout = QVBoxLayout()
         self.inter_filter_layout = []
@@ -456,8 +483,10 @@ class MainWindow(QMainWindow):
         self.option_label = QLabel('OPTION')
         self.option_checkbox = QCheckBox('룰렛 SKIP')
         self.option_checkbox_2 = QCheckBox('한번에 뽑기')
-        self.option_checkbox_3 = QCheckBox('곡만 뽑기(CATEGORY 필터 적용)')
+        self.option_checkbox_3 = QCheckBox('곡만 뽑기')
+        self.option_checkbox_4 = QCheckBox('LADDER(추후 업데이트 예정)')
         self.multi_select_count_spinbox = QSpinBox()
+        self.ladder_tier_select_combobox = QComboBox()
         self.memo_label = QLabel('MEMO\n(Beta)')
         self.memo_edit = QTextEdit()
         self.top_layout.addLayout(self.v_layout[0], 1)
@@ -466,16 +495,21 @@ class MainWindow(QMainWindow):
         self.main_layout.addLayout(self.top_layout, 5)
         #self.main_layout.addLayout(self.memo_layout, 1)
         self.main_layout.addLayout(self.option_layout, 1)
+        self.main_layout.addLayout(self.option_layout_2, 1)
         self.main_layout.addLayout(self.filter_layout, 20)
         self.option_layout.addWidget(self.option_label)
         self.option_layout.addWidget(self.option_checkbox)
         self.option_layout.addWidget(self.option_checkbox_2)
         self.option_layout.addWidget(self.multi_select_count_spinbox)
         self.option_layout.addWidget(self.option_checkbox_3)
+        self.option_layout_2.addWidget(self.option_checkbox_4)
+        self.option_layout_2.addWidget(self.ladder_tier_select_combobox)
         self.option_checkbox_2.stateChanged.connect(self.click_option_checkbox_2)
         self.memo_layout.addWidget(self.memo_label)
         self.memo_layout.addWidget(self.memo_edit)
         self.memo_edit.setMinimumHeight(50)
+
+        self.ladder_tier_select_combobox.addItems(self.ladder_tier)
         
         for i, filter in enumerate(self.filter):
             self.inter_filter_layout.append(QVBoxLayout())
@@ -1164,8 +1198,6 @@ class MainWindow(QMainWindow):
                     index_tmp = -1
                     
                     for idx in floor_index:
-                        print(self.floor_button[idx] == int(self.multi_select_button_label[index].text().split(' ')[0]))
-                        print(self.floor_level[idx] == self.multi_select_level_label[index].text())
                         if self.floor_button[idx] == int(self.multi_select_button_label[index].text().split(' ')[0]) and self.floor_level[idx] == self.multi_select_level_label[index].text():
                             index_tmp = idx
                     
