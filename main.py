@@ -14,7 +14,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.4.4'
+VERSION = '1.5.0'
 song_DB_path = 'songs.json'
 ladder_tier_DB_path = 'ladder_tier.json'
 
@@ -1277,6 +1277,8 @@ class RouletteWidget(QWidget):
             self.roulette_bottom_layout.addLayout(self.roulette_input_layout[i])
             self.roulette_input_layout[i].addWidget(self.roulette_input_field[i])
             self.roulette_input_layout[i].addWidget(self.roulette_probability_label[i])
+
+            self.roulette_input_field[i].textChanged.connect(self.update)
                
         self.setLayout(self.roulette_layout)
         self.roulette_layout.addLayout(self.roulette_bottom_layout)
