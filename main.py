@@ -752,7 +752,7 @@ class MainWindow(QMainWindow):
                 QMessageBox.information(self, 'BEXTER is GOD', '2~' + str(MAX_MULTI_SELECT) + ' 사이의 수를 입력하세요')
                 return
             if self.option_checkbox_3.isChecked():
-                category_filter, button_filter, difficulty_filter, level_filter = [], [], [], []
+                button_filter, difficulty_filter, level_filter = [], [], []
             self.stack.setCurrentIndex(1)
             self.multi_select_music(category_filter, button_filter, difficulty_filter, level_filter)
             return
@@ -1162,7 +1162,7 @@ class MainWindow(QMainWindow):
             button_index = random.randrange(0, len(self.button))
             difficulty_index = random.randrange(0, len(self.difficulty))
             level = self.search_level(song_index, button_index, difficulty_index)
-            if self.option_checkbox_3.isChecked() and self.sname_replica[song_index] != '': #ONLY SONGS모드에서 중복 선곡 방지
+            if self.option_checkbox_3.isChecked() and self.sname_replica[song_index] != '' and self.category[song_index] in category_filter: #ONLY SONGS모드에서 중복 선곡 방지
                 song_index_final = song_index 
                 first_select_flag = False
 
@@ -1242,6 +1242,7 @@ class RouletteWidget(QWidget):
         self.roulette_speed = 0
         self.acceleration = 0
         self.input = ['' for i in range(MAX_ROULETTE_INPUT)]
+        self.activate_flag = [True for i in range(MAX_ROULETTE_INPUT)]
         self.roulette_pin_flag = False
         self.init_UI()
         
@@ -1254,9 +1255,8 @@ class RouletteWidget(QWidget):
         self.roulette_result_label = QLabel()
         self.roulette_input_layout = []
         self.roulette_input_field = []
-        self.roulette_add_button = QPushButton('+')
-        self.roulette_remove_button = QPushButton('-')
-        self.roulette_probability_label = []
+        self.roulette_personal_add_button = []
+        self.roulette_personal_remove_button = []
         self.roulette_speed_combobox = QComboBox()
         self.roulette_speed_mode = ['NORMAL', '부드럽게', '거칠게']
 
@@ -1265,20 +1265,22 @@ class RouletteWidget(QWidget):
         self.roulette_layout.addWidget(self.roulette_result_label)
         self.roulette_bottom_layout.addWidget(self.roulette_speed_combobox)
         self.roulette_bottom_layout.addLayout(self.roulette_button_layout)
-        self.roulette_button_layout.addWidget(self.roulette_add_button)
         self.roulette_button_layout.addWidget(self.spin_roulette_button)
-        self.roulette_button_layout.addWidget(self.roulette_remove_button)
         
         for i in range(MAX_ROULETTE_INPUT):
             self.roulette_input_layout.append(QHBoxLayout())
             self.roulette_input_field.append(QLineEdit())
-            self.roulette_probability_label.append(QLabel('10%'))
+            self.roulette_personal_add_button.append(QPushButton('+'))
+            self.roulette_personal_remove_button.append(QPushButton('-'))
             
             self.roulette_bottom_layout.addLayout(self.roulette_input_layout[i])
             self.roulette_input_layout[i].addWidget(self.roulette_input_field[i])
-            self.roulette_input_layout[i].addWidget(self.roulette_probability_label[i])
+            self.roulette_input_layout[i].addWidget(self.roulette_personal_add_button[i])
+            self.roulette_input_layout[i].addWidget(self.roulette_personal_remove_button[i])
 
             self.roulette_input_field[i].textChanged.connect(self.update)
+            self.roulette_personal_add_button[i].clicked.connect(partial(self.add_roulette, i))
+            self.roulette_personal_remove_button[i].clicked.connect(partial(self.remove_roulette, i))
                
         self.setLayout(self.roulette_layout)
         self.roulette_layout.addLayout(self.roulette_bottom_layout)
@@ -1286,9 +1288,7 @@ class RouletteWidget(QWidget):
         
         self.roulette_result_label.setAlignment(Qt.AlignCenter)
         self.roulette_bottom_layout.setAlignment(Qt.AlignBottom)
-        
-        self.roulette_add_button.clicked.connect(self.add_roulette)
-        self.roulette_remove_button.clicked.connect(self.remove_roulette)
+
         self.spin_roulette_button.clicked.connect(self.spin_roulette)
         self.home_button.clicked.connect(self.parent.return_to_home)
         
@@ -1348,6 +1348,44 @@ class RouletteWidget(QWidget):
             'font-family : Noto Sans KR;'
             '}'
         )
+
+        for btn in self.roulette_personal_add_button:
+            btn.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            )
+
+        for btn in self.roulette_personal_remove_button:
+            btn.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            )    
         
         for i, edit in enumerate(self.roulette_input_field):
             edit.setStyleSheet(
@@ -1359,51 +1397,6 @@ class RouletteWidget(QWidget):
                 '}'
             )
             edit.setMinimumHeight(27)
-        
-        
-        self.roulette_add_button.setStyleSheet(
-            'QPushButton {'
-            f'background-color : rgb(247,241,237);'
-            'color : rgb(47,54,95);'
-            'font-family : Noto Sans KR;'
-            '}'
-            'QPushButton::hover {'
-            f'background-color : rgb(47,54,95);'
-            'color : rgb(247,241,237);'
-            'font-family : Noto Sans KR;'
-            '}'
-            'QPushButton::pressed {'
-            f'background-color : rgb(247,241,237);'
-            'color : rgb(47,54,95);'
-            'font-family : Noto Sans KR;'
-            '}'
-        )
-        
-        self.roulette_remove_button.setStyleSheet(
-            'QPushButton {'
-            f'background-color : rgb(247,241,237);'
-            'color : rgb(47,54,95);'
-            'font-family : Noto Sans KR;'
-            '}'
-            'QPushButton::hover {'
-            f'background-color : rgb(47,54,95);'
-            'color : rgb(247,241,237);'
-            'font-family : Noto Sans KR;'
-            '}'
-            'QPushButton::pressed {'
-            f'background-color : rgb(247,241,237);'
-            'color : rgb(47,54,95);'
-            'font-family : Noto Sans KR;'
-            '}'
-        )
-        
-        for roulette_probability_label in self.roulette_probability_label:
-            roulette_probability_label.setStyleSheet(
-                'QLabel {'
-                f'color : rgb(47,54,95);'
-                'font-family : Noto Sans KR;'
-                '}'
-            )
     
     def set_roulette_speed(self, mode):
         if mode == '부드럽게':
@@ -1422,28 +1415,33 @@ class RouletteWidget(QWidget):
             self.max_time = random.randrange(7000, 9000)
             self.max_speed = 375
 
-    def add_roulette(self):
-        if self.count < MAX_ROULETTE_INPUT:
+    def add_roulette(self, index):
+        if self.count == MAX_ROULETTE_INPUT or index == -1:
+            return
+        
+        if self.activate_flag[index] != True:
             self.count += 1
-            self.roulette_input_field[self.count-1].setEnabled(True)
-            self.roulette_input_field[self.count-1].setStyleSheet(
+            self.roulette_input_field[index].setEnabled(True)
+            self.roulette_input_field[index].setStyleSheet(
                 'QLineEdit {'
-                f'background-color : rgb(' + str(self.roulette_palette[self.count-1][0]) + ',' + str(self.roulette_palette[self.count-1][1]) + ',' + str(self.roulette_palette[self.count-1][2]) + ',);'
+                f'background-color : rgb(' + str(self.roulette_palette[index][0]) + ',' + str(self.roulette_palette[index][1]) + ',' + str(self.roulette_palette[index][2]) + ',);'
                 'color : rgb(47,54,95);'
                 'font-family : Noto Sans KR;'
                 'border : 2px solid rgb(47,54,95);'
                 '}'
             )
-            self.input[self.count-1] = self.roulette_input_field[self.count-1].text()
-            for i in range(self.count):
-                self.roulette_probability_label[i].setText(str(int(100 / (self.count))) + '%')
-            
-            self.update()
+            self.input[index] = self.roulette_input_field[index].text()
+            self.activate_flag[index] = True
+            self.update()    
     
-    def remove_roulette(self):
-        if self.count > 2:
-            self.roulette_input_field[self.count-1].setEnabled(False)
-            self.roulette_input_field[self.count-1].setStyleSheet(
+    def remove_roulette(self, index):
+        if self.count == 2 or index == -1:
+            return
+
+        if self.activate_flag[index] != False:
+            self.count -= 1
+            self.roulette_input_field[index].setEnabled(False)
+            self.roulette_input_field[index].setStyleSheet(
                 'QLineEdit {'
                 f'background-color : rgb(128,128,128);'
                 'color : rgb(47,54,95);'
@@ -1451,23 +1449,16 @@ class RouletteWidget(QWidget):
                 'border : 2px solid rgb(47,54,95);'
                 '}'
             )
-            self.input[self.count-1] = ''
-            self.roulette_probability_label[self.count-1].setText('00%')
-            for i in range(self.count-1):
-                self.roulette_probability_label[i].setText(str(int(100 / (self.count-1))) + '%')
-                
-            self.count -= 1
+            self.input[index] = ''
+            self.activate_flag[index] = False
             
             self.update()
     
     def spin_roulette(self):
         self.set_roulette_speed(self.roulette_speed_combobox.currentText())
 
-        self.roulette_add_button.setEnabled(False)
         self.spin_roulette_button.setEnabled(False)
         self.spin_roulette_button.setText('빙글빙글 돌아가는 룰렛')
-        self.roulette_remove_button.setEnabled(False)
-        
         
         for i in range(self.count):
             self.input[i] = self.roulette_input_field[i].text()
@@ -1495,10 +1486,8 @@ class RouletteWidget(QWidget):
             
         qp.end()   
         
-        self.roulette_add_button.setEnabled(True)
         self.spin_roulette_button.setEnabled(True)
         self.spin_roulette_button.setText('빙글빙글 돌아가는')
-        self.roulette_remove_button.setEnabled(True)
     
     def paintEvent(self, event):
         qp = QPainter()
@@ -1515,23 +1504,38 @@ class RouletteWidget(QWidget):
         roulette_center_x = int(W_width / 2)
         roulette_center_y = 50 + (DIAMETER / 2)
         radius = DIAMETER / 2 * 0.65
+        temp_roulette_palette = []
+        temp_roulette_input = []
+        count = 0
         
-        for i in range(n):
-            qp.setPen(QPen(Qt.black, 0))
-            color = QColor(self.roulette_palette[i][0], self.roulette_palette[i][1], self.roulette_palette[i][2])
-            brush = QBrush(color)
-            qp.setBrush(brush)
-            qp.drawPie(int(W_width / 2 - DIAMETER / 2), 50, DIAMETER, DIAMETER, int(270 * 16 + 360 * 16 / n * i) - rotate, int(360 * 16 / n))
-        
-        for i in range(n):
-            font = QFont('Noto Sans KR', 20 - int(len(self.roulette_input_field[i].text()) * 0.25) + int(20 / n))
-            qp.setFont(font)
-            angle = 110 + (360 / n)  * (i + 1) * (-1) + rotate / 16 + 360 / math.pow(n, 2) / 2
-            x = roulette_center_x + (radius * math.cos(math.radians(angle))) - 250
-            y = roulette_center_y + (radius * math.sin(math.radians(angle))) - 50
-            qp.drawText(QRect(int(x), int(y), 500, 100), Qt.AlignCenter, self.roulette_input_field[i].text())
+        for i in range(MAX_ROULETTE_INPUT):
+            if self.activate_flag[i] == True:
+                qp.setPen(QPen(Qt.black, 0))
+                color = QColor(self.roulette_palette[i][0], self.roulette_palette[i][1], self.roulette_palette[i][2])
+                brush = QBrush(color)
+                qp.setBrush(brush)
+                qp.drawPie(int(W_width / 2 - DIAMETER / 2), 50, DIAMETER, DIAMETER, int(270 * 16 + 360 * 16 / n * count) - rotate, int(360 * 16 / n))
+                count += 1
 
-        self.set_result_label(self.roulette_palette[int(rotate / 360 / 16 * n % n)][0], self.roulette_palette[int(rotate / 360 / 16 * n % n)][1], self.roulette_palette[int(rotate / 360 / 16 * n % n)][2], int(rotate / 360 / 16 * n % n))     
+        count = 0
+
+        for i in range(MAX_ROULETTE_INPUT):
+            if self.activate_flag[i] == True:
+                font = QFont('Noto Sans KR', 20 - int(len(self.roulette_input_field[i].text()) * 0.25) + int(20 / n))
+                qp.setFont(font)
+                angle = 110 + (360 / n)  * (count + 1) * (-1) + rotate / 16 + 360 / math.pow(n, 2) / 2
+                x = roulette_center_x + (radius * math.cos(math.radians(angle))) - 250
+                y = roulette_center_y + (radius * math.sin(math.radians(angle))) - 50
+                qp.drawText(QRect(int(x), int(y), 500, 100), Qt.AlignCenter, self.roulette_input_field[i].text())
+                count += 1
+
+        for i in range(MAX_ROULETTE_INPUT):
+            if self.activate_flag[i] == True:
+                temp_roulette_palette.append(self.roulette_palette[i])
+                temp_roulette_input.append(self.input[i])
+        print(self.activate_flag)
+
+        self.set_result_label(temp_roulette_palette[int(rotate / 360 / 16 * n % n)][0], temp_roulette_palette[int(rotate / 360 / 16 * n % n)][1], temp_roulette_palette[int(rotate / 360 / 16 * n % n)][2], temp_roulette_input[int(rotate / 360 / 16 * n % n)])     
     
     def draw_roulette_pin(self, qp):
         qp.setPen(QPen(Qt.red, 0))
@@ -1547,7 +1551,7 @@ class RouletteWidget(QWidget):
         qp.drawPolygon(points)
         qp.setPen(QPen(Qt.black, 2))
         
-    def set_result_label(self, red, green, blue, idx):
+    def set_result_label(self, red, green, blue, text):
         self.roulette_result_label.setStyleSheet(
             'QLabel {'
             f'background-color : rgb(' + str(red) + ',' + str(green) + ',' + str(blue) + ');'
@@ -1556,7 +1560,7 @@ class RouletteWidget(QWidget):
             'font-family : Noto Sans KR;'
             '}'
         )
-        self.roulette_result_label.setText(self.input[idx])
+        self.roulette_result_label.setText(text)
             
 if __name__ == '__main__':
     app = QApplication(sys.argv)
