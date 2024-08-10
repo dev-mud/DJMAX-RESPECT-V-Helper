@@ -406,6 +406,10 @@ class MainWindow(QMainWindow):
             self.ladder_tier.append(key)
             self.ladder_tier_sc_level.append([ladder_tier_data[key]["SC_MIN_LEVEL"], ladder_tier_data[key]["SC_MAX_LEVEL"]])
             self.ladder_tier_non_sc_level.append([ladder_tier_data[key]["NON_SC_MIN_LEVEL"], ladder_tier_data[key]["NON_SC_MAX_LEVEL"]])
+
+        print(self.ladder_tier)
+        print(self.ladder_tier_non_sc_level)
+        print(self.ladder_tier_sc_level)    
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -484,7 +488,7 @@ class MainWindow(QMainWindow):
         self.option_checkbox = QCheckBox('룰렛 SKIP')
         self.option_checkbox_2 = QCheckBox('한번에 뽑기')
         self.option_checkbox_3 = QCheckBox('곡만 뽑기')
-        self.option_checkbox_4 = QCheckBox('LADDER(추후 업데이트 예정)')
+        self.option_checkbox_4 = QCheckBox('LADDER(BETA)')
         self.multi_select_count_spinbox = QSpinBox()
         self.ladder_tier_select_combobox = QComboBox()
         self.memo_label = QLabel('MEMO\n(Beta)')
@@ -740,12 +744,31 @@ class MainWindow(QMainWindow):
             return
         
         return category_filter, button_filter, difficulty_filter, level_filter
-    
+
     def click_select_button(self):
-        try:
-            category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
-        except TypeError:
-            return
+        if self.option_checkbox_4.isChecked():
+            category_filter = self.category_name.copy()
+            button_filter = self.filtering_button()
+            difficulty_filter = self.difficulty.copy()
+            level_filter = []
+            range_non_sc_level = self.ladder_tier_non_sc_level[self.ladder_tier_select_combobox.currentIndex()]
+            range_sc_level = self.ladder_tier_sc_level[self.ladder_tier_select_combobox.currentIndex()]
+
+            if len(button_filter) == 0:
+                QMessageBox.information(self, 'BEXTER is GOD', '버튼을 선택하세요')
+                return
+
+            if range_non_sc_level[0] != -1:
+                for level in range(range_non_sc_level[0], range_non_sc_level[1] + 1):
+                    level_filter.append(str(level))
+            if range_sc_level[0] != -1:
+                for level in range(range_sc_level[0], range_sc_level[1] + 1):
+                    level_filter.append('SC ' + str(level))
+        else:
+            try:
+                category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
+            except TypeError:
+                return
         
         if self.option_checkbox_2.isChecked():
             if self.multi_select_count_spinbox.value() > MAX_MULTI_SELECT or self.multi_select_count_spinbox.value() <= 1:
@@ -839,7 +862,7 @@ class MainWindow(QMainWindow):
         )
         
         self.select_button.setEnabled(True)
-     
+
     def click_roulette_button(self):
         self.stack.setCurrentIndex(2)
     
@@ -1532,8 +1555,7 @@ class RouletteWidget(QWidget):
         for i in range(MAX_ROULETTE_INPUT):
             if self.activate_flag[i] == True:
                 temp_roulette_palette.append(self.roulette_palette[i])
-                temp_roulette_input.append(self.input[i])
-        print(self.activate_flag)
+                temp_roulette_input.append(self.roulette_input_field[i].text())
 
         self.set_result_label(temp_roulette_palette[int(rotate / 360 / 16 * n % n)][0], temp_roulette_palette[int(rotate / 360 / 16 * n % n)][1], temp_roulette_palette[int(rotate / 360 / 16 * n % n)][2], temp_roulette_input[int(rotate / 360 / 16 * n % n)])     
     
@@ -1560,7 +1582,7 @@ class RouletteWidget(QWidget):
             'font-family : Noto Sans KR;'
             '}'
         )
-        self.roulette_result_label.setText(text)
+        self.roulette_result_label.setText(text)    
             
 if __name__ == '__main__':
     app = QApplication(sys.argv)
