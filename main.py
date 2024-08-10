@@ -325,7 +325,7 @@ class MainWindow(QMainWindow):
         self.floor_button = []
         
         for button in [4, 5, 6, 8]:
-            res = requests.get('https://v-archive.net/grade/' + str(button) + '/SC')
+            res = requests.get('https://v-archive.net/grade/' + str(button) + '/ALL')
             soup = BeautifulSoup(res.text, 'html.parser')
             dlc = soup.find_all('span', attrs={"class" : "dlc_code_wrap"})
             song_name = soup.find_all('a', attrs={"class" : "title_name"})
