@@ -1,11 +1,13 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, QMessageBox, QCheckBox, QSpinBox, QComboBox
-from PyQt5.QtWidgets import QLabel, QPushButton, QLineEdit, QTextEdit
+from PyQt5.QtWidgets import QLabel, QPushButton, QLineEdit, QTextEdit, QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QAbstractItemView, QHeaderView
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtTest import *
 from functools import partial
 from bs4 import BeautifulSoup
+import pandas as pd
 import sys, os
 import math
 import random
@@ -19,7 +21,7 @@ song_DB_path = 'songs.json'
 ladder_tier_DB_path = 'ladder_tier.json'
 
 W_width = 560 #창 가로 길이
-W_height = 980 #창 세로 길이
+W_height = 1000 #창 세로 길이
 
 MAX_MULTI_SELECT = 10 #'한 번에 뽑기' 최대 개수
 MAX_ROULETTE_INPUT = 10 #룰렛 항목 최대 개수
@@ -48,10 +50,13 @@ class MainWindow(QMainWindow):
         self.select_button.clicked.connect(self.click_select_button)
         self.roulette_button = QPushButton('룰렛')
         self.roulette_button.clicked.connect(self.click_roulette_button)
+        self.statistics_button = QPushButton('곡 통계(BETA)')
+        self.statistics_button.clicked.connect(self.click_statistics_button)
         
         self.right_layout.addWidget(self.thumbnail_label)
         self.right_layout.addWidget(self.select_button)
         self.right_layout.addWidget(self.roulette_button)
+        self.right_layout.addWidget(self.statistics_button)
         
         #'한 번에 뽑기' 위젯(QStackedWidget #2)
         self.multi_select_widget = QWidget()
@@ -59,6 +64,9 @@ class MainWindow(QMainWindow):
         
         #룰렛 위젯(QStackedWidget #3)
         self.roulette_widget = RouletteWidget(self)
+
+        #통계 위젯(QStackedWidget #4)
+        self.statistics_widget = StatisticsWidget(self)
 
         self.setFixedSize(W_width, W_height)
         self.init_stacked_widget()
@@ -81,6 +89,7 @@ class MainWindow(QMainWindow):
         self.stack.addWidget(self.main_widget)
         self.stack.addWidget(self.multi_select_widget)
         self.stack.addWidget(self.roulette_widget)
+        self.stack.addWidget(self.statistics_widget)
         
     def set_css(self):
         palette = self.palette()
@@ -136,6 +145,24 @@ class MainWindow(QMainWindow):
         )
         
         self.roulette_button.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.statistics_button.setStyleSheet(
             'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
@@ -353,11 +380,13 @@ class MainWindow(QMainWindow):
                 self.floor_button.append(button)
         
     def load_Data(self):
+        count = 0
+
         with open(song_DB_path, 'r', encoding='utf-8') as f:
             song_json = json.load(f, strict=False)
         
         with open(ladder_tier_DB_path, 'r', encoding='utf-8') as f:
-            ladder_tier_json = json.load(f, strict=False)
+            ladder_tier_json = json.load(f, strict=False)       
 
         try: 
             self.crawling_from_archive()    
@@ -405,11 +434,7 @@ class MainWindow(QMainWindow):
         for i, key in enumerate(ladder_tier_data):
             self.ladder_tier.append(key)
             self.ladder_tier_sc_level.append([ladder_tier_data[key]["SC_MIN_LEVEL"], ladder_tier_data[key]["SC_MAX_LEVEL"]])
-            self.ladder_tier_non_sc_level.append([ladder_tier_data[key]["NON_SC_MIN_LEVEL"], ladder_tier_data[key]["NON_SC_MAX_LEVEL"]])
-
-        print(self.ladder_tier)
-        print(self.ladder_tier_non_sc_level)
-        print(self.ladder_tier_sc_level)    
+            self.ladder_tier_non_sc_level.append([ladder_tier_data[key]["NON_SC_MIN_LEVEL"], ladder_tier_data[key]["NON_SC_MAX_LEVEL"]])  
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -865,6 +890,9 @@ class MainWindow(QMainWindow):
 
     def click_roulette_button(self):
         self.stack.setCurrentIndex(2)
+
+    def click_statistics_button(self):
+        self.stack.setCurrentIndex(3)
     
     def click_category(self, i):
         if self.category_flag[i] == True:
@@ -1583,6 +1611,144 @@ class RouletteWidget(QWidget):
             '}'
         )
         self.roulette_result_label.setText(text)    
+
+class StatisticsWidget(QWidget):
+    def __init__(self, parent):
+        super(StatisticsWidget, self).__init__(parent)
+        self.parent = parent
+        self.set_data()
+        self.initUI()
+
+    def initUI(self):
+        self.statistics_layout = QVBoxLayout()
+        self.statistics_setting_layout = QHBoxLayout()
+        self.statistics_bottom_layout = QVBoxLayout()
+        self.statistics_table_widget = QTableWidget()
+        self.statistics_category_label = QLabel('CATEGORY')
+        self.statistics_category_combobox = QComboBox()
+        self.statistics_search_button = QPushButton('SEARCH')
+        self.home_button = QPushButton('확인')
+
+        self.setLayout(self.statistics_layout)
+        
+        self.statistics_layout.addLayout(self.statistics_setting_layout)
+        self.statistics_setting_layout.addWidget(self.statistics_category_label)
+        self.statistics_setting_layout.addWidget(self.statistics_category_combobox)
+        self.statistics_setting_layout.addWidget(self.statistics_search_button)
+        self.statistics_layout.addWidget(self.statistics_table_widget)
+        self.statistics_layout.addLayout(self.statistics_bottom_layout)
+        self.statistics_bottom_layout.addWidget(self.home_button)
+        self.statistics_category_combobox.addItems(self.statistics_category)
+
+        self.statistics_bottom_layout.setAlignment(Qt.AlignBottom)
+
+        self.statistics_search_button.clicked.connect(partial(self.search_data, ''))
+        self.home_button.clicked.connect(self.parent.return_to_home)
+
+        self.set_css()
+
+    def set_data(self):
+        self.song_name = self.parent.song_name
+        self.category = self.parent.category
+        self.level = self.parent.level
+        self.level_range = self.parent.level_range
+
+        self.statistics_category = ['레벨 분포']
+
+        #레벨 분포
+        self.level_count = [[0, 0, 0, 0] for i in range(len(self.level_range))]
+        for level_list_2d in self.level:
+            for i, level_list in enumerate(level_list_2d):
+                for j, level in enumerate(level_list):
+                    if level != '-':
+                        if j == 3:
+                            index = self.level_range.index('SC ' + level)
+                        else:
+                            index = self.level_range.index(level)
+                        self.level_count[index][i] += 1        
+
+    def set_css(self):
+        self.statistics_category_label.setStyleSheet(
+            'QLabel {'
+            f'font : bold;'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.statistics_category_combobox.setStyleSheet(
+            'QComboBox {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.statistics_search_button.setMaximumWidth(100)
+        self.statistics_search_button.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.home_button.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.statistics_table_widget.setStyleSheet(
+            'QTableWidget {'
+            f'background-color: rgb(255,255,255);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QHeaderView::section {'
+            f'background-color: rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+    def set_table_widget_items(self, data, row, column):
+        self.statistics_table_widget.setRowCount(len(row))
+        self.statistics_table_widget.setColumnCount(len(column))
+        self.statistics_table_widget.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.statistics_table_widget.setVerticalHeaderLabels(row)
+        self.statistics_table_widget.setHorizontalHeaderLabels(column)
+
+        for i, data_list in enumerate(data):
+            for j, element in enumerate(data_list):
+                item = QTableWidgetItem(str(element))
+                self.statistics_table_widget.setItem(i, j, item)
+
+        self.statistics_table_widget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)        
+
+    def search_data(self, keyword):
+        if keyword == '':
+            self.set_table_widget_items(self.level_count, self.level_range,['4 BUTTON','5 BUTTON','6 BUTTON','8 BUTTON'])
             
 if __name__ == '__main__':
     app = QApplication(sys.argv)
