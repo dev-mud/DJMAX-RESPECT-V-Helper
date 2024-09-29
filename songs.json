@@ -19228,5 +19228,365 @@
                 "13"
             ]
         ]
+    },
+    "Empty Your Mind 1st": {
+        "artist": "AJURIKA",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "4",
+                "8",
+                "13",
+                "9"
+            ],
+            [
+                "4",
+                "9",
+                "12",
+                "10"
+            ],
+            [
+                "7",
+                "10",
+                "14",
+                "10"
+            ],
+            [
+                "4",
+                "9",
+                "13",
+                "10"
+            ]
+        ]
+    },
+    "Equator Line 1st": {
+        "artist": "AJURIKA",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "4",
+                "8",
+                "12",
+                "10"
+            ],
+            [
+                "5",
+                "9",
+                "11",
+                "9"
+            ],
+            [
+                "5",
+                "9",
+                "13",
+                "9"
+            ],
+            [
+                "6",
+                "9",
+                "12",
+                "10"
+            ]
+        ]
+    },
+    "Fiji -Paraiso Mix- (Eternal Paradise)": {
+        "artist": "Keiichi Okabe (MONACA, Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "5",
+                "7",
+                "10",
+                "8"
+            ],
+            [
+                "5",
+                "8",
+                "11",
+                "7"
+            ],
+            [
+                "5",
+                "8",
+                "11",
+                "7"
+            ],
+            [
+                "5",
+                "7",
+                "10",
+                "7"
+            ]
+        ]
+    },
+    "Heat Haze Shadow": {
+        "artist": "AJURIKA",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "3",
+                "7",
+                "11",
+                "9"
+            ],
+            [
+                "5",
+                "8",
+                "11",
+                "8"
+            ],
+            [
+                "6",
+                "10",
+                "12",
+                "10"
+            ],
+            [
+                "8",
+                "9",
+                "13",
+                "11"
+            ]
+        ]
+    },
+    "Kitsch": {
+        "artist": "Yu Miyake (Bandai Namco Entertainment Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "2",
+                "5",
+                "9",
+                "6"
+            ],
+            [
+                "4",
+                "7",
+                "10",
+                "7"
+            ],
+            [
+                "4",
+                "8",
+                "10",
+                "8"
+            ],
+            [
+                "5",
+                "8",
+                "11",
+                "8"
+            ]
+        ]
+    },
+    "Moonlit Wilderness": {
+        "artist": "Satoru Kosaki (Bandai Namco Entertainment Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "2",
+                "7",
+                "11",
+                "9"
+            ],
+            [
+                "4",
+                "7",
+                "12",
+                "9"
+            ],
+            [
+                "3",
+                "8",
+                "12",
+                "8"
+            ],
+            [
+                "3",
+                "7",
+                "11",
+                "8"
+            ]
+        ]
+    },
+    "Moonsiders 1st": {
+        "artist": "Taku Inoue (Bandai Namco Studios Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "4",
+                "8",
+                "12",
+                "10"
+            ],
+            [
+                "4",
+                "7",
+                "11",
+                "8"
+            ],
+            [
+                "5",
+                "8",
+                "12",
+                "10"
+            ],
+            [
+                "4",
+                "8",
+                "12",
+                "9"
+            ]
+        ]
+    },
+    "My Last Stand": {
+        "artist": "mifumei (Bandai Namco Studios Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "6",
+                "9",
+                "12",
+                "10"
+            ],
+            [
+                "4",
+                "7",
+                "12",
+                "7"
+            ],
+            [
+                "4",
+                "8",
+                "12",
+                "11"
+            ],
+            [
+                "5",
+                "8",
+                "13",
+                "10"
+            ]
+        ]
+    },
+    "Poolside": {
+        "artist": "Hiroshi Okubo (Bandai Namco Entertainment Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "3",
+                "9",
+                "12",
+                "9"
+            ],
+            [
+                "5",
+                "8",
+                "12",
+                "9"
+            ],
+            [
+                "4",
+                "7",
+                "12",
+                "10"
+            ],
+            [
+                "6",
+                "9",
+                "11",
+                "8"
+            ]
+        ]
+    },
+    "Tekken Tag Tournament Piano Intro -Massive True Mix-": {
+        "artist": "Akitaka Tohyama (Bandai Namco Entertainment Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "2",
+                "6",
+                "13",
+                "9"
+            ],
+            [
+                "4",
+                "7",
+                "11",
+                "11"
+            ],
+            [
+                "2",
+                "6",
+                "10",
+                "9"
+            ],
+            [
+                "4",
+                "7",
+                "12",
+                "10"
+            ]
+        ]
+    },
+    "The Decisive Blow (Normal)": {
+        "artist": "Hiroshi Okubo",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "4",
+                "10",
+                "13",
+                "10"
+            ],
+            [
+                "5",
+                "9",
+                "13",
+                "10"
+            ],
+            [
+                "4",
+                "8",
+                "14",
+                "11"
+            ],
+            [
+                "3",
+                "17",
+                "14",
+                "11"
+            ]
+        ]
+    },
+    "Yodeling in meadow hill (Hidden Retreat)": {
+        "artist": "Keiichi Okabe (MONACA, Inc.)",
+        "category": "TEKKEN",
+        "difficulty": [
+            [
+                "5",
+                "8",
+                "13",
+                "13"
+            ],
+            [
+                "5",
+                "8",
+                "12",
+                "9"
+            ],
+            [
+                "5",
+                "7",
+                "12",
+                "11"
+            ],
+            [
+                "6",
+                "9",
+                "13",
+                "10"
+            ]
+        ]
     }
 }
