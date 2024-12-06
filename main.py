@@ -16,7 +16,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.5.0'
+VERSION = '1.5.2'
 song_DB_path = 'songs.json'
 ladder_tier_DB_path = 'ladder_tier.json'
 
@@ -369,7 +369,7 @@ class MainWindow(QMainWindow):
                 
                 for j in range(self.floor_count[i]):
                     self.floor.append(self.floor_num[i])  
-            
+
             for i, txt in enumerate(song_name):
                 self.floor_category.append(txt.text.strip())
                 self.floor_sname.append(song_name[i].text.strip())
@@ -377,8 +377,8 @@ class MainWindow(QMainWindow):
                     self.floor_level.append(difficulty[i].text.strip())
                 else:
                     self.floor_level.append(difficulty[i].text.strip().split(' ')[1])
-                self.floor_button.append(button)
-        
+                self.floor_button.append(button)      
+
     def load_Data(self):
         count = 0
 
@@ -403,9 +403,9 @@ class MainWindow(QMainWindow):
         self.level_color = [['255', '255', '0'], ['255', '127', '0'], ['255', '0', '0'], ['224', '0', '117'], ['198', '4', '227'], ['61', '102', '255']]
         self.category = []
         self.category_flag = []
-        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['255', '81', '186'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
-        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['69', '238', '252'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
-        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'V LIBERTY', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'CLEAR PASS']
+        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['255', '81', '186'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
+        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['69', '238', '252'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
+        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'V LIBERTY', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'TEKKEN', 'CLEAR PASS']
         self.difficulty = ['NORMAL', 'HARD', 'MAXIMUM', 'SC']
         self.difficulty_flag = []
         self.difficulty_color = [['255', '255', '0'], ['255', '102', '0'], ['255', '0', '0'], ['198', '4', '227']]
@@ -1642,7 +1642,7 @@ class StatisticsWidget(QWidget):
 
         self.statistics_bottom_layout.setAlignment(Qt.AlignBottom)
 
-        self.statistics_search_button.clicked.connect(partial(self.search_data, ''))
+        self.statistics_search_button.clicked.connect(self.search_data)
         self.home_button.clicked.connect(self.parent.return_to_home)
 
         self.set_css()
@@ -1652,8 +1652,11 @@ class StatisticsWidget(QWidget):
         self.category = self.parent.category
         self.level = self.parent.level
         self.level_range = self.parent.level_range
+        self.floor = self.parent.floor
+        self.floor_button = self.parent.floor_button
+        self.floor_num = self.parent.floor_num
 
-        self.statistics_category = ['레벨 분포']
+        self.statistics_category = ['레벨 분포', 'FLOOR 분포']
 
         #레벨 분포
         self.level_count = [[0, 0, 0, 0] for i in range(len(self.level_range))]
@@ -1665,7 +1668,35 @@ class StatisticsWidget(QWidget):
                             index = self.level_range.index('SC ' + level)
                         else:
                             index = self.level_range.index(level)
-                        self.level_count[index][i] += 1        
+                        self.level_count[index][i] += 1
+
+        #FLOOR 분포                     
+        self.floor_count = [[0, 0, 0, 0] for i in range(len(self.floor_num))]
+        for i, floor in enumerate(self.floor):
+            if self.floor_button[i] == 4:
+                try:
+                    index = self.floor_num.index(floor)
+                    self.floor_count[index][0] += 1
+                except:
+                    pass
+            if self.floor_button[i] == 5:
+                try:
+                    index = self.floor_num.index(floor)
+                    self.floor_count[index][1] += 1
+                except:
+                    pass
+            if self.floor_button[i] == 6:
+                try:
+                    index = self.floor_num.index(floor)
+                    self.floor_count[index][2] += 1
+                except:
+                    pass
+            if self.floor_button[i] == 8:
+                try:
+                    index = self.floor_num.index(floor)
+                    self.floor_count[index][3] += 1
+                except:
+                    pass       
 
     def set_css(self):
         self.statistics_category_label.setStyleSheet(
@@ -1746,9 +1777,13 @@ class StatisticsWidget(QWidget):
 
         self.statistics_table_widget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)        
 
-    def search_data(self, keyword):
-        if keyword == '':
+    def search_data(self):
+        keyword = self.statistics_category_combobox.currentText()
+
+        if keyword == '레벨 분포':
             self.set_table_widget_items(self.level_count, self.level_range,['4 BUTTON','5 BUTTON','6 BUTTON','8 BUTTON'])
+        if keyword == 'FLOOR 분포':
+            self.set_table_widget_items(self.floor_count, self.floor_num,['4 BUTTON','5 BUTTON','6 BUTTON','8 BUTTON'])    
             
 if __name__ == '__main__':
     app = QApplication(sys.argv)
