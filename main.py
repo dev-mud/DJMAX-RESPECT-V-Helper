@@ -298,12 +298,6 @@ class MainWindow(QMainWindow):
             '}'
         )
 
-        self.option_checkbox_4.setStyleSheet(
-            'QCheckBox {'
-            f'font-family : Noto Sans KR;'
-            '}'
-        )
-
         self.ladder_tier_select_combobox.setStyleSheet(
             'QComboBox {'
             f'background-color : rgb(247,241,237);'
@@ -513,7 +507,6 @@ class MainWindow(QMainWindow):
         self.option_checkbox = QCheckBox('룰렛 SKIP')
         self.option_checkbox_2 = QCheckBox('한번에 뽑기')
         self.option_checkbox_3 = QCheckBox('곡만 뽑기')
-        self.option_checkbox_4 = QCheckBox('LADDER(BETA)')
         self.multi_select_count_spinbox = QSpinBox()
         self.ladder_tier_select_combobox = QComboBox()
         self.memo_label = QLabel('MEMO\n(Beta)')
@@ -531,8 +524,6 @@ class MainWindow(QMainWindow):
         self.option_layout.addWidget(self.option_checkbox_2)
         self.option_layout.addWidget(self.multi_select_count_spinbox)
         self.option_layout.addWidget(self.option_checkbox_3)
-        self.option_layout_2.addWidget(self.option_checkbox_4)
-        self.option_layout_2.addWidget(self.ladder_tier_select_combobox)
         self.option_checkbox_2.stateChanged.connect(self.click_option_checkbox_2)
         self.memo_layout.addWidget(self.memo_label)
         self.memo_layout.addWidget(self.memo_edit)
@@ -771,29 +762,10 @@ class MainWindow(QMainWindow):
         return category_filter, button_filter, difficulty_filter, level_filter
 
     def click_select_button(self):
-        if self.option_checkbox_4.isChecked():
-            category_filter = self.category_name.copy()
-            button_filter = self.filtering_button()
-            difficulty_filter = self.difficulty.copy()
-            level_filter = []
-            range_non_sc_level = self.ladder_tier_non_sc_level[self.ladder_tier_select_combobox.currentIndex()]
-            range_sc_level = self.ladder_tier_sc_level[self.ladder_tier_select_combobox.currentIndex()]
-
-            if len(button_filter) == 0:
-                QMessageBox.information(self, 'BEXTER is GOD', '버튼을 선택하세요')
-                return
-
-            if range_non_sc_level[0] != -1:
-                for level in range(range_non_sc_level[0], range_non_sc_level[1] + 1):
-                    level_filter.append(str(level))
-            if range_sc_level[0] != -1:
-                for level in range(range_sc_level[0], range_sc_level[1] + 1):
-                    level_filter.append('SC ' + str(level))
-        else:
-            try:
-                category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
-            except TypeError:
-                return
+        try:
+            category_filter, button_filter, difficulty_filter, level_filter = self.check_filter()
+        except TypeError:
+            return
         
         if self.option_checkbox_2.isChecked():
             if self.multi_select_count_spinbox.value() > MAX_MULTI_SELECT or self.multi_select_count_spinbox.value() <= 1:
