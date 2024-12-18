@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import QWidget, QHBoxLayout, QVBoxLayout, QStackedWidget, QMessageBox, QCheckBox, QSpinBox, QComboBox
-from PyQt5.QtWidgets import QLabel, QPushButton, QLineEdit, QTextEdit, QTableWidget, QTableWidgetItem
+from PyQt5.QtWidgets import QLabel, QPushButton, QLineEdit, QTableWidget, QTableWidgetItem
 from PyQt5.QtWidgets import QAbstractItemView, QHeaderView
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -16,9 +16,9 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.5.2'
+VERSION = '1.5.3'
 song_DB_path = 'songs.json'
-ladder_tier_DB_path = 'ladder_tier.json'
+preset_DB_path = 'preset.json'
 
 W_width = 560 #창 가로 길이
 W_height = 1000 #창 세로 길이
@@ -50,7 +50,7 @@ class MainWindow(QMainWindow):
         self.select_button.clicked.connect(self.click_select_button)
         self.roulette_button = QPushButton('룰렛')
         self.roulette_button.clicked.connect(self.click_roulette_button)
-        self.statistics_button = QPushButton('곡 통계(BETA)')
+        self.statistics_button = QPushButton('곡 통계')
         self.statistics_button.clicked.connect(self.click_statistics_button)
         
         self.right_layout.addWidget(self.thumbnail_label)
@@ -108,21 +108,48 @@ class MainWindow(QMainWindow):
             'font-family : Noto Sans KR;'
             '}'
         )
-        
-        self.memo_label.setStyleSheet(
+
+        self.preset_label.setStyleSheet(
             'QLabel {'
             f'font : bold;'
             'font-family : Noto Sans KR;'
             '}'
         )
-        
-        self.memo_edit.setStyleSheet(
-            'QTextEdit {'
+
+        self.preset_lineedit.setStyleSheet(
+            'QLineEdit {'
+                f'background-color : rgb(247,241,237);'
+                'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
+                'border : 2px solid rgb(47,54,95);'
+            '}'
+        )
+        self.preset_lineedit.setMaximumWidth(150)
+
+        self.preset_save_button.setStyleSheet(
+            'QPushButton {'
             f'background-color : rgb(247,241,237);'
             'color : rgb(47,54,95);'
-            'font : bold 28px;'
             'font-family : Noto Sans KR;'
-            'border : 2px solid rgb(47,54,95);'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+        self.preset_save_button.setMaximumWidth(50)
+
+        self.preset_combobox.setStyleSheet(
+            'QComboBox {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
             '}'
         )
         
@@ -298,14 +325,6 @@ class MainWindow(QMainWindow):
             '}'
         )
 
-        self.ladder_tier_select_combobox.setStyleSheet(
-            'QComboBox {'
-            f'background-color : rgb(247,241,237);'
-            'color : rgb(47,54,95);'
-            'font-family : Noto Sans KR;'
-            '}'
-        )
-
         for filter_label in self.filter_attribute:
             filter_label.setStyleSheet(
                 'QLabel {'
@@ -374,21 +393,20 @@ class MainWindow(QMainWindow):
                 self.floor_button.append(button)      
 
     def load_Data(self):
-        count = 0
-
         with open(song_DB_path, 'r', encoding='utf-8') as f:
-            song_json = json.load(f, strict=False)
-        
-        with open(ladder_tier_DB_path, 'r', encoding='utf-8') as f:
-            ladder_tier_json = json.load(f, strict=False)       
+            song_json = json.load(f, strict=False)  
+
+        with open(preset_DB_path, 'r', encoding='utf-8') as f:
+            preset_json = json.load(f, strict=False) 
 
         try: 
             self.crawling_from_archive()    
         except:
             pass
-        self.set_data(song_json, ladder_tier_json)
+
+        self.set_data(song_json, preset_json)
         
-    def set_data(self, song_data, ladder_tier_data):
+    def set_data(self, song_data, preset_data):
         self.song_name = []
         self.artist= []
         self.level = []
@@ -408,13 +426,18 @@ class MainWindow(QMainWindow):
         self.button = [4,5,6,8]
         self.button_flag = []
         self.button_color = [['0', '255', '0'], ['0', '255', '255'], ['255', '153', '0'], ['28', '31', '133']]
-        self.ladder_tier = []
-        self.ladder_tier_sc_level = []
-        self.ladder_tier_non_sc_level = []
+        self.preset_name = []
+        self.preset_category = []
+        self.preset_button = []
+        self.preset_difficulty = []
+        self.preset_level = []
+        self.preset_option = []
+        self.preset_multi_select_count = []
         self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)']
         self.duplication_index = []
         self.status_flag = False
      
+        #songs.json 데이터 전처리
         for i, key in enumerate(song_data):
             if key not in self.duplication:
                 self.song_name.append(key)
@@ -425,10 +448,15 @@ class MainWindow(QMainWindow):
             self.category.append(song_data[key]['category'])
             self.level.append(song_data[key]['difficulty'])
 
-        for i, key in enumerate(ladder_tier_data):
-            self.ladder_tier.append(key)
-            self.ladder_tier_sc_level.append([ladder_tier_data[key]["SC_MIN_LEVEL"], ladder_tier_data[key]["SC_MAX_LEVEL"]])
-            self.ladder_tier_non_sc_level.append([ladder_tier_data[key]["NON_SC_MIN_LEVEL"], ladder_tier_data[key]["NON_SC_MAX_LEVEL"]])  
+        #preset.json 데이터 전처리
+        for i, key in enumerate(preset_data):
+            self.preset_name.append(preset_data[key]['name'])
+            self.preset_category.append(preset_data[key]['category'])
+            self.preset_button.append(preset_data[key]['button'])
+            self.preset_difficulty.append(preset_data[key]['difficulty'])
+            self.preset_level.append(preset_data[key]['level'])
+            self.preset_option.append(preset_data[key]['option'])
+            self.preset_multi_select_count.append(preset_data[key]['multi_select_count'])
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -485,8 +513,7 @@ class MainWindow(QMainWindow):
         self.v_layout = [QVBoxLayout(), QVBoxLayout()]
         self.right_layout = QVBoxLayout()
         self.option_layout = QHBoxLayout()
-        self.option_layout_2 = QHBoxLayout()
-        self.memo_layout = QHBoxLayout()
+        self.preset_layout = QHBoxLayout()
         self.filter_layout = QVBoxLayout()
         self.inter_filter_layout = []
         self.category_layout = []
@@ -507,29 +534,34 @@ class MainWindow(QMainWindow):
         self.option_checkbox = QCheckBox('룰렛 SKIP')
         self.option_checkbox_2 = QCheckBox('한번에 뽑기')
         self.option_checkbox_3 = QCheckBox('곡만 뽑기')
+        self.preset_label = QLabel('PRESET')
+        self.preset_lineedit = QLineEdit()
+        self.preset_save_button = QPushButton('SAVE')
+        self.preset_combobox = QComboBox()
         self.multi_select_count_spinbox = QSpinBox()
-        self.ladder_tier_select_combobox = QComboBox()
-        self.memo_label = QLabel('MEMO\n(Beta)')
-        self.memo_edit = QTextEdit()
         self.top_layout.addLayout(self.v_layout[0], 1)
         self.top_layout.addLayout(self.v_layout[1], 5)
         self.top_layout.addLayout(self.right_layout, 1)
         self.main_layout.addLayout(self.top_layout, 5)
-        #self.main_layout.addLayout(self.memo_layout, 1)
         self.main_layout.addLayout(self.option_layout, 1)
-        self.main_layout.addLayout(self.option_layout_2, 1)
+        self.main_layout.addLayout(self.preset_layout, 1)
         self.main_layout.addLayout(self.filter_layout, 20)
         self.option_layout.addWidget(self.option_label)
         self.option_layout.addWidget(self.option_checkbox)
         self.option_layout.addWidget(self.option_checkbox_2)
         self.option_layout.addWidget(self.multi_select_count_spinbox)
         self.option_layout.addWidget(self.option_checkbox_3)
+        self.preset_layout.addWidget(self.preset_label)
+        self.preset_layout.addWidget(self.preset_lineedit)
+        self.preset_layout.addWidget(self.preset_save_button)
+        self.preset_layout.addWidget(self.preset_combobox)
+        
+        self.preset_layout.setAlignment(Qt.AlignLeft)
+        self.preset_combobox.addItem('')
+        self.preset_combobox.addItems(self.preset_name)
+        self.preset_save_button.clicked.connect(self.click_preset_save_button)
+        self.preset_combobox.currentIndexChanged.connect(self.change_preset_combobox_item)
         self.option_checkbox_2.stateChanged.connect(self.click_option_checkbox_2)
-        self.memo_layout.addWidget(self.memo_label)
-        self.memo_layout.addWidget(self.memo_edit)
-        self.memo_edit.setMinimumHeight(50)
-
-        self.ladder_tier_select_combobox.addItems(self.ladder_tier)
         
         for i, filter in enumerate(self.filter):
             self.inter_filter_layout.append(QVBoxLayout())
@@ -734,6 +766,147 @@ class MainWindow(QMainWindow):
         else:
             self.multi_select_count_spinbox.setEnabled(False)
     
+    def click_preset_save_button(self):
+        pass
+    
+    #프리셋 콤보박스 선택 시
+    def change_preset_combobox_item(self):
+        preset_combobox_index = self.preset_combobox.currentIndex() - 1
+
+        #콤보박스 공백 선택
+        if preset_combobox_index == -1:
+            return
+        
+        #옵션 체크박스 프리셋 세팅
+        for i, flag in enumerate(self.preset_option[preset_combobox_index]):
+            if flag == 1:
+                if i == 0:
+                    self.option_checkbox.setChecked(True)
+                elif i == 1:
+                    self.option_checkbox_2.setChecked(True)
+                    self.multi_select_count_spinbox.setValue(self.preset_multi_select_count[preset_combobox_index])
+                elif i == 2:
+                    self.option_checkbox_3.setChecked(True)
+            elif flag == 0:
+                if i == 0:
+                    self.option_checkbox.setChecked(False)
+                elif i == 1:
+                    self.option_checkbox_2.setChecked(False)
+                elif i == 2:
+                    self.option_checkbox_3.setChecked(False)
+
+        #카테고리 세팅
+        for i, flag in enumerate(self.preset_category[preset_combobox_index]):
+            if flag == 1:
+                self.category_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
+                    + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
+                    + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                )
+                self.category_flag[i] = False
+            else:
+                self.category_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(247,241,237);"
+                    + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
+                    + "border : 2px solid rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                    + "QPushButton::hover {"
+                    + "background-color : rgb(" + self.category_color[i][0] + ", " + self.category_color[i][1] + ", " + self.category_color[i][2] + ");"
+                    + "color : rgb(" + self.category_font_color[i][0] + ", " + self.category_font_color[i][1] + ", " + self.category_font_color[i][2] + ");"
+                    + "font-size : 10px;"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                )
+                self.category_flag[i] = True
+
+        #버튼 세팅
+        for i, flag in enumerate(self.preset_button[preset_combobox_index]):
+            if flag == 1:
+                self.button_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "color : rgb(0,0,0);"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "}"
+                )
+                self.button_flag[i] = False
+            else:
+                self.button_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(247,241,237);"
+                    + "color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "}"
+                    + "QPushButton::hover {"
+                    + "background-color : rgb(" + self.button_color[i][0] + ", " + self.button_color[i][1] + ", " + self.button_color[i][2] + ");"
+                    + "color : rgb(0,0,0);"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                )
+                self.button_flag[i] = True
+
+        #난이도 세팅
+        for i, flag in enumerate(self.preset_difficulty[preset_combobox_index]):
+            if flag == 1:
+                self.difficulty_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                    + "color : rgb(0,0,0);"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                    + "}"
+                )
+                self.difficulty_flag[i] = False
+            else:
+                self.difficulty_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(247,241,237);"
+                    + "color : rgb(0,0,0);"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                    + "}"
+                    + "QPushButton::hover {"
+                    + "background-color : rgb(" + self.difficulty_color[i][0] + ", " + self.difficulty_color[i][1] + ", " + self.difficulty_color[i][2] + ");"
+                    + "color : rgb(0,0,0);"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                )
+                self.difficulty_flag[i] = True   
+
+        #레벨 세팅
+        for i, flag in enumerate(self.preset_level[preset_combobox_index]):
+            if flag == 1:
+                self.level_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "}"
+                )
+                self.level_flag[i] = False
+            else:
+                self.level_filter_button[i].setStyleSheet(
+                    "QPushButton {"
+                    + "background-color : rgb(247,241,237);"
+                    + "font-family : Noto Sans KR;"
+                    + "border : 2px solid rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "}"
+                    + "QPushButton::hover {"
+                    + "background-color : rgb(" + self.level_color[int(i/5)][0] + ", " + self.level_color[int(i/5)][1] + ", " + self.level_color[int(i/5)][2] + ");"
+                    + "font-family : Noto Sans KR;"
+                    + "}"
+                )
+                self.level_flag[i] = True             
+
     def check_filter(self):
         category_filter = self.filtering_category()
         if len(category_filter) == 0:
