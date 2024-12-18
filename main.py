@@ -767,7 +767,83 @@ class MainWindow(QMainWindow):
             self.multi_select_count_spinbox.setEnabled(False)
     
     def click_preset_save_button(self):
-        pass
+        with open('preset.json', 'r', encoding='utf-8') as f:
+            preset_json = json.load(f, strict=False)
+
+        preset_combobox_index = str(self.preset_combobox.currentIndex())
+
+        #콤보박스 공백 선택
+        if preset_combobox_index == '0':
+            return
+
+        preset_json[preset_combobox_index]['name'] = self.preset_lineedit.text()
+        preset_json[preset_combobox_index]['multi_select_count'] = self.multi_select_count_spinbox.value()
+        category = []
+        button = []
+        difficulty = []
+        level = []
+        option = []
+
+        #옵션 체크박스 프리셋 가져오기
+        if self.option_checkbox.isChecked() == True:
+            option.append(1)
+        else:
+            option.append(0)
+
+        if self.option_checkbox_2.isChecked() == True:
+            option.append(1)
+        else:
+            option.append(0)
+
+        if self.option_checkbox_3.isChecked() == True:
+            option.append(1)
+        else:
+            option.append(0)        
+
+        preset_json[preset_combobox_index]['option'] = option
+
+        print(self.category_flag)
+
+        #카테고리 프리셋 가져오기
+        for flag in self.category_flag:
+            if flag == True:
+                category.append(0)
+            else:
+                category.append(1)
+
+        preset_json[preset_combobox_index]['category'] = category        
+
+        #버튼 프리셋 가져오기
+        for flag in self.button_flag:
+            if flag == True:
+                button.append(0)
+            else:
+                button.append(1)    
+
+        preset_json[preset_combobox_index]['button'] = button        
+
+        #난이도 프리셋 가져오기
+        for flag in self.difficulty_flag:
+            if flag == True:
+                difficulty.append(0)
+            else:
+                difficulty.append(1)
+
+        preset_json[preset_combobox_index]['difficulty'] = difficulty        
+
+        #레벨 프리셋 가져오기
+        for flag in self.level_flag:
+            if flag == True:
+                level.append(0)
+            else:
+                level.append(1)
+
+        preset_json[preset_combobox_index]['level'] = level
+
+        with open("preset.json", "w", encoding='utf-8') as f:
+            json.dump(preset_json, f, ensure_ascii=False, indent=4)
+
+        QMessageBox.information(self, '신승철', '프리셋 저장 완료')
     
     #프리셋 콤보박스 선택 시
     def change_preset_combobox_item(self):
@@ -910,25 +986,25 @@ class MainWindow(QMainWindow):
     def check_filter(self):
         category_filter = self.filtering_category()
         if len(category_filter) == 0:
-            QMessageBox.information(self, 'BEXTER is GOD', '카테고리를 선택하세요')
+            QMessageBox.information(self, '신승철', '카테고리를 선택하세요')
             self.select_button.setEnabled(True)
             return
         
         button_filter = self.filtering_button()
         if len(button_filter) == 0:
-            QMessageBox.information(self, 'BEXTER is GOD', '버튼을 선택하세요')
+            QMessageBox.information(self, '신승철', '버튼을 선택하세요')
             self.select_button.setEnabled(True)
             return
         
         difficulty_filter = self.filtering_difficulty()
         if len(difficulty_filter) == 0:
-            QMessageBox.information(self, 'BEXTER is GOD', '난이도를 선택하세요')
+            QMessageBox.information(self, '신승철', '난이도를 선택하세요')
             self.select_button.setEnabled(True)
             return
         
         level_filter = self.filtering_level()
         if len(level_filter) == 0:
-            QMessageBox.information(self, 'BEXTER is GOD', '레벨을 선택하세요')
+            QMessageBox.information(self, '신승철', '레벨을 선택하세요')
             self.select_button.setEnabled(True)
             return
         
@@ -942,7 +1018,7 @@ class MainWindow(QMainWindow):
         
         if self.option_checkbox_2.isChecked():
             if self.multi_select_count_spinbox.value() > MAX_MULTI_SELECT or self.multi_select_count_spinbox.value() <= 1:
-                QMessageBox.information(self, 'BEXTER is GOD', '2~' + str(MAX_MULTI_SELECT) + ' 사이의 수를 입력하세요')
+                QMessageBox.information(self, '신승철', '2~' + str(MAX_MULTI_SELECT) + ' 사이의 수를 입력하세요')
                 return
             if self.option_checkbox_3.isChecked():
                 button_filter, difficulty_filter, level_filter = [], [], []
