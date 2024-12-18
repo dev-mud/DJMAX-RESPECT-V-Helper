@@ -777,7 +777,11 @@ class MainWindow(QMainWindow):
             return
 
         preset_json[preset_combobox_index]['name'] = self.preset_lineedit.text()
+        self.preset_combobox.setItemText(self.preset_combobox.currentIndex(), self.preset_lineedit.text())
+
         preset_json[preset_combobox_index]['multi_select_count'] = self.multi_select_count_spinbox.value()
+        self.preset_multi_select_count[self.preset_combobox.currentIndex()-1] = self.multi_select_count_spinbox.value()
+
         category = []
         button = []
         difficulty = []
@@ -801,8 +805,7 @@ class MainWindow(QMainWindow):
             option.append(0)        
 
         preset_json[preset_combobox_index]['option'] = option
-
-        print(self.category_flag)
+        self.preset_option[self.preset_combobox.currentIndex()-1] = option.copy()
 
         #카테고리 프리셋 가져오기
         for flag in self.category_flag:
@@ -811,7 +814,8 @@ class MainWindow(QMainWindow):
             else:
                 category.append(1)
 
-        preset_json[preset_combobox_index]['category'] = category        
+        preset_json[preset_combobox_index]['category'] = category
+        self.preset_category[self.preset_combobox.currentIndex()-1] = category.copy()        
 
         #버튼 프리셋 가져오기
         for flag in self.button_flag:
@@ -820,7 +824,8 @@ class MainWindow(QMainWindow):
             else:
                 button.append(1)    
 
-        preset_json[preset_combobox_index]['button'] = button        
+        preset_json[preset_combobox_index]['button'] = button
+        self.preset_button[self.preset_combobox.currentIndex()-1] = button.copy()        
 
         #난이도 프리셋 가져오기
         for flag in self.difficulty_flag:
@@ -829,7 +834,8 @@ class MainWindow(QMainWindow):
             else:
                 difficulty.append(1)
 
-        preset_json[preset_combobox_index]['difficulty'] = difficulty        
+        preset_json[preset_combobox_index]['difficulty'] = difficulty
+        self.preset_difficulty[self.preset_combobox.currentIndex()-1] = difficulty.copy()        
 
         #레벨 프리셋 가져오기
         for flag in self.level_flag:
@@ -839,6 +845,7 @@ class MainWindow(QMainWindow):
                 level.append(1)
 
         preset_json[preset_combobox_index]['level'] = level
+        self.preset_level[self.preset_combobox.currentIndex()-1] = level.copy()
 
         with open("preset.json", "w", encoding='utf-8') as f:
             json.dump(preset_json, f, ensure_ascii=False, indent=4)
