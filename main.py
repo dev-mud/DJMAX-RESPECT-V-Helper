@@ -18,7 +18,8 @@ import re
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
 VERSION = '1.6.0'
 song_DB_path = 'songs.json'
-preset_DB_path = 'preset.json'
+preset_filter_DB_path = 'preset_filter.json'
+preset_roulette_DB_path = 'preset_roulette.json'
 
 W_width = 560 #창 가로 길이
 W_height = 1000 #창 세로 길이
@@ -396,17 +397,20 @@ class MainWindow(QMainWindow):
         with open(song_DB_path, 'r', encoding='utf-8') as f:
             song_json = json.load(f, strict=False)  
 
-        with open(preset_DB_path, 'r', encoding='utf-8') as f:
-            preset_json = json.load(f, strict=False) 
+        with open(preset_filter_DB_path, 'r', encoding='utf-8') as f:
+            preset_filter_json = json.load(f, strict=False)
+
+        with open(preset_roulette_DB_path, 'r', encoding='utf-8') as f:
+            preset_roulette_json = json.load(f, strict=False)     
 
         try: 
             self.crawling_from_archive()    
         except:
             pass
 
-        self.set_data(song_json, preset_json)
+        self.set_data(song_json, preset_filter_json, preset_roulette_json)
         
-    def set_data(self, song_data, preset_data):
+    def set_data(self, song_data, preset_filter_json, preset_roulette_json):
         self.song_name = []
         self.artist= []
         self.level = []
@@ -415,9 +419,9 @@ class MainWindow(QMainWindow):
         self.level_color = [['255', '255', '0'], ['255', '127', '0'], ['255', '0', '0'], ['224', '0', '117'], ['198', '4', '227'], ['61', '102', '255']]
         self.category = []
         self.category_flag = []
-        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['255', '81', '186'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
-        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['69', '238', '252'], ['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
-        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'V LIBERTY', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'TEKKEN', 'CLEAR PASS']
+        self.category_color = [['255', '191', '0'], ['255', '204', '0'], ['0', '178', '255'], ['246', '40', '40'], ['210', '129', '22'], ['114', '137', '255'], ['255', '237', '193'], ['106', '0', '24'], ['249', '109', '27'], ['203', '29', '64'], ['116', '37', '221'], ['193', '17', '0'], ['1', '52', '131'], ['255', '81', '186'], ['6', '5', '75'], ['30', '182', '17'], ['252', '89', '206'], ['255','202','183'], ['85', '137', '252'], ['0', '41', '17'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['255', '133', '1']]
+        self.category_font_color = [['231', '117', '63'], ['201', '117', '244'], ['160', '77', '247'], ['115', '7', '49'], ['0', '0', '0'], ['43', '97', '178'], ['115', '115', '115'], ['220', '27', '73'], ['46', '58', '66'], ['245', '220', '142'], ['59', '10', '112'], ['0', '0', '0'], ['255', '161', '0'], ['69', '238', '252'], ['121', '217', '22'],['7', '119', '221'], ['0', '0', '0'], ['0', '0', '0'], ['0', '0', '0'], ['10', '217', '0'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['128', '128', '128'], ['0', '0', '0']]
+        self.category_name = ['RESPECT', 'RESPECT V', 'PORTABLE 1', 'PORTABLE 2', 'PORTABLE 3', 'TRILOGY', 'CLAZZIQUAI', 'BLACK SQUARE', 'V EXTENSION', 'V EXTENSION 2', 'V EXTENSION 3', 'V EXTENSION 4', 'V EXTENSION 5', 'V LIBERTY', 'V LIBERTY 2', 'EMOTIONAL SENSE', 'TECHNIKA 1', 'TECHNIKA 2', 'TECHNIKA 3', 'TECHNIKA TUNE Q', 'GUILTY GEAR', "GIRLS' FRONTLINE", 'GROOVE COASTER', 'DEEMO', 'CYTUS', 'CHUNITHM', 'ESTIMATE', 'NEXON', 'MUSE DASH', 'EZ2ON', 'MAPLESTORY', 'FALCOM', 'TEKKEN', 'CLEAR PASS']
         self.difficulty = ['NORMAL', 'HARD', 'MAXIMUM', 'SC']
         self.difficulty_flag = []
         self.difficulty_color = [['255', '255', '0'], ['255', '102', '0'], ['255', '0', '0'], ['198', '4', '227']]
@@ -433,6 +437,9 @@ class MainWindow(QMainWindow):
         self.preset_level = []
         self.preset_option = []
         self.preset_multi_select_count = []
+        self.roulette_preset_name = []
+        self.roulette_preset_enable = []
+        self.roulette_preset_item = []
         self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)']
         self.duplication_index = []
         self.status_flag = False
@@ -448,15 +455,21 @@ class MainWindow(QMainWindow):
             self.category.append(song_data[key]['category'])
             self.level.append(song_data[key]['difficulty'])
 
-        #preset.json 데이터 전처리
-        for i, key in enumerate(preset_data):
-            self.preset_name.append(preset_data[key]['name'])
-            self.preset_category.append(preset_data[key]['category'])
-            self.preset_button.append(preset_data[key]['button'])
-            self.preset_difficulty.append(preset_data[key]['difficulty'])
-            self.preset_level.append(preset_data[key]['level'])
-            self.preset_option.append(preset_data[key]['option'])
-            self.preset_multi_select_count.append(preset_data[key]['multi_select_count'])
+        #preset_filter.json 데이터 전처리
+        for i, key in enumerate(preset_filter_json):
+            self.preset_name.append(preset_filter_json[key]['name'])
+            self.preset_category.append(preset_filter_json[key]['category'])
+            self.preset_button.append(preset_filter_json[key]['button'])
+            self.preset_difficulty.append(preset_filter_json[key]['difficulty'])
+            self.preset_level.append(preset_filter_json[key]['level'])
+            self.preset_option.append(preset_filter_json[key]['option'])
+            self.preset_multi_select_count.append(preset_filter_json[key]['multi_select_count'])
+
+        #preset_roulette.json 데이터 전처리
+        for i, key in enumerate(preset_roulette_json):
+            self.roulette_preset_name.append(preset_roulette_json[key]['name'])
+            self.roulette_preset_enable.append(preset_roulette_json[key]['enable'])
+            self.roulette_preset_item.append(preset_roulette_json[key]['item'])
             
         for i in self.category_name:
             self.category_flag.append(True)
@@ -767,7 +780,7 @@ class MainWindow(QMainWindow):
             self.multi_select_count_spinbox.setEnabled(False)
     
     def click_preset_save_button(self):
-        with open('preset.json', 'r', encoding='utf-8') as f:
+        with open(preset_filter_DB_path, 'r', encoding='utf-8') as f:
             preset_json = json.load(f, strict=False)
 
         preset_combobox_index = str(self.preset_combobox.currentIndex())
@@ -847,7 +860,7 @@ class MainWindow(QMainWindow):
         preset_json[preset_combobox_index]['level'] = level
         self.preset_level[self.preset_combobox.currentIndex()-1] = level.copy()
 
-        with open("preset.json", "w", encoding='utf-8') as f:
+        with open(preset_filter_DB_path, 'w', encoding='utf-8') as f:
             json.dump(preset_json, f, ensure_ascii=False, indent=4)
 
         QMessageBox.information(self, '신승철', '프리셋 저장 완료')
@@ -1529,6 +1542,7 @@ class RouletteWidget(QWidget):
         self.roulette_layout = QVBoxLayout()
         self.roulette_bottom_layout = QVBoxLayout()
         self.roulette_button_layout = QHBoxLayout()
+        self.roulette_setting_layout = QHBoxLayout()
         self.spin_roulette_button = QPushButton('빙글빙글 돌아가는')
         self.home_button = QPushButton('확인')
         self.roulette_result_label = QLabel()
@@ -1536,16 +1550,29 @@ class RouletteWidget(QWidget):
         self.roulette_input_field = []
         self.roulette_personal_add_button = []
         self.roulette_personal_remove_button = []
+        self.roulette_speed_label = QLabel('SPEED')
         self.roulette_speed_combobox = QComboBox()
         self.roulette_speed_mode = ['NORMAL', '부드럽게', '거칠게']
+        self.roulette_preset_label = QLabel('PRESET')
+        self.roulette_preset_lineedit = QLineEdit()
+        self.roulette_preset_save_button = QPushButton('SAVE')
+        self.roulette_preset_combobox = QComboBox()
 
+        self.roulette_preset_combobox.addItem('')
+        self.roulette_preset_combobox.addItems(self.parent.roulette_preset_name)
         self.roulette_speed_combobox.addItems(self.roulette_speed_mode)
         
         self.roulette_layout.addWidget(self.roulette_result_label)
-        self.roulette_bottom_layout.addWidget(self.roulette_speed_combobox)
+        self.roulette_setting_layout.addWidget(self.roulette_preset_label)
+        self.roulette_setting_layout.addWidget(self.roulette_preset_lineedit)
+        self.roulette_setting_layout.addWidget(self.roulette_preset_combobox)
+        self.roulette_setting_layout.addWidget(self.roulette_preset_save_button)
+        self.roulette_setting_layout.addWidget(self.roulette_speed_label)
+        self.roulette_setting_layout.addWidget(self.roulette_speed_combobox)
+        self.roulette_bottom_layout.addLayout(self.roulette_setting_layout)
         self.roulette_bottom_layout.addLayout(self.roulette_button_layout)
         self.roulette_button_layout.addWidget(self.spin_roulette_button)
-        
+
         for i in range(MAX_ROULETTE_INPUT):
             self.roulette_input_layout.append(QHBoxLayout())
             self.roulette_input_field.append(QLineEdit())
@@ -1568,6 +1595,9 @@ class RouletteWidget(QWidget):
         self.roulette_result_label.setAlignment(Qt.AlignCenter)
         self.roulette_bottom_layout.setAlignment(Qt.AlignBottom)
 
+        #이벤트 함수
+        self.roulette_preset_combobox.currentIndexChanged.connect(self.change_preset_combobox_item)
+        self.roulette_preset_save_button.clicked.connect(self.click_preset_save_button)
         self.spin_roulette_button.clicked.connect(self.spin_roulette)
         self.home_button.clicked.connect(self.parent.return_to_home)
         
@@ -1584,6 +1614,59 @@ class RouletteWidget(QWidget):
         )
         self.roulette_result_label.setMaximumHeight(30)
 
+        self.roulette_preset_label.setStyleSheet(
+            'QLabel {'
+            f'color : rgb(47,54,95);'
+            'font : bold;'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.roulette_preset_lineedit.setStyleSheet(
+            'QLineEdit {'
+                f'background-color : rgb(247,241,237);'
+                'color : rgb(47,54,95);'
+                'font-family : Noto Sans KR;'
+                'border : 2px solid rgb(47,54,95);'
+            '}'
+        )
+        self.roulette_preset_lineedit.setMaximumWidth(150)
+
+        self.roulette_preset_save_button.setStyleSheet(
+            'QPushButton {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::hover {'
+            f'background-color : rgb(47,54,95);'
+            'color : rgb(247,241,237);'
+            'font-family : Noto Sans KR;'
+            '}'
+            'QPushButton::pressed {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
+        self.roulette_preset_combobox.setStyleSheet(
+            'QComboBox {'
+            f'background-color : rgb(247,241,237);'
+            'color : rgb(47,54,95);'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+        self.roulette_preset_combobox.setMinimumWidth(150)
+
+        self.roulette_speed_label.setStyleSheet(
+            'QLabel {'
+            f'color : rgb(47,54,95);'
+            'font : bold;'
+            'font-family : Noto Sans KR;'
+            '}'
+        )
+
         self.roulette_speed_combobox.setStyleSheet(
             'QComboBox {'
             f'background-color : rgb(247,241,237);'
@@ -1591,6 +1674,7 @@ class RouletteWidget(QWidget):
             'font-family : Noto Sans KR;'
             '}'
         )
+        self.roulette_speed_combobox.setMinimumWidth(100)
         
         self.spin_roulette_button.setStyleSheet(
             'QPushButton {'
@@ -1677,6 +1761,61 @@ class RouletteWidget(QWidget):
             )
             edit.setMinimumHeight(27)
     
+    def click_preset_save_button(self):
+        with open(preset_roulette_DB_path, 'r', encoding='utf-8') as f:
+            preset_json = json.load(f, strict=False)
+
+        preset_combobox_index = str(self.roulette_preset_combobox.currentIndex())
+
+        #콤보박스 공백 선택
+        if preset_combobox_index == '0':
+            return
+
+        preset_json[preset_combobox_index]['name'] = self.roulette_preset_lineedit.text()
+        self.roulette_preset_combobox.setItemText(self.roulette_preset_combobox.currentIndex(), self.roulette_preset_lineedit.text())
+
+        enable = []
+        item = []
+
+        #룰렛 아이템 활성화 여부 가져오기
+        for lineedit in self.roulette_input_field:
+            if lineedit.isEnabled() == True:
+                enable.append(1)
+            else:
+                enable.append(0)    
+
+        preset_json[preset_combobox_index]['enable'] = enable
+
+        #룰렛 아이템 가져오기
+        for lineedit in self.roulette_input_field:
+            item.append(lineedit.text())
+
+        preset_json[preset_combobox_index]['item'] = item
+
+        with open(preset_roulette_DB_path, 'w', encoding='utf-8') as f:
+            json.dump(preset_json, f, ensure_ascii=False, indent=4)
+
+        QMessageBox.information(self, '신승철', '프리셋 저장 완료')
+    
+    #프리셋 콤보박스 선택 시
+    def change_preset_combobox_item(self):
+        preset_combobox_index = self.roulette_preset_combobox.currentIndex() - 1
+
+        #콤보박스 공백 선택
+        if preset_combobox_index == -1:
+            return
+        
+        #룰렛 아이템 활성화 세팅
+        for i, flag in enumerate(self.parent.roulette_preset_enable[preset_combobox_index]):
+            if flag == 1:
+                self.add_roulette(i)
+            elif flag == 0:
+                self.remove_roulette(i)
+
+        #룰렛 아이템 세팅
+        for i, item in enumerate(self.parent.roulette_preset_item[preset_combobox_index]):
+            self.roulette_input_field[i].setText(item)  
+
     def set_roulette_speed(self, mode):
         if mode == '부드럽게':
             self.roulette_speed = 1
