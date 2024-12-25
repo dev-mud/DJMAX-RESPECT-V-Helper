@@ -1787,12 +1787,14 @@ class RouletteWidget(QWidget):
                 enable.append(0)    
 
         preset_json[preset_combobox_index]['enable'] = enable
+        self.parent.roulette_preset_enable[int(preset_combobox_index)-1] = enable.copy()
 
         #룰렛 아이템 가져오기
         for lineedit in self.roulette_input_field:
             item.append(lineedit.text())
 
         preset_json[preset_combobox_index]['item'] = item
+        self.parent.roulette_preset_item[int(preset_combobox_index)-1] = item.copy()
 
         with open(preset_roulette_DB_path, 'w', encoding='utf-8') as f:
             json.dump(preset_json, f, ensure_ascii=False, indent=4)
