@@ -1005,28 +1005,30 @@ class MainWindow(QMainWindow):
 
     def check_filter(self):
         category_filter = self.filtering_category()
+        button_filter = self.filtering_button()
+        difficulty_filter = self.filtering_difficulty()
+        level_filter = self.filtering_level()
+
         if len(category_filter) == 0:
             QMessageBox.information(self, '신승철', '카테고리를 선택하세요')
             self.select_button.setEnabled(True)
             return
         
-        button_filter = self.filtering_button()
         if len(button_filter) == 0:
             QMessageBox.information(self, '신승철', '버튼을 선택하세요')
             self.select_button.setEnabled(True)
             return
         
-        difficulty_filter = self.filtering_difficulty()
-        if len(difficulty_filter) == 0:
-            QMessageBox.information(self, '신승철', '난이도를 선택하세요')
-            self.select_button.setEnabled(True)
-            return
-        
-        level_filter = self.filtering_level()
-        if len(level_filter) == 0:
-            QMessageBox.information(self, '신승철', '레벨을 선택하세요')
-            self.select_button.setEnabled(True)
-            return
+        if self.option_checkbox_3.isChecked() == False:
+            if len(difficulty_filter) == 0:
+                QMessageBox.information(self, '신승철', '난이도를 선택하세요')
+                self.select_button.setEnabled(True)
+                return
+            
+            if len(level_filter) == 0:
+                QMessageBox.information(self, '신승철', '레벨을 선택하세요')
+                self.select_button.setEnabled(True)
+                return   
         
         return category_filter, button_filter, difficulty_filter, level_filter
 
