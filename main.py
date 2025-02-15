@@ -1829,13 +1829,13 @@ class RouletteWidget(QWidget):
         elif mode == '거칠게':
             self.roulette_speed = 1
             self.acceleration = 1 + random.randrange(400, 600)/10000
-            self.max_time = random.randrange(7000, 9000)
-            self.max_speed = 500
+            self.max_time = random.randrange(7500, 9000)
+            self.max_speed = 480
         elif mode == 'NORMAL':
             self.roulette_speed = 1
             self.acceleration = 1 + random.randrange(100, 200)/10000
-            self.max_time = random.randrange(7000, 9000)
-            self.max_speed = 375
+            self.max_time = random.randrange(7500, 9000)
+            self.max_speed = 350
 
     def add_roulette(self, index):
         if self.count == MAX_ROULETTE_INPUT or index == -1:
