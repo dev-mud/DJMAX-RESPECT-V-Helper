@@ -440,7 +440,7 @@ class MainWindow(QMainWindow):
         self.roulette_preset_name = []
         self.roulette_preset_enable = []
         self.roulette_preset_item = []
-        self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)']
+        self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)', 'STOP(3rd Coast)', 'STOP(SAINT MILLER)']
         self.duplication_index = []
         self.status_flag = False
      
