@@ -16,7 +16,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.6.7'
+VERSION = '1.6.8'
 song_DB_path = 'songs.json'
 preset_filter_DB_path = 'preset_filter.json'
 preset_roulette_DB_path = 'preset_roulette.json'
