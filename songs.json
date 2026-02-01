@@ -16830,7 +16830,7 @@
         ]
     },
     "DataErr0r": {
-        "artist": "USAO",
+        "artist": "Cosmograph",
         "category": "MUSE DASH",
         "difficulty": [
             [
@@ -20884,10 +20884,10 @@
         "category": "BLUE ARCHIVE",
         "difficulty": [
             [
-                "4",
-                "9",
+                "5",
+                "8",
                 "14",
-                "12"
+                "14"
             ],
             [
                 "5",
@@ -20897,15 +20897,15 @@
             ],
             [
                 "5",
-                "9",
-                "12",
-                "13"
+                "8",
+                "13",
+                "12"
             ],
             [
-                "7",
-                "10",
+                "4",
+                "8",
                 "13",
-                "13"
+                "12"
             ]
         ]
     },
@@ -21059,7 +21059,7 @@
             ]
         ]
     },
-    "小緋縅 (kohiodoshi)": {
+    "小緋縅(kohiodoshi)": {
         "artist": "Ice vs technoplanet",
         "category": "V LIBERTY 3",
         "difficulty": [
