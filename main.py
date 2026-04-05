@@ -1164,7 +1164,7 @@ class MainWindow(QMainWindow):
                             duplication_tmp.append(dup.split('(')[0])
 
                         if self.data_label[0].text() in duplication_tmp:
-                            if self.archive_level[floor_index][button_index][difficulty_index] == self.level[song_index][button_index][difficulty_index]:
+                            if str(self.archive_level[floor_index][button_index][difficulty_index]) == self.level[song_index][button_index][difficulty_index]:
                                 pass
                             else:
                                 floor_index = self.archive_sname.index(self.data_label[0].text(), floor_index + 1)
