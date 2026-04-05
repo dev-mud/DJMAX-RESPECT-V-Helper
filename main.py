@@ -16,7 +16,7 @@ import requests
 import re
 
 PROGRAM_NAME = 'DJMAX RESPECT V Helper'
-VERSION = '1.6.9'
+VERSION = '1.6.10'
 song_DB_path = 'songs.json'
 preset_filter_DB_path = 'preset_filter.json'
 preset_roulette_DB_path = 'preset_roulette.json'
@@ -364,7 +364,62 @@ class MainWindow(QMainWindow):
         self.floor_sname = []
         self.floor_level = []
         self.floor_button = []
-        
+        self.archive_sname = []
+        self.archive_level = []
+        self.archive_floor = []
+
+        res = requests.get('https://v-archive.net/db/v2/songs.json')
+        archive_data = res.json()
+
+        self.archive_level = [[['-' for _ in range(4)] for _ in range(4)] for _ in range(len(archive_data))]
+        self.archive_floor = [[['-' for _ in range(4)] for _ in range(4)] for _ in range(len(archive_data))]
+
+        for i in range(len(archive_data)):
+            self.archive_sname.append(archive_data[i]['name'])
+            for j, button in enumerate(archive_data[i]['patterns']):
+                for k, difficulty in enumerate(archive_data[i]['patterns'][button]):
+                    if difficulty == "NM":
+                        self.archive_level[i][j][0] = archive_data[i]['patterns'][button]['NM']['level']
+                        if 'floorName' in archive_data[i]['patterns'][button]['NM']:
+                            self.archive_floor[i][j][0] = archive_data[i]['patterns'][button]['NM']['floorName']
+
+                    elif difficulty == "HD":
+                        self.archive_level[i][j][1] = archive_data[i]['patterns'][button]['HD']['level']
+                        if 'floorName' in archive_data[i]['patterns'][button]['HD']:
+                            self.archive_floor[i][j][1] = archive_data[i]['patterns'][button]['HD']['floorName']
+
+                    elif difficulty == "MX":
+                        self.archive_level[i][j][2] = archive_data[i]['patterns'][button]['MX']['level']
+                        if 'floorName' in archive_data[i]['patterns'][button]['MX']:
+                            self.archive_floor[i][j][2] = archive_data[i]['patterns'][button]['MX']['floorName']
+
+                    elif difficulty == "SC":
+                        self.archive_level[i][j][3] = archive_data[i]['patterns'][button]['SC']['level']
+                        if 'floorName' in archive_data[i]['patterns'][button]['SC']:
+                            self.archive_floor[i][j][3] = archive_data[i]['patterns'][button]['SC']['floorName']
+
+        self.floor_sname = self.archive_sname.copy()
+
+        for i in range(len(self.archive_level)):
+            for j in range(len(self.archive_level[i])):
+                for k in range(len(self.archive_level[i][j])):
+                    self.floor_level.append(self.archive_level[i][j][k])
+                    if k == 0:
+                        self.floor_button.append(4)
+                    if k == 1:
+                        self.floor_button.append(5)
+                    if k == 2:
+                        self.floor_button.append(6)
+                    if k == 3:
+                        self.floor_button.append(8)            
+
+        print(self.archive_sname)
+        print(self.archive_level)
+        print(self.archive_floor)
+        print(self.floor_level)
+        print(self.floor_button)
+
+        """
         for button in [4, 5, 6, 8]:
             res = requests.get('https://v-archive.net/grade/' + str(button) + '/ALL')
             soup = BeautifulSoup(res.text, 'html.parser')
@@ -392,6 +447,7 @@ class MainWindow(QMainWindow):
                 else:
                     self.floor_level.append(difficulty[i].text.strip().split(' ')[1])
                 self.floor_button.append(button)      
+        """
 
     def load_Data(self):
         with open(song_DB_path, 'r', encoding='utf-8') as f:
@@ -403,10 +459,7 @@ class MainWindow(QMainWindow):
         with open(preset_roulette_DB_path, 'r', encoding='utf-8') as f:
             preset_roulette_json = json.load(f, strict=False)     
 
-        try: 
-            self.crawling_from_archive()    
-        except:
-            pass
+        self.crawling_from_archive()    
 
         self.set_data(song_json, preset_filter_json, preset_roulette_json)
         
@@ -1089,8 +1142,9 @@ class MainWindow(QMainWindow):
                     
                 self.thumbnail_label.setPixmap(self.thumbnail_pixmap) 
                 self.change_label_background(self.data_label[2], self.data_label[3])
-                
+
                 if self.option_checkbox_3.isChecked() == False:
+                    """
                     floor_index = list(filter(lambda x: self.floor_sname[x] == self.data_label[0].text(), range(len(self.floor_sname))))
                     index_tmp = -1
                     
@@ -1102,6 +1156,13 @@ class MainWindow(QMainWindow):
                         self.data_label[6].setText(self.floor[index_tmp])
                     else:
                         self.data_label[6].setText('')
+                    """
+                    try:
+                        floor_index = self.archive_sname.index(self.data_label[0].text())
+                        self.data_label[6].setText(self.archive_floor[floor_index][button_index][difficulty_index])
+                    except:
+                        pass    
+
                 else:
                     self.data_label[6].setText('')
                         
