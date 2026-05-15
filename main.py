@@ -413,11 +413,11 @@ class MainWindow(QMainWindow):
                     if k == 3:
                         self.floor_button.append(8)            
 
-        print(self.archive_sname)
-        print(self.archive_level)
-        print(self.archive_floor)
-        print(self.floor_level)
-        print(self.floor_button)
+        #print(self.archive_sname)
+        #print(self.archive_level)
+        #print(self.archive_floor)
+        #print(self.floor_level)
+        #print(self.floor_button)
 
         """
         for button in [4, 5, 6, 8]:
@@ -496,7 +496,8 @@ class MainWindow(QMainWindow):
         self.duplication = ['Alone(Nauts)', 'Alone(Marshmellow)', 'Urban Night(hYO)', 'Urban Night(Electronic Boutique)', 'Voyage(makou)', 'Voyage(SOPHI)', 'Showdown(LeeZu)', 'Showdown(Andy Lee)', 'STOP(3rd Coast)', 'STOP(SAINT MILLER)', 'Right Back(Makou)', 'Right Back(TANUKI)']
         self.duplication_index = []
         self.status_flag = False
-     
+
+        print(len(song_data))
         #songs.json 데이터 전처리
         for i, key in enumerate(song_data):
             if key not in self.duplication:
@@ -535,6 +536,15 @@ class MainWindow(QMainWindow):
             
         for i in self.level_range:
             self.level_flag.append(True)
+
+        #archive 곡명과 song.json 곡명 일치하지 않은 곡 print
+        """
+        for i, sname in enumerate(self.archive_sname):
+            if sname in self.song_name:
+                pass
+            else:
+                print(sname)
+        """        
     
     def set_label(self):
         self.attribute_label = []
